@@ -22,6 +22,7 @@
    <objectgroup draworder="index">
     <object x="0" y="0" width="32.0625" height="32.0625"/>
     <object x="0.0625" y="0.0625" width="31.9375" height="31.9375"/>
+    <object x="0.125" y="0.0625" width="31.8125" height="31.875"/>
    </objectgroup>
   </tile>
   <tile id="151">
@@ -55,7 +56,7 @@
    <property name="unity:sortingLayerName" value="Background"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztmlFuwjAQBYPoleit6JVy1QqplaJQirO21+/F8yT/Bc+uh+BgZVniWSs+6xKnHp1qjcalx3XxqbU2Dn061NgqDr061NgqDr061NgqDr061Ngq2b1eLsc/gw+tONTYKg69OtTYIqOf60t/u2by4RCXOmvj0qdLnbVxeLZ6BB96cao1GqcenWqNxqlHp1qjcerRqdZosntcGamjZ1ozHs96Pce6xJ8na5J5jzn9Zo2qFR9/Bx9awYdW8KEVfGgFH1qZwccIXjT40Ao+tIIPreBDK/jQCj60gg+t4EMr+NDKiDpnYUYyy9rgA2YkM6zN6Pc1FN/z2MZ5L8+q/ew+WjHPuE740GLhQ4s1Yr/ChxYLH1osNx/Oz6CZLHzosDL3PXzkzaPGyua5+nBco0zWqO/s2c7MnH24rVEmK9tHJhMfWkx8aDHxUcbDR/95FHmOLHxosfChxcKHFoszDD2Wa91nZbnWfVaWa92jWJyD9mf1qCu6rqprlMnChxYLH1osfGix1Hywn/fhR+c9m4+ja4EPLc7MPjJYZ/Ch+t3NYPxe/9G4hppeR/jodT4Q9fHZuIZaHyNGj0R83Dfj62fcK2vIfJ4syah6MvaP+5uBjzhXbT/vFXxoZUYf182cak5m9HHbzImPGPfI9e/28f1+jg/2j1fBh1acfex/fyI14CPG5f7Q4h69vuSewUecy/3Rn3uEjQ8tdsm1//3XeDUnPmJs7g8tNj602PtrS85DSubER4zdqs7r8ny+q5TZfNyW5/PdrJSwnHyUntsy+o8e72kw4uMbIVX6Xw==
+   eJztmkFuwjAQRYPorr0O3bU3ou2NuGqJRKUUBTKexOM/zvvS7Bw/xw8yxGIYfLncqvdkuUd8aGUvPsZkuE98aAUfWsGHVvChFXxoBR9a2YuPLPeZZZ1rk+Ue8aEVfGgFH1rBh1bwoRV8aAUf9XhUXNXM1ozDoW5dbozoRH7HMj2zWq0VH/PBh1bwoRV8aAUfWsGHVvbgowXPG3xoBR9awYdW8KEVfGgFH1rBh1bwoRV8aKXFOvfC9GQve4MPmJ7sYW9a/19D8X8e02Tu5VFr793HVswe9wkfWix8aLFa9Ct8aLHwocXK5iPzb9BIFj50WJF9Dx9x86ixonlZfWTco0hWq89sb2dmmX1k26NIVrSPSCY+tJj40GLiw8bDR/15FHkZWfjQYuFDi4UPLRZnGHqsrOvulZV13b2ysq67FYtz0PqsGuvy7qvqHkWy8KHFwocWCx9aLDUf9POyvF7rzTCn935781G6F6Xr+rjW58ZruL82Iqqc0vHf1/oxzJnBRwSrtg/rnGt8qH52Ixh/418KrlnqIWv3tIWPWucDXh/vBdcs9ZAtfLSoGvH4OE/q61bnJ9cs9ZDIZ441rdYT0T/OC4UPP1etn9dKrz5qvw/WSq8+nvXy42ROfPi4W74PniZz4sPHnRv/6Jm01Mfp5+u5c+MtZ1RLc+LDx50bbzmjWpoTHz7u3Pj7549nDfjwcXn/0OJaxk/7u+U7gw8/1zK+tL/j4z+3hG0ZW9rf8eFnW8Y+e9d4NCc+fGz6uRYbH1rscezc76fSZ9T9nPjwscexa89HxhwHzne3YI9j156PjDkN7c53LaxMPqzntlT9qv2fDaqsfgEddQvA
   </data>
  </layer>
  <layer name="Foreground" width="100" height="100">
@@ -63,7 +64,7 @@
    <property name="unity:sortingLayerName" value="Foreground"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt0bENACAMBLEUzMRY7F9Sp6X5INkTnHRVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAD046gMYPAF6sdADNTgcAAAAAAAAw1gWVxAEX
+   eJzt2CEOgDAQRcEKHJwHB0eC3l91qUOgtyUzyfcvWbelAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAtzW2ZUfQXbEjdmaH0D33uGM1OwSAqSzZAbzs2QEAAD/gfzgW/8Ox+B8CAADMrQG9LQP5
   </data>
  </layer>
 </map>
