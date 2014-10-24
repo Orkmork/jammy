@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="All_v01" tilewidth="32" tileheight="32">
+  <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
+  <tile id="100">
+   <objectgroup draworder="index">
+    <object x="0.0625" y="-0.0625" width="31.9375" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="101">
+   <objectgroup draworder="index">
+    <object x="0" y="-0.0625" width="32" height="31.9375"/>
+   </objectgroup>
+  </tile>
+  <tile id="151">
+   <objectgroup draworder="index">
+    <object x="-0.0625" y="0" width="31.875" height="31.8125"/>
+   </objectgroup>
+  </tile>
+  <tile id="157">
+   <objectgroup draworder="index">
+    <object x="0" y="0" width="32" height="31.9375"/>
+   </objectgroup>
+  </tile>
+  <tile id="203">
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.0625" width="31.9375" height="31.8125"/>
+   </objectgroup>
+  </tile>
+  <tile id="256">
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.0625" width="31.875" height="31.875"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="Kachelebene 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1DEKACAMBMHk/5+2VlLYJKDMwHVXbwQAAAAAwJzMfQDdbrpzfqqffgEdqv78PgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAXLEQUAJ0=
+  </data>
+ </layer>
+</map>
