@@ -1,0 +1,2808 @@
+fileFormatVersion: 2
+guid: 4668a60b93787384ba3e32783c1d7dba
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: character_fiona_0
+    21300002: character_fiona_1
+    21300004: character_fiona_2
+    21300006: character_fiona_3
+    21300008: character_fiona_4
+    21300010: character_fiona_5
+    21300012: character_fiona_6
+    21300014: character_fiona_7
+    21300016: character_fiona_8
+    21300018: character_fiona_9
+    21300020: character_fiona_10
+    21300022: character_fiona_11
+    21300024: character_fiona_12
+    21300026: character_fiona_13
+    21300028: character_fiona_14
+    21300030: character_fiona_15
+    21300032: character_fiona_16
+    21300034: character_fiona_17
+    21300036: character_fiona_18
+    21300038: character_fiona_19
+    21300040: character_fiona_20
+    21300042: character_fiona_21
+    21300044: character_fiona_22
+    21300046: character_fiona_23
+    21300048: character_fiona_24
+    21300050: character_fiona_25
+    21300052: character_fiona_26
+    21300054: character_fiona_27
+    21300056: character_fiona_28
+    21300058: character_fiona_29
+    21300060: character_fiona_30
+    21300062: character_fiona_31
+    21300064: character_fiona_32
+    21300066: character_fiona_33
+    21300068: character_fiona_34
+    21300070: character_fiona_35
+    21300072: character_fiona_36
+    21300074: character_fiona_37
+    21300076: character_fiona_38
+    21300078: character_fiona_39
+    21300080: character_fiona_40
+    21300082: character_fiona_41
+    21300084: character_fiona_42
+    21300086: character_fiona_43
+    21300088: character_fiona_44
+    21300090: character_fiona_45
+    21300092: character_fiona_46
+    21300094: character_fiona_47
+    21300096: character_fiona_48
+    21300098: character_fiona_49
+    21300100: character_fiona_50
+    21300102: character_fiona_51
+    21300104: character_fiona_52
+    21300106: character_fiona_53
+    21300108: character_fiona_54
+    21300110: character_fiona_55
+    21300112: character_fiona_56
+    21300114: character_fiona_57
+    21300116: character_fiona_58
+    21300118: character_fiona_59
+    21300120: character_fiona_60
+    21300122: character_fiona_61
+    21300124: character_fiona_62
+    21300126: character_fiona_63
+    21300128: character_fiona_64
+    21300130: character_fiona_65
+    21300132: character_fiona_66
+    21300134: character_fiona_67
+    21300136: character_fiona_68
+    21300138: character_fiona_69
+    21300140: character_fiona_70
+    21300142: character_fiona_71
+    21300144: character_fiona_72
+    21300146: character_fiona_73
+    21300148: character_fiona_74
+    21300150: character_fiona_75
+    21300152: character_fiona_76
+    21300154: character_fiona_77
+    21300156: character_fiona_78
+    21300158: character_fiona_79
+    21300160: character_fiona_80
+    21300162: character_fiona_81
+    21300164: character_fiona_82
+    21300166: character_fiona_83
+    21300168: character_fiona_84
+    21300170: character_fiona_85
+    21300172: character_fiona_86
+    21300174: character_fiona_87
+    21300176: character_fiona_88
+    21300178: character_fiona_89
+    21300180: character_fiona_90
+    21300182: character_fiona_91
+    21300184: character_fiona_92
+    21300186: character_fiona_93
+    21300188: character_fiona_94
+    21300190: character_fiona_95
+    21300192: character_fiona_96
+    21300194: character_fiona_97
+    21300196: character_fiona_98
+    21300198: character_fiona_99
+    21300200: character_fiona_100
+    21300202: character_fiona_101
+    21300204: character_fiona_102
+    21300206: character_fiona_103
+    21300208: character_fiona_104
+    21300210: character_fiona_105
+    21300212: character_fiona_106
+    21300214: character_fiona_107
+    21300216: character_fiona_108
+    21300218: character_fiona_109
+    21300220: character_fiona_110
+    21300222: character_fiona_111
+    21300224: character_fiona_112
+    21300226: character_fiona_113
+    21300228: character_fiona_114
+    21300230: character_fiona_115
+    21300232: character_fiona_116
+    21300234: character_fiona_117
+    21300236: character_fiona_118
+    21300238: character_fiona_119
+    21300240: character_fiona_120
+    21300242: character_fiona_121
+    21300244: character_fiona_122
+    21300246: character_fiona_123
+    21300248: character_fiona_124
+    21300250: character_fiona_125
+    21300252: character_fiona_126
+    21300254: character_fiona_127
+    21300256: character_fiona_128
+    21300258: character_fiona_129
+    21300260: character_fiona_130
+    21300262: character_fiona_131
+    21300264: character_fiona_132
+    21300266: character_fiona_133
+    21300268: character_fiona_134
+    21300270: character_fiona_135
+    21300272: character_fiona_136
+    21300274: character_fiona_137
+    21300276: character_fiona_138
+    21300278: character_fiona_139
+    21300280: character_fiona_140
+    21300282: character_fiona_141
+    21300284: character_fiona_142
+    21300286: character_fiona_143
+    21300288: character_fiona_144
+    21300290: character_fiona_145
+    21300292: character_fiona_146
+    21300294: character_fiona_147
+    21300296: character_fiona_148
+    21300298: character_fiona_149
+    21300300: character_fiona_150
+    21300302: character_fiona_151
+    21300304: character_fiona_152
+    21300306: character_fiona_153
+    21300308: character_fiona_154
+    21300310: character_fiona_155
+    21300312: character_fiona_156
+    21300314: character_fiona_157
+    21300316: character_fiona_158
+    21300318: character_fiona_159
+    21300320: character_fiona_160
+    21300322: character_fiona_161
+    21300324: character_fiona_162
+    21300326: character_fiona_163
+    21300328: character_fiona_164
+    21300330: character_fiona_165
+    21300332: character_fiona_166
+    21300334: character_fiona_167
+    21300336: character_fiona_168
+    21300338: character_fiona_169
+    21300340: character_fiona_170
+    21300342: character_fiona_171
+    21300344: character_fiona_172
+    21300346: character_fiona_173
+    21300348: character_fiona_174
+    21300350: character_fiona_175
+    21300352: character_fiona_176
+    21300354: character_fiona_177
+    21300356: character_fiona_178
+    21300358: character_fiona_179
+    21300360: character_fiona_180
+    21300362: character_fiona_181
+    21300364: character_fiona_182
+    21300366: character_fiona_183
+    21300368: character_fiona_184
+    21300370: character_fiona_185
+    21300372: character_fiona_186
+    21300374: character_fiona_187
+    21300376: character_fiona_188
+    21300378: character_fiona_189
+    21300380: character_fiona_190
+    21300382: character_fiona_191
+    21300384: character_fiona_192
+    21300386: character_fiona_193
+    21300388: character_fiona_194
+    21300390: character_fiona_195
+    21300392: character_fiona_196
+    21300394: character_fiona_197
+    21300396: character_fiona_198
+    21300398: character_fiona_199
+    21300400: character_fiona_200
+    21300402: character_fiona_201
+    21300404: character_fiona_202
+    21300406: character_fiona_203
+    21300408: character_fiona_204
+    21300410: character_fiona_205
+    21300412: character_fiona_206
+    21300414: character_fiona_207
+    21300416: character_fiona_208
+    21300418: character_fiona_209
+    21300420: character_fiona_210
+    21300422: character_fiona_211
+    21300424: character_fiona_212
+    21300426: character_fiona_213
+    21300428: character_fiona_214
+    21300430: character_fiona_215
+    21300432: character_fiona_216
+    21300434: character_fiona_217
+    21300436: character_fiona_218
+    21300438: character_fiona_219
+    21300440: character_fiona_220
+    21300442: character_fiona_221
+    21300444: character_fiona_222
+    21300446: character_fiona_223
+    21300448: character_fiona_224
+    21300450: character_fiona_225
+    21300452: character_fiona_226
+    21300454: character_fiona_227
+    21300456: character_fiona_228
+    21300458: character_fiona_229
+    21300460: character_fiona_230
+    21300462: character_fiona_231
+    21300464: character_fiona_232
+    21300466: character_fiona_233
+    21300468: character_fiona_234
+    21300470: character_fiona_235
+    21300472: character_fiona_236
+    21300474: character_fiona_237
+    21300476: character_fiona_238
+    21300478: character_fiona_239
+    21300480: character_fiona_240
+    21300482: character_fiona_241
+    21300484: character_fiona_242
+    21300486: character_fiona_243
+    21300488: character_fiona_244
+    21300490: character_fiona_245
+    21300492: character_fiona_246
+    21300494: character_fiona_247
+    21300496: character_fiona_248
+    21300498: character_fiona_249
+    21300500: character_fiona_250
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: character_fiona_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_3
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_10
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1895
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_12
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_13
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_14
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_15
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_16
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_18
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_19
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_20
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1830
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_22
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_23
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_24
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_25
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_26
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_27
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_28
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1765
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_30
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_31
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_32
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_33
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_34
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_35
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_36
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_38
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1700
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_40
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_41
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_42
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_43
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_44
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_45
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_46
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_47
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_48
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1635
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_51
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_52
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_53
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_54
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_55
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_56
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_58
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1570
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1505
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_60
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1505
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_62
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_63
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_64
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_65
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_66
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_67
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_68
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_69
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_70
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_71
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_72
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_73
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_74
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 1440
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_76
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_77
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_78
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_79
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_80
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_81
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_82
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_84
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_85
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1375
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1310
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_87
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1310
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_88
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1310
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_89
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1310
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_90
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1310
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1245
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_92
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1245
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_93
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1245
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_94
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1245
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_95
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1245
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_96
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1245
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1180
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_98
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1180
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_99
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1180
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_100
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1180
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_101
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1180
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_102
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1180
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1115
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_104
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1115
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_105
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1115
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_106
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1115
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_107
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1115
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_108
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1115
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_109
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1115
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_111
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_112
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_113
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_114
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_115
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_116
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_117
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_118
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_119
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_120
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1050
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_122
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_123
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_124
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_125
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_126
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_127
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_128
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_129
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_130
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_131
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 985
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_133
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_134
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_135
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_136
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_137
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_138
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_139
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_140
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_141
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_142
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_143
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_144
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_145
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_146
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_147
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_148
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 920
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_149
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 855
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_150
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 855
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_151
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 855
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_152
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 855
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_153
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_154
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_155
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_156
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_157
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_158
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_159
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_160
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_161
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_162
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_163
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_164
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_165
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 790
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_166
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 725
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_167
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 725
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_168
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 725
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_169
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 725
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_170
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 725
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_171
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_172
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_173
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_174
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_175
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_176
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_177
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_178
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_179
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_180
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_181
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_182
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_183
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_184
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_185
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_186
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 660
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_187
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_188
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 595
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_189
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 595
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_191
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 530
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_192
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 530
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_193
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 465
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_194
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 465
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_195
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_196
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 400
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_197
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 400
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_198
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 400
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_199
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 400
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_200
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 400
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_201
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 335
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_202
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 335
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_203
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_204
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_205
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_206
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_207
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_208
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_209
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_210
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_211
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_212
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 270
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_213
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_214
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 205
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_215
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 205
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_216
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 205
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_217
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_218
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_219
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_220
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_221
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_222
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_223
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_224
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_225
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_226
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_227
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_228
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 140
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_229
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_230
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_231
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_232
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_233
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_234
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_235
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_236
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_237
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_238
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_239
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_240
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 75
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_241
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_242
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_243
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_244
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_245
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_246
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_247
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_248
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_249
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: character_fiona_250
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 10
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
