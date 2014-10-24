@@ -21,6 +21,7 @@
    </properties>
    <objectgroup draworder="index">
     <object x="0" y="0" width="32.0625" height="32.0625"/>
+    <object x="0.0625" y="0.0625" width="31.9375" height="31.9375"/>
    </objectgroup>
   </tile>
   <tile id="151">
@@ -54,7 +55,7 @@
    <property name="unity:sortingLayerName" value="Background"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt1kEKgCAQBVClM3Ws7r+NiKDAyoVl5nvwdwrDIB9DAACA/4pxDUBLdBfwZSU6ark/hXQo72zX9k0vct/+1m/73J2hnKH2AByMtQfozNXf6I2k+u/pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALRgBojmFXI=
+   eJztmlFuwjAQBYPoleit6JVy1QqplaJQirO21+/F8yT/Bc+uh+BgZVniWSs+6xKnHp1qjcalx3XxqbU2Dn061NgqDr061NgqDr061NgqDr061Ngq2b1eLsc/gw+tONTYKg69OtTYIqOf60t/u2by4RCXOmvj0qdLnbVxeLZ6BB96cao1GqcenWqNxqlHp1qjcerRqdZosntcGamjZ1ozHs96Pce6xJ8na5J5jzn9Zo2qFR9/Bx9awYdW8KEVfGgFH1qZwccIXjT40Ao+tIIPreBDK/jQCj60gg+t4EMr+NDKiDpnYUYyy9rgA2YkM6zN6Pc1FN/z2MZ5L8+q/ew+WjHPuE740GLhQ4s1Yr/ChxYLH1osNx/Oz6CZLHzosDL3PXzkzaPGyua5+nBco0zWqO/s2c7MnH24rVEmK9tHJhMfWkx8aDHxUcbDR/95FHmOLHxosfChxcKHFoszDD2Wa91nZbnWfVaWa92jWJyD9mf1qCu6rqprlMnChxYLH1osfGix1Hywn/fhR+c9m4+ja4EPLc7MPjJYZ/Ch+t3NYPxe/9G4hppeR/jodT4Q9fHZuIZaHyNGj0R83Dfj62fcK2vIfJ4syah6MvaP+5uBjzhXbT/vFXxoZUYf182cak5m9HHbzImPGPfI9e/28f1+jg/2j1fBh1acfex/fyI14CPG5f7Q4h69vuSewUecy/3Rn3uEjQ8tdsm1//3XeDUnPmJs7g8tNj602PtrS85DSubER4zdqs7r8ny+q5TZfNyW5/PdrJSwnHyUntsy+o8e72kw4uMbIVX6Xw==
   </data>
  </layer>
  <layer name="Foreground" width="100" height="100">
@@ -62,7 +63,7 @@
    <property name="unity:sortingLayerName" value="Foreground"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJztzjEJAAAIADDBTPav5u3rI8iWYBEAAAAAAHyQ1wGGug4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABrDayjADk=
+   eJzt0bENACAMBLEUzMRY7F9Sp6X5INkTnHRVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAD046gMYPAF6sdADNTgcAAAAAAAAw1gWVxAEX
   </data>
  </layer>
 </map>
