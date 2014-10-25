@@ -105,24 +105,16 @@
  <tileset firstgid="2885" name="Inside_A4" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Inside_A4.png" width="512" height="480"/>
   <tile id="60">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0" width="31.875" height="32.0625"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="61">
-   <objectgroup draworder="index">
-    <object x="0" y="0" width="32" height="31.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="76">
-   <objectgroup draworder="index">
-    <object x="0" y="0.0625" width="32.125" height="31.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="77">
-   <objectgroup draworder="index">
-    <object x="0" y="0" width="32.0625" height="31.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
  </tileset>
  <tileset firstgid="3125" name="Inside_C" tilewidth="32" tileheight="32">
