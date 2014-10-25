@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="All_v01" tilewidth="32" tileheight="32">
+  <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
+  <tile id="9">
+   <objectgroup draworder="index">
+    <object x="0.25" y="0.125" width="31.75" height="31.875"/>
+   </objectgroup>
+  </tile>
+  <tile id="59">
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0" width="31.9375" height="32.0625"/>
+   </objectgroup>
+  </tile>
+  <tile id="108">
+   <objectgroup draworder="index">
+    <object x="0.1875" y="0.125" width="31.8125" height="31.8125"/>
+   </objectgroup>
+  </tile>
+  <tile id="1370">
+   <objectgroup draworder="index">
+    <object x="31.625" y="0.25">
+     <polygon points="0,0 -31.5,31.5625 -31.6875,-0.1875 0.375,-0.25"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="1372">
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.0625">
+     <polygon points="0,0 31.875,31.9375 31.9375,0"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="2501" name="Inside_A4" tilewidth="32" tileheight="32">
+  <image source="../ressources/Graphics/Tilesets/Inside_A4.png" width="512" height="480"/>
+  <tile id="83">
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.25" width="31.875" height="31.75"/>
+   </objectgroup>
+  </tile>
+  <tile id="99">
+   <objectgroup draworder="index">
+    <object x="0.125" y="0.0625" width="31.9375" height="31.8125"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <tileset firstgid="2741" name="Inside_B" tilewidth="32" tileheight="32">
+  <image source="../ressources/Graphics/Tilesets/Inside_B.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="2997" name="All_v01" tilewidth="32" tileheight="32">
+  <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
+  <tile id="9">
+   <objectgroup draworder="index">
+    <object x="0.125" y="0.0625" width="31.875" height="31.875"/>
+   </objectgroup>
+  </tile>
+  <tile id="59">
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.0625" width="32" height="32"/>
+   </objectgroup>
+  </tile>
+  <tile id="259">
+   <objectgroup draworder="index">
+    <object x="31.75" y="0.25">
+     <polygon points="0,0 -31.6875,31.75 0.1875,31.6875"/>
+    </object>
+   </objectgroup>
+  </tile>
+  <tile id="260">
+   <objectgroup draworder="index">
+    <object x="0.125" y="0.125">
+     <polygon points="0,0 31.8125,31.875 -0.125,31.9375 -0.125,23.8125 -0.125,23.125"/>
+    </object>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="Background" width="100" height="100">
+  <properties>
+   <property name="unity:sortingLayerName" value="Background"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="Foreground" width="100" height="100">
+  <properties>
+   <property name="unity:sortingLayerName" value="Foreground"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt3DtOw0AUBdBpkoafREHNRkBiEyBWAS10gQ5CASwjLIuFYAqiCIUi8Wdu8DnSlLau9Oz52B6XAtu5nJRyNamdgt+u1STOXE0AYDAXx7UTAAAAAAAAYzLbq52AVa8d1ONRTaO8qwcAGzo9qJ2AZObvWbqYvwMAAAD8mB22O/7uqJscyXZp791iBPXYVJvnaZ8t7w+6deL6hj/duz+ifKzUw3vYcduleSQA0C/zAmCdPteML9P+zj0U364ytAfXXJQ39QAAAAAAIFzyO7nkbLCOf+nk+y7Rfu0QLJ017bx2CJZumnZbO8Q/or/Jor/Jor8BgHF4mpby3LS5Z3ywFevKLNaVWawrM9lD1z1jQRZjQRZjAZDiC/AnF8w=
+  </data>
+ </layer>
+</map>
