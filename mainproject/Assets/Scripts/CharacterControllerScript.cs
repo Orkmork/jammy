@@ -14,9 +14,29 @@ public class CharacterControllerScript : MonoBehaviour {
 	public LayerMask whatIsGround;
 	public float jumpForce = 250f;
 
+	public int lives = 3;
+	public int coins = 0;
+
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+
+		// restore state
+		if (PlayerPrefs.HasKey ("lives"))
+		{
+			lives = PlayerPrefs.GetInt("lives");
+		}
+		if (PlayerPrefs.HasKey ("coins"))
+		{
+			coins = PlayerPrefs.GetInt("coins");
+		}
+	}
+
+	void OnDisable()
+	{
+		// save state
+		PlayerPrefs.SetInt ("lives", lives);
+		PlayerPrefs.SetInt ("coins", coins);
 	}
 	
 	// Update is called once per frame
