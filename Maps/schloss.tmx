@@ -7,12 +7,12 @@
   <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
   <tile id="8">
    <objectgroup draworder="index">
-    <object x="0.0625" y="0.0625" width="31.875" height="31.875"/>
+    <object x="0" y="0" width="31.9375" height="31.9375"/>
    </objectgroup>
   </tile>
   <tile id="58">
    <objectgroup draworder="index">
-    <object x="0" y="0" width="32" height="31.875"/>
+    <object x="0" y="-0.0625" width="32" height="32.0625"/>
    </objectgroup>
   </tile>
   <tile id="253">
