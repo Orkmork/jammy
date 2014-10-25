@@ -50,27 +50,13 @@
     <object x="0.0625" y="0.0625" width="31.875" height="31.875"/>
    </objectgroup>
   </tile>
-  <tile id="257">
-   <objectgroup draworder="index">
-    <object x="31.875" y="0.125">
-     <polygon points="0,0 -31.8125,31.8125 0.125,31.8125 -0.0625,19.75 0.0625,0"/>
-    </object>
-   </objectgroup>
-  </tile>
-  <tile id="258">
-   <objectgroup draworder="index">
-    <object x="0" y="0">
-     <polygon points="0,0 0,31.8125 32,32"/>
-    </object>
-   </objectgroup>
-  </tile>
  </tileset>
  <layer name="Background" width="100" height="100">
   <properties>
    <property name="unity:sortingLayerName" value="Background"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer name="Foreground" width="100" height="100">
