@@ -9,35 +9,54 @@ public class EnemyScript : MonoBehaviour {
 	public Transform groundLookAheadCheck;
 	public LayerMask whatIsGround;
 	
-	public float dropChance = 0.2f;
 	public float turnChance = 0f;//0.05f;
+	
+	public int maxDropTurns = -1;
+	
+	int randDropTurns = 0;
+	int dropTurnCount = 0;	
 	
 	bool facingRight = true;
 	
 	bool grounded = false;
 	bool groundLookAhead = false;
+	bool falling = false;
 	
 	float groundRadius = 0.2f;
-	
-//	public float jumpForce = 250f;
+	float lookAheadRadius = 0.1f;
 	
 	Animator anim;
 	
 	bool RandomTrue(float chance)
 	{	
+		if (chance >= 1.0f)
+		{
+			return true;
+		}
 		if (chance > 0f)
 		{
 			return Random.Range(0f, 1f) < chance;
 		}
-		else
+		return false;
+	}
+	
+	void ResetDropTurns()
+	{
+		dropTurnCount = 0;
+		
+		if (maxDropTurns < 0)
 		{
-			return false;
+			return;
 		}
+		
+		randDropTurns = (int)(Random.Range(0, maxDropTurns));
 	}
 	
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
+		
+		ResetDropTurns();
 		
 		Run (1f);
 	}
@@ -65,16 +84,26 @@ public class EnemyScript : MonoBehaviour {
 	
 	void FixedUpdate () {
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-		groundLookAhead = Physics2D.OverlapCircle (groundLookAheadCheck.position, groundRadius, whatIsGround);
+		groundLookAhead = Physics2D.OverlapCircle (groundLookAheadCheck.position, lookAheadRadius, whatIsGround);
 		
 		if (!groundLookAhead)
 		{
-			if (RandomTrue(dropChance))
+			if (maxDropTurns < 0)
 			{
-			    TurnAround();
-			    return;
-		    }
-		}
+				TurnAround();
+				return;
+			}
+			else {
+				if (++dropTurnCount <= randDropTurns)
+				{
+					TurnAround();
+				}			
+				else if (!grounded)
+				{
+					ResetDropTurns();				
+				}
+			}
+		}	
 /*
 		if (RandomTrue(turnChance)) 
 		{
@@ -94,7 +123,7 @@ public class EnemyScript : MonoBehaviour {
 	
 	void Run(float move)
 	{
-//		anim.SetFloat ("Speed", Mathf.Abs (move));
+		anim.SetFloat ("Speed", Mathf.Abs (move));
 		
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 		
