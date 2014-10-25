@@ -48,6 +48,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraScript.cs" />
      <Compile Include="Assets\Scripts\CharacterControllerScript.cs" />
+     <Compile Include="Assets\Scripts\CharacterRespawn.cs" />
+     <Compile Include="Assets\Scripts\HudScript.cs" />
      <Compile Include="Assets\Scripts\SoundScript.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileAnimator.cs" />

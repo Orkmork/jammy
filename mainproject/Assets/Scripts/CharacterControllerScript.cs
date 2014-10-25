@@ -77,6 +77,15 @@ public class CharacterControllerScript : MonoBehaviour {
 
 		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
+		if (Input.GetKeyDown (KeyCode.K)) {
+			LoseLife();
+		}
+		if (Input.GetKeyDown (KeyCode.L)) {
+			GainLife();
+		}
+
+
+		// flip orientation
 		if(move > 0 && !facingRight)
 		{
 			Flip();
