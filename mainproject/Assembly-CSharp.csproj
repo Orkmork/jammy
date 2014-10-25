@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\PowerupScript.cs" />
      <Compile Include="Assets\Scripts\SoundScript.cs" />
      <Compile Include="Assets\Scripts\TrapDestroyerScript.cs" />
+     <Compile Include="Assets\Test\MessageScript.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\TileAnimator.cs" />
      <None Include="Assets\Tiled2Unity\Prefabs\_ReadMe.txt" />

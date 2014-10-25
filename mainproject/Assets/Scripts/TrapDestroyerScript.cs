@@ -9,7 +9,7 @@ public class TrapDestroyerScript : MonoBehaviour {
 		{
 			//Debug.Break();
 			GameObject.Find("Character").GetComponent<CharacterControllerScript>().LoseLife();
-			
+			//Debug.Break();
 			return;
 		}
 	}

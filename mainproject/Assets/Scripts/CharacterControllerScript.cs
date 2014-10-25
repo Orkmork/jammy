@@ -45,6 +45,11 @@ public class CharacterControllerScript : MonoBehaviour {
 			alive = false;
 			waitForRespawn = true;
 		}
+		else
+		{
+			Debug.Break();
+			return;
+		}
 	}
 
 	public void GainLife()
