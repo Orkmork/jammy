@@ -19,9 +19,6 @@
    <objectgroup draworder="index"/>
   </tile>
   <tile id="108">
-   <properties>
-    <property name="unity:scale" value="0.01"/>
-   </properties>
    <objectgroup draworder="index">
     <object x="0.0625" y="0" width="31.9375" height="31.9375"/>
    </objectgroup>
@@ -37,9 +34,6 @@
    </objectgroup>
   </tile>
   <tile id="158">
-   <properties>
-    <property name="unity:scale" value="0.01"/>
-   </properties>
    <objectgroup draworder="index">
     <object x="0.0625" y="-0.0625" width="31.9375" height="32.125"/>
    </objectgroup>
