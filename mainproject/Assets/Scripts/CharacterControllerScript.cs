@@ -6,13 +6,19 @@ public class CharacterControllerScript : MonoBehaviour {
 	public float maxSpeed = 2f;
 	bool facingRight = true;
 
-	Animator anim;
+	public Animator anim;
 
 	bool grounded = false;
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	public float jumpForce = 250f;	
+	public float jumpForce = 250f;
+	public float killForce = 1f;
+	public bool levelEnd = false;
+	public bool alive = true;
+	public bool waitForRespawn = false;
+
+
 
 	public int lives = 3;
 	public int coins = 0;
@@ -26,6 +32,18 @@ public class CharacterControllerScript : MonoBehaviour {
 		if (lives > 0)
 		{
 			--lives;
+			if(facingRight) {
+				killForce *= -1f;
+			}
+
+
+//			rigidbody2D.velocity = new Vector2 (2f * killForce, rigidbody2D.velocity.y);
+			rigidbody2D.AddForce(new Vector2(0, 100f));
+			rigidbody2D.velocity = new Vector2 (2f * killForce, rigidbody2D.velocity.y);
+
+			anim.SetBool("LostLife",true);
+			alive = false;
+			waitForRespawn = true;
 		}
 	}
 
@@ -71,54 +89,76 @@ public class CharacterControllerScript : MonoBehaviour {
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 
-		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+		if (alive) {
+						anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+				}
 
 		float move = Input.GetAxis ("Horizontal");
 
-		anim.SetFloat ("Speed", Mathf.Abs (move));
+		if (alive) {
+			if (!levelEnd) {
+					anim.SetFloat ("Speed", Mathf.Abs (move));
+					rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+			}
 
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+			if (move > 0 && !facingRight) {
+					Flip ();
+			} else if (move < 0 && facingRight) {
+					Flip ();
+			}
+		} else if (waitForRespawn){
+			if(Input.GetKeyDown (KeyCode.R))
+			{
 
-		if(move > 0 && !facingRight)
-		{
-			Flip();
+				anim.SetBool ("LostLife", false);	
+				if(!facingRight) Flip ();
+				rigidbody2D.position = GameObject.Find ("SpawnPoint").transform.position;
+				alive = true;
+				waitForRespawn = false;
+
+			}
 		}
-		else if(move <0 && facingRight)
-		{
-			Flip();
+
+
+		if(Input.GetKeyDown (KeyCode.K)){
+			LoseLife();
+		}
+		if(Input.GetKeyDown (KeyCode.L)){
+			GainLife();
 		}
 
 
 	}
 	
 	void Update() {
-		float move = Input.GetAxis ("Horizontal");
-		if (grounded && Input.GetKeyDown (KeyCode.Space)) {
-			anim.SetBool ("Ground", false);
-			rigidbody2D.AddForce(new Vector2(0, jumpForce));
-		}
+		if (alive) {
+			float move = Input.GetAxis ("Horizontal");
+			if (grounded && Input.GetKeyDown (KeyCode.Space)) {
+					anim.SetBool ("Ground", false);
+					rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+			}
 
-		//Crouching-------------
-		if (allowJumpCrouch || grounded) {
-			if (Input.GetKey(KeyCode.DownArrow )) {
-				anim.SetBool ("Crouch", true);
+			//Crouching-------------
+			if (allowJumpCrouch || grounded) {
+					if (Input.GetKey (KeyCode.DownArrow)) {
+							anim.SetBool ("Crouch", true);
+					} 
+					if (Input.GetKeyUp (KeyCode.DownArrow)) {
+							anim.SetBool ("Crouch", false);
+					} 
+			}
+
+			//KickAttack-----------------
+
+			if (grounded && move < 0.01f && Input.GetKey (KeyCode.LeftControl)) {
+					anim.SetBool ("KickAttack", true);
 			} 
-			if (Input.GetKeyUp(KeyCode.DownArrow )) {
-				anim.SetBool ("Crouch", false);
-			} 
+			if (Input.GetKeyUp (KeyCode.LeftControl)) {
+					anim.SetBool ("KickAttack", false);
+			} else if (Mathf.Abs (move) > 0.01f) {
+					anim.SetBool ("KickAttack", false);
+			}
 		}
-
-		//KickAttack-----------------
-
-		if (grounded && move < 0.01f && Input.GetKey(KeyCode.LeftControl )) {
-			anim.SetBool ("KickAttack", true);
-		} 
-		if (Input.GetKeyUp(KeyCode.LeftControl )) {
-			anim.SetBool ("KickAttack", false);
-		}else if(Mathf.Abs (move) > 0.01f) {
-			anim.SetBool ("KickAttack", false);
-		}
-
 
 	}
 
@@ -128,5 +168,10 @@ public class CharacterControllerScript : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	IEnumerator waitForMe()
+	{
+		yield return new WaitForSeconds(2);
 	}
 }
