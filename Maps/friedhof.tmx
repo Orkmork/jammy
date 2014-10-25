@@ -7,29 +7,23 @@
   <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
   <tile id="100">
    <objectgroup draworder="index">
-    <object x="0.0625" y="-0.0625" width="31.9375" height="32"/>
+    <object x="0" y="0" width="31.9375" height="32"/>
    </objectgroup>
   </tile>
   <tile id="101">
    <objectgroup draworder="index">
-    <object x="0" y="-0.0625" width="32" height="31.9375"/>
+    <object x="0" y="0" width="32.1875" height="32"/>
    </objectgroup>
   </tile>
   <tile id="103">
-   <objectgroup draworder="index">
-    <object x="0" y="0">
-     <polygon points="0,0 32,31.9375 31.875,0.0625"/>
-    </object>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="108">
    <properties>
     <property name="unity:scale" value="0.01"/>
    </properties>
    <objectgroup draworder="index">
-    <object x="0" y="0" width="32.0625" height="32.0625"/>
-    <object x="0.0625" y="0.0625" width="31.9375" height="31.9375"/>
-    <object x="0.125" y="0.0625" width="31.8125" height="31.875"/>
+    <object x="0.0625" y="0" width="31.9375" height="31.9375"/>
    </objectgroup>
   </tile>
   <tile id="151">
@@ -55,28 +49,8 @@
     <object x="0.0625" y="0.0625" width="31.9375" height="31.8125"/>
    </objectgroup>
   </tile>
-  <tile id="206">
-   <objectgroup draworder="index">
-    <object x="10.25" y="10.3125"/>
-    <object x="0.0625" y="0.0625" width="31.8125" height="32"/>
-    <object x="26.3125" y="18.3125"/>
-    <object x="26.3125" y="18.25"/>
-    <object x="27.625" y="8"/>
-    <object x="25.8125" y="5.375"/>
-    <object x="10.75" y="5.375"/>
-    <object x="9.25" y="7.75" height="0.1875"/>
-    <object x="7" y="16" height="0.125"/>
-    <object x="6.5" y="18.3125"/>
-    <object x="7.0625" y="23.375" width="0.3125" height="0.125"/>
-    <object x="13.5625" y="25.875" width="0.5" height="0.1875"/>
-    <object x="22.75" y="26.9375" width="0.125"/>
-    <object x="15.0625" y="25.75"/>
-   </objectgroup>
-  </tile>
   <tile id="256">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0.0625" width="31.875" height="31.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="257">
    <objectgroup draworder="index">
