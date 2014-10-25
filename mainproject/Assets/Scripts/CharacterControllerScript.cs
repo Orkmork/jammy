@@ -12,10 +12,12 @@ public class CharacterControllerScript : MonoBehaviour {
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	public float jumpForce = 250f;
+	public float jumpForce = 250f;	
 
 	public int lives = 3;
 	public int coins = 0;
+	
+	public bool allowJumpCrouch = true;
 
 	// === state ====================================
 	
@@ -97,12 +99,14 @@ public class CharacterControllerScript : MonoBehaviour {
 		}
 
 		//Crouching-------------
-		if (grounded && Input.GetKey(KeyCode.DownArrow )) {
-			anim.SetBool ("Crouch", true);
-		} 
-		if (grounded && Input.GetKeyUp(KeyCode.DownArrow )) {
-			anim.SetBool ("Crouch", false);
-		} 
+		if (allowJumpCrouch || grounded) {
+			if (Input.GetKey(KeyCode.DownArrow )) {
+				anim.SetBool ("Crouch", true);
+			} 
+			if (Input.GetKeyUp(KeyCode.DownArrow )) {
+				anim.SetBool ("Crouch", false);
+			} 
+		}
 
 		//KickAttack-----------------
 
