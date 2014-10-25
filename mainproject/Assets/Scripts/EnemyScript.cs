@@ -20,7 +20,6 @@ public class EnemyScript : MonoBehaviour {
 	
 	bool grounded = false;
 	bool groundLookAhead = false;
-	bool falling = false;
 	
 	float groundRadius = 0.2f;
 	float lookAheadRadius = 0.1f;

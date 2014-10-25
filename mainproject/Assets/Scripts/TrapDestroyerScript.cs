@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DestroyerScript : MonoBehaviour {
+public class TrapDestroyerScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{

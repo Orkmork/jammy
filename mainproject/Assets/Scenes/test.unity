@@ -296,7 +296,7 @@ Transform:
   - {fileID: 1895241617}
   - {fileID: 1979691673}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!114 &192762709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,7 +548,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &842852203
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +584,7 @@ Transform:
   m_Children:
   - {fileID: 2130240011}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!114 &842852205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,11 +670,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  anim: {fileID: 0}
   groundCheck: {fileID: 2130240011}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294965247
   jumpForce: 250
+  killForce: 1
+  levelEnd: 0
+  alive: 1
+  waitForRespawn: 0
   lives: 3
   coins: 0
   allowJumpCrouch: 1
@@ -885,7 +890,7 @@ Transform:
   - {fileID: 119654392}
   - {fileID: 899640316}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &1196762430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2600,6 +2605,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1407994291}
   m_RootOrder: 1
+--- !u!1001 &1682040581
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.0328216553
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.0669124648
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+  m_RootGameObject: {fileID: 1937701498}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1895241616
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,6 +2675,33 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 192762708}
+  m_RootOrder: 0
+--- !u!1 &1937701498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+  m_PrefabInternal: {fileID: 1682040581}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1937701499}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1937701499
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
+  m_PrefabInternal: {fileID: 1682040581}
+  m_GameObject: {fileID: 1937701498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0328216553, y: -.0669124648, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!1 &1951459232
 GameObject:
