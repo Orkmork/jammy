@@ -17,6 +17,31 @@ public class CharacterControllerScript : MonoBehaviour {
 	public int lives = 3;
 	public int coins = 0;
 
+	// === state ====================================
+	
+	public void LoseLife()
+	{
+		if (lives > 0)
+		{
+			--lives;
+		}
+	}
+
+	public void GainLife()
+	{
+		if (lives < 10)
+		{
+			++lives;
+		}
+	}
+	
+	public void IncreaseCoins(int amount)
+	{
+		coins += amount;
+	}
+
+	// === control ==================================
+	
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
