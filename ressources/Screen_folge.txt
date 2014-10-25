@@ -1,0 +1,20 @@
+﻿00 - Start
+01 - GameOver
+02 - Story_01
+03 - Story_02
+04 - Story_03
+05 - Story_04
+06 - --- Map Zoo
+07 - Story_05
+08 - Story_06
+09 - Story_07
+10 - --- Map Friedhof
+11 - story_08
+12 - story_09
+13 - story_10
+14 - --- Map PYramide
+15 - STory_11
+16 - story_12
+17 - --- Map Schloss
+18 - story_13
+19 - Credits
