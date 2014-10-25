@@ -151,18 +151,10 @@
    <objectgroup draworder="index"/>
   </tile>
   <tile id="96">
-   <objectgroup draworder="index">
-    <object x="15.125" y="1.375">
-     <polyline points="0,0 -6.0625,5.625 -6.0625,26.375 -8.125,26.5625 -8.25,27.6875 -9.125,27.625 -9.125,30.4375 10.75,30.5 10.75,27.625 9.9375,27.5 9.75,26.625 7.8125,26.625 7.75,4.6875 2.1875,-0.0625 0.1875,-0.0625 0,0.0625 0.1875,-0.0625"/>
-    </object>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="112">
-   <objectgroup draworder="index">
-    <object x="6.125" y="0">
-     <polyline points="0,0 -0.125,6.0625 -4.125,6.125 -4.25,6.75 -5.0625,7 -5.0625,30.875 -4.1875,31.875 23.8125,31.9375 24.75,31 24.9375,7.0625 23.9375,6.125 19.75,6.0625 19.875,0 -0.0625,-0.0625"/>
-    </object>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="122">
    <objectgroup draworder="index"/>
