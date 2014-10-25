@@ -17,6 +17,8 @@ public class CharacterControllerScript : MonoBehaviour {
 	public bool levelEnd = false;
 	public bool alive = true;
 	public bool waitForRespawn = false;
+	public float moveDir = 1f;
+	public bool speedJump = false;
 
 
 
@@ -32,12 +34,20 @@ public class CharacterControllerScript : MonoBehaviour {
 		if (lives > 0)
 		{
 			--lives;
+			if(lives == 0) {
+				Application.LoadLevel(1);
+			}
 			if(facingRight) {
 				killForce *= -1f;
 			}
 
+			// highlight playerdeath
+			SpriteRenderer renderer = GameObject.Find ("Deathscreen").GetComponent<SpriteRenderer>();
+			renderer.color = new Color(0f, 0f, 0f, 0.8f);
+			GameObject.Find ("Character").GetComponent<SpriteRenderer>().sortingLayerName = "DeathPlayer";
+			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Hoppala! Da hat's dich wohl erwischt! <R> für respawn...";
 
-//			rigidbody2D.velocity = new Vector2 (2f * killForce, rigidbody2D.velocity.y);
+			//kill player
 			rigidbody2D.AddForce(new Vector2(0, 100f));
 			rigidbody2D.velocity = new Vector2 (2f * killForce, rigidbody2D.velocity.y);
 
@@ -114,6 +124,11 @@ public class CharacterControllerScript : MonoBehaviour {
 		} else if (waitForRespawn){
 			if(Input.GetKeyDown (KeyCode.R))
 			{
+				// highlight playerdeath
+				SpriteRenderer renderer = GameObject.Find ("Deathscreen").GetComponent<SpriteRenderer>();
+				renderer.color = new Color(0f, 0f, 0f, 0f);
+				GameObject.Find ("Character").GetComponent<SpriteRenderer>().sortingLayerName = "Player";
+				GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "";
 
 				anim.SetBool ("LostLife", false);	
 				if(!facingRight) Flip ();
@@ -131,6 +146,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		if(Input.GetKeyDown (KeyCode.L)){
 			GainLife();
 		}
+				
 
 
 	}
@@ -163,6 +179,11 @@ public class CharacterControllerScript : MonoBehaviour {
 			} else if (Mathf.Abs (move) > 0.01f) {
 					anim.SetBool ("KickAttack", false);
 			}
+
+			//if(Mathf.Abs (move) > 0.01f && Input.GetKeyDown(KeyCode.T) && anim.GetFloat ("Speed") > 0.01f) {
+			//	anim.SetFloat ("Speed", 200f);
+			//	rigidbody2D.AddForce(new Vector2(2000f * moveDir, 0f));	
+			//}
 		}
 
 	}
@@ -173,6 +194,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+		moveDir *= -1f;
 	}
 
 	IEnumerator waitForMe()

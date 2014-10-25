@@ -61,3 +61,11 @@ TagManager:
     userID: 5
     uniqueID: 3544251839
     locked: 0
+  - name: Deathscreen
+    userID: 6
+    uniqueID: 316202999
+    locked: 0
+  - name: DeathPlayer
+    userID: 7
+    uniqueID: 1341681185
+    locked: 0
