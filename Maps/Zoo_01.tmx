@@ -78,6 +78,15 @@
    </objectgroup>
   </tile>
  </tileset>
+ <tileset firstgid="5497" name="Sign_Bar" tilewidth="32" tileheight="32">
+  <image source="../ressources/Tile/Sign_Bar.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="5498" name="Door_brick" tilewidth="32" tileheight="32">
+  <image source="../ressources/Tile/Door_brick.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="5499" name="Outside_C" tilewidth="32" tileheight="32">
+  <image source="../ressources/Graphics/Tilesets/Outside_C.png" width="512" height="512"/>
+ </tileset>
  <layer name="Background" width="100" height="100">
   <properties>
    <property name="unity:sortingLayerName" value="Background"/>
@@ -91,7 +100,7 @@
    <property name="unity:sortingLayerName" value="Foreground"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt3DtOw0AUBdBpkoafREHNRkBiEyBWAS10gQ5CASwjLIuFYAqiCIUi8Wdu8DnSlLau9Oz52B6XAtu5nJRyNamdgt+u1STOXE0AYDAXx7UTAAAAAAAAYzLbq52AVa8d1ONRTaO8qwcAGzo9qJ2AZObvWbqYvwMAAAD8mB22O/7uqJscyXZp791iBPXYVJvnaZ8t7w+6deL6hj/duz+ifKzUw3vYcduleSQA0C/zAmCdPteML9P+zj0U364ytAfXXJQ39QAAAAAAIFzyO7nkbLCOf+nk+y7Rfu0QLJ017bx2CJZumnZbO8Q/or/Jor/Jor8BgHF4mpby3LS5Z3ywFevKLNaVWawrM9lD1z1jQRZjQRZjAZDiC/AnF8w=
+   eJzt3DtOAlEUBuCrCRT4iiRQuxFN3ITGVWjsoEM7xUJdhnbqSow7cAv2Dg0hBgpgmHvG+b7klMBJ/pn7mAcpwWrOWimdt3J3wV8XMglnLBMAqMxpN3cHAAAAAABAk4x2cnfArMcS8riVaSjP8gCW8NZL6b2oj17uTpj4LHL4Keqr4jyO9qr9vbrY6qQ0KLLY7uTuJK8o6/dJHkN5lLJ+L8NhkcN1P6Vuw/MAAACAuhvtr/f5wUE5fURWp3fvXhqQx7LWuZ72veb5Qbn6jm9YaOj8COV1Jg/3YZutTutIAGCzrAuAeTa5Z3xob+67qxLl2VWa48YxF8qTPAAAAAAACC7yPbnIvcE8Uf5Lh8UmEe3mboKp46JOcjfB1GVRV7mb+EeMN7EYb2Ix3gBAM9y1U7ovauwaH6zEvjIW+8pY7Ctj8g5d+cwFsZgLYjEXAFH8Aj9wHw0=
   </data>
  </layer>
 </map>
