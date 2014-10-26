@@ -21,22 +21,13 @@ public class CharacterControllerScript : MonoBehaviour {
 	public bool speedJump = false;
 	public bool hasweapon = false;
 
-	public bool playableDuck = true;
-	public bool playableJump = true;
+
 
 	public int lives = 3;
 	public int coins = 0;
 	public int shots = 0;
-
-	private Transform frontCheck;
+	
 	public bool allowJumpCrouch = true;
-
-	SoundScript sfx;
-
-	void Awake()
-	{
-		frontCheck = transform.Find ("frontCheck").transform;
-	}
 
 	// === state ====================================
 	
@@ -51,7 +42,7 @@ public class CharacterControllerScript : MonoBehaviour {
 			if(facingRight) {
 				killForce *= -1f;
 			}
-			sfx.playDie();
+
 			// highlight playerdeath
 			SpriteRenderer renderer = GameObject.Find ("Deathscreen").GetComponent<SpriteRenderer>();
 			renderer.color = new Color(0f, 0f, 0f, 0.8f);
@@ -68,7 +59,8 @@ public class CharacterControllerScript : MonoBehaviour {
 		}
 		else
 		{
-			lives = 0;
+			Debug.Break();
+			return;
 		}
 	}
 
@@ -90,7 +82,6 @@ public class CharacterControllerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
-		sfx = GameObject.Find ("Character").GetComponent<SoundScript>();
 
 		// restore state
 		if (PlayerPrefs.HasKey ("lives"))
@@ -117,7 +108,6 @@ public class CharacterControllerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 
@@ -131,10 +121,6 @@ public class CharacterControllerScript : MonoBehaviour {
 			if (!levelEnd) {
 					anim.SetFloat ("Speed", Mathf.Abs (move));
 					rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
-			}
-			else if(levelEnd)
-			{
-				sfx.playLvlend();
 			}
 
 			if (move > 0 && !facingRight) {
@@ -160,11 +146,14 @@ public class CharacterControllerScript : MonoBehaviour {
 			}
 		}
 
-		if (shots <= 0) {
-			anim.SetBool ("HasWeapon", false);	
-			hasweapon = false;
-		}
 
+		if(Input.GetKeyDown (KeyCode.K)){
+			LoseLife();
+		}
+		if(Input.GetKeyDown (KeyCode.L)){
+			GainLife();
+		}
+				
 
 
 	}
@@ -175,31 +164,15 @@ public class CharacterControllerScript : MonoBehaviour {
 			if (grounded && Input.GetKeyDown (KeyCode.Space)) {
 					anim.SetBool ("Ground", false);
 					rigidbody2D.AddForce (new Vector2 (0, jumpForce));
-				sfx.playJump();
 			}
-			Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
-			foreach(Collider2D c in frontHits)
-			{
-				if(c.tag == "Obstacle" && move > 0.01f);
-				{
-					sfx.playWall();
-					break;
-				}
-			}
+
 			//Crouching-------------
 			if (allowJumpCrouch || grounded) {
 					if (Input.GetKey (KeyCode.DownArrow)) {
 							anim.SetBool ("Crouch", true);
-							if(playableDuck)
-							{
-								if(playableDuck)
-										sfx.playDuck();
-								playableDuck = false;
-							}	
 					} 
 					if (Input.GetKeyUp (KeyCode.DownArrow)) {
 							anim.SetBool ("Crouch", false);
-							playableDuck = true;
 					} 
 			}
 

@@ -111,7 +111,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00241c387a2629f4b83b00d2ebe36673, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 00241c387a2629f4b83b00d2ebe36673, type: 2}
       propertyPath: m_Name
@@ -238,7 +238,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: de2be532af3c92041a6888f3b9045546, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: de2be532af3c92041a6888f3b9045546, type: 2}
       propertyPath: m_TagString
@@ -334,7 +334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27367a3415116634095a86f2ffb8d9e6, type: 2}
@@ -652,7 +652,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b739635c58056140ac6b52cc79ffba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 0
 --- !u!61 &657262472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -785,7 +784,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
       propertyPath: m_Name
@@ -812,7 +811,6 @@ GameObject:
   - 114: {fileID: 1040541467}
   - 114: {fileID: 1040541468}
   - 114: {fileID: 1040541469}
-  - 82: {fileID: 1040541470}
   m_Layer: 11
   m_Name: Character
   m_TagString: Player
@@ -832,7 +830,6 @@ Transform:
   m_Children:
   - {fileID: 1519087472}
   - {fileID: 977762673}
-  - {fileID: 1504646673}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!50 &1040541462
@@ -942,8 +939,6 @@ MonoBehaviour:
   moveDir: 1
   speedJump: 0
   hasweapon: 0
-  playableDuck: 1
-  playableJump: 1
   lives: 3
   coins: 0
   shots: 0
@@ -961,20 +956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kick: {fileID: 8300000, guid: 6e754d3d80c25e442a1a9a299ca0d251, type: 3}
-  lvlend: {fileID: 8300000, guid: fdcda4233633eeb4995ddc503e1ab523, type: 3}
-  colision: {fileID: 8300000, guid: 09ea3d6c9f292334dad7befda7c60d66, type: 3}
-  run: {fileID: 8300000, guid: a4d15ffff1cf89943a624bd194212aae, type: 3}
-  die: {fileID: 8300000, guid: 5153158a8c11f2b4f8a2e56eca1325aa, type: 3}
-  mummy: {fileID: 8300000, guid: f530a6e31ea6df44db901c3e38281bbc, type: 3}
-  health: {fileID: 8300000, guid: a3cfee5fb64d8c641bb892af2d1c4ae7, type: 3}
-  ghost: {fileID: 8300000, guid: 82ffdaf96add4d54cbcbcbd5ba8cfc51, type: 3}
-  wolfdie: {fileID: 8300000, guid: 7a7cf411c14fb314d995d337be094b33, type: 3}
-  zombies: {fileID: 8300000, guid: c3606abbc9e2c654f9979e51145d0c5e, type: 3}
-  coins: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
-  shoot: {fileID: 8300000, guid: f7bd2061c5b937346961524f8135bd76, type: 3}
-  collectbox: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
-  jump: {fileID: 8300000, guid: 5d2382fcd317ce5418b53c75f9c3a705, type: 3}
-  duck: {fileID: 8300000, guid: 8d9a70ef9493c744eac51927fd02c199, type: 3}
 --- !u!114 &1040541469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,64 +973,6 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 4294957051
---- !u!82 &1040541470
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1040541460}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &1210815391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,46 +1407,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
---- !u!1 &1504646672
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 6d74f357fe623aa4290f00da82958c79, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1504646673}
-  - 61: {fileID: 1504646674}
-  m_Layer: 12
-  m_Name: frontCheck
-  m_TagString: Untagged
-  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1504646673
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 6d74f357fe623aa4290f00da82958c79, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504646672}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .151225477, y: -.0526001453, z: 0}
-  m_LocalScale: {x: .800000012, y: .800000012, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1040541461}
-  m_RootOrder: 2
---- !u!61 &1504646674
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6100004, guid: 6d74f357fe623aa4290f00da82958c79,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1504646672}
-  m_Enabled: 0
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: .0900000036, y: .0900000036}
-  m_Center: {x: 0, y: 0}
 --- !u!1 &1515527035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,62 +2430,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: lvlend
-      value: 
-      objectReference: {fileID: 8300000, guid: fdcda4233633eeb4995ddc503e1ab523, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: colision
-      value: 
-      objectReference: {fileID: 8300000, guid: 09ea3d6c9f292334dad7befda7c60d66, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: run
-      value: 
-      objectReference: {fileID: 8300000, guid: a4d15ffff1cf89943a624bd194212aae, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: die
-      value: 
-      objectReference: {fileID: 8300000, guid: 5153158a8c11f2b4f8a2e56eca1325aa, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: mummy
-      value: 
-      objectReference: {fileID: 8300000, guid: f530a6e31ea6df44db901c3e38281bbc, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: health
-      value: 
-      objectReference: {fileID: 8300000, guid: a3cfee5fb64d8c641bb892af2d1c4ae7, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: ghost
-      value: 
-      objectReference: {fileID: 8300000, guid: 82ffdaf96add4d54cbcbcbd5ba8cfc51, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: wolfdie
-      value: 
-      objectReference: {fileID: 8300000, guid: 7a7cf411c14fb314d995d337be094b33, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: zombies
-      value: 
-      objectReference: {fileID: 8300000, guid: c3606abbc9e2c654f9979e51145d0c5e, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: coins
-      value: 
-      objectReference: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: shoot
-      value: 
-      objectReference: {fileID: 8300000, guid: f7bd2061c5b937346961524f8135bd76, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: collectbox
-      value: 
-      objectReference: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: jump
-      value: 
-      objectReference: {fileID: 8300000, guid: 5d2382fcd317ce5418b53c75f9c3a705, type: 3}
-    - target: {fileID: 11400002, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
-      propertyPath: duck
-      value: 
-      objectReference: {fileID: 8300000, guid: 8d9a70ef9493c744eac51927fd02c199, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
   m_RootGameObject: {fileID: 1040541460}
