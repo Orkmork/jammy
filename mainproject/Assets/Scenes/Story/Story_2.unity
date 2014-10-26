@@ -171,3 +171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyTex: {fileID: 2800000, guid: 607502a0e61fb584993760f04137dd02, type: 3}
+  scale: 1.25
+  nextLevel: -1
+  scaleTex: 0

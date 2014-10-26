@@ -5,9 +5,11 @@ public class StoryScript : MonoBehaviour {
 
 	public Texture2D storyTex;
 	
-	public float scale = 0.9f;
+	public float scale = 1.0f;
 	
 	public int nextLevel = -1;
+	
+	public bool scaleTex = true;
 	
 	Vector2 GetCenter()
 	{
@@ -16,8 +18,12 @@ public class StoryScript : MonoBehaviour {
 	
 	Rect GetCenteredRect(int wid, int hei)
 	{
-		Vector2 c = GetCenter();
-		//return new Rect(c.x-wid/2, c.y-hei/2, c.x+wid/2, c.y+hei/2);
+		if (scaleTex)
+		{
+			return new Rect(0, 0, Screen.width, Screen.height);
+		}
+
+		Vector2 c = GetCenter();		
 		return new Rect(c.x-wid*scale/2, c.y-hei*scale/2, wid*scale, hei*scale);
 	}
 	
@@ -28,7 +34,10 @@ public class StoryScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.Return) || Input.GetAxis("Fire1") > 0)
+		if (
+			Input.GetKey(KeyCode.Space)
+			|| Input.GetKey(KeyCode.Return)
+			|| Input.GetAxis("Fire1") > 0)
 		{
 			Confirm ();
 		}
