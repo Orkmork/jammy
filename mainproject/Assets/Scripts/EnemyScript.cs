@@ -4,6 +4,7 @@ using System.Collections;
 public class EnemyScript : MonoBehaviour {
 
 	public float maxSpeed = 2f;
+	public int health = 1;
 	
 	public Transform groundCheck;
 	public Transform groundLookAheadCheck;
@@ -25,7 +26,11 @@ public class EnemyScript : MonoBehaviour {
 	float lookAheadRadius = 0.1f;
 	
 	Animator anim;
-	
+
+	public void Hurt() {
+		health--;
+	}
+
 	bool RandomTrue(float chance)
 	{	
 		if (chance >= 1.0f)

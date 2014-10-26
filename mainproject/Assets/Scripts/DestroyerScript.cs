@@ -7,7 +7,9 @@ public class DestroyerScript : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			GameObject.Find ("Character").GetComponent<CharacterControllerScript>().LoseLife();
+			if(GameObject.Find ("Character").GetComponent<CharacterControllerScript>().alive) {
+				GameObject.Find ("Character").GetComponent<CharacterControllerScript>().LoseLife();
+			}
 			return;
 		}
 	}

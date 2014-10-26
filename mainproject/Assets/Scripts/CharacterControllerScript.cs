@@ -8,7 +8,7 @@ public class CharacterControllerScript : MonoBehaviour {
 
 	public Animator anim;
 
-	bool grounded = false;
+	public bool grounded = false;
 	public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
@@ -25,6 +25,7 @@ public class CharacterControllerScript : MonoBehaviour {
 
 	public int lives = 3;
 	public int coins = 0;
+	public int shots = 0;
 	
 	public bool allowJumpCrouch = true;
 
@@ -91,6 +92,10 @@ public class CharacterControllerScript : MonoBehaviour {
 		{
 			coins = PlayerPrefs.GetInt("coins");
 		}
+		if (PlayerPrefs.HasKey ("shots"))
+		{
+			shots = PlayerPrefs.GetInt("shots");
+		}
 	}
 
 	void OnDisable()
@@ -98,6 +103,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		// save state
 		PlayerPrefs.SetInt ("lives", lives);
 		PlayerPrefs.SetInt ("coins", coins);
+		PlayerPrefs.SetInt ("shots", shots);
 	}
 	
 	// Update is called once per frame
@@ -106,8 +112,8 @@ public class CharacterControllerScript : MonoBehaviour {
 		anim.SetBool ("Ground", grounded);
 
 		if (alive) {
-						anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
-				}
+			anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+		}
 
 		float move = Input.GetAxis ("Horizontal");
 
@@ -172,7 +178,7 @@ public class CharacterControllerScript : MonoBehaviour {
 
 			//KickAttack-----------------
 
-			if (grounded && move < 0.01f && Input.GetKey (KeyCode.LeftControl)) {
+			if (grounded && move < 0.01f && !hasweapon && Input.GetKey (KeyCode.LeftControl)) {
 					anim.SetBool ("KickAttack", true);
 			} 
 			if (Input.GetKeyUp (KeyCode.LeftControl)) {
@@ -181,10 +187,7 @@ public class CharacterControllerScript : MonoBehaviour {
 					anim.SetBool ("KickAttack", false);
 			}
 
-			//Shoot----------------------
-			if (grounded && hasweapon && Input.GetKey (KeyCode.F)) {
-				anim.SetBool ("Shoot", true);
-			} 
+
 
 			//if(Mathf.Abs (move) > 0.01f && Input.GetKeyDown(KeyCode.T) && anim.GetFloat ("Speed") > 0.01f) {
 			//	anim.SetFloat ("Speed", 200f);
