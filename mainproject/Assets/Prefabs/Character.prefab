@@ -191,8 +191,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294965247
   jumpForce: 250
+  killForce: 1
   levelEnd: 0
   alive: 1
+  waitForRespawn: 0
+  moveDir: 1
+  speedJump: 0
   lives: 3
   coins: 0
   allowJumpCrouch: 1

@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d574fbaae98b04e838ff3147dccd2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: nothing to see here
+  message: Start
   width: 400
   height: 50
 --- !u!4 &624473487
