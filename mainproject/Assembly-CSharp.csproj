@@ -72,7 +72,6 @@
      <None Include="Assets\Tiled2Unity\Imported\Zoo_01.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\test_01.tiled2unity.xml" />
-     <None Include="Assets\Tiled2Unity\Imported\Pyramide.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
