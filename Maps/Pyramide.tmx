@@ -3,131 +3,82 @@
  <properties>
   <property name="unity:scale" value="0.01"/>
  </properties>
- <tileset firstgid="1" name="All_v01" tilewidth="32" tileheight="32">
-  <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
- </tileset>
- <tileset firstgid="2501" name="Dungeon_A5" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Dungeon_A5" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Dungeon_A5.png" width="256" height="512"/>
   <tile id="35">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0" width="32.0625" height="31.9375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="49">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0" width="31.9375" height="31.9375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="80">
-   <objectgroup draworder="index">
-    <object x="0" y="0" width="31.9375" height="32"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="81">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0.125" width="31.9375" height="31.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="82">
-   <objectgroup draworder="index">
-    <object x="0.125" y="0.0625" width="32" height="31.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="99">
-   <objectgroup draworder="index">
-    <object x="0.125" y="0.0625" width="31.875" height="32"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="119">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0" width="32" height="32"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="127">
-   <objectgroup draworder="index">
-    <object x="0.125" y="0" width="31.875" height="31.9375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
  </tileset>
- <tileset firstgid="2629" name="Dungeon_C" tilewidth="32" tileheight="32">
+ <tileset firstgid="129" name="Dungeon_C" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Dungeon_C.png" width="512" height="512"/>
   <tile id="2">
-   <objectgroup draworder="index">
-    <object x="2.125" y="0.0625" width="27.8125" height="31.9375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="18">
-   <objectgroup draworder="index">
-    <object x="1.9375" y="0.125" width="28.0625" height="31.8125"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="50">
-   <objectgroup draworder="index">
-    <object x="1.9375" y="0.125" width="28.125" height="31.9375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="66">
-   <objectgroup draworder="index">
-    <object x="2" y="0" width="28" height="32.0625"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="115">
-   <objectgroup draworder="index">
-    <object x="0.125" y="0.0625" width="31.8125" height="31.9375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="116">
-   <objectgroup draworder="index">
-    <object x="0" y="0.0625" width="31.9375" height="32.0625"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="117">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0.0625" width="32.125" height="32.125"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="131">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0.0625" width="31.875" height="31.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="132">
-   <objectgroup draworder="index">
-    <object x="0.0625" y="0.0625" width="31.9375" height="31.8125"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="149">
-   <objectgroup draworder="index">
-    <object x="2.9375" y="0.0625" width="27.0625" height="31.8125"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
  </tileset>
- <tileset firstgid="2885" name="Inside_A4" tilewidth="32" tileheight="32">
-  <image source="../ressources/Graphics/Tilesets/Inside_A4.png" width="512" height="480"/>
- </tileset>
- <tileset firstgid="3125" name="Inside_C" tilewidth="32" tileheight="32">
-  <image source="../ressources/Graphics/Tilesets/Inside_C.png" width="512" height="512"/>
- </tileset>
- <tileset firstgid="3381" name="Outside_C" tilewidth="32" tileheight="32">
+ <tileset firstgid="385" name="Outside_C" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Outside_C.png" width="512" height="512"/>
   <tile id="6">
-   <objectgroup draworder="index">
-    <object x="3" y="0" width="26.0625" height="31.9375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="22">
-   <objectgroup draworder="index">
-    <object x="3.0625" y="0.0625" width="26.0625" height="32"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
  </tileset>
- <tileset firstgid="3637" name="Sign_Bar" tilewidth="32" tileheight="32">
+ <tileset firstgid="641" name="Sign_Bar" tilewidth="32" tileheight="32">
   <image source="../ressources/Tile/Sign_Bar.png" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index"/>
   </tile>
  </tileset>
- <tileset firstgid="3638" name="Door_brick" tilewidth="32" tileheight="32">
+ <tileset firstgid="642" name="Door_brick" tilewidth="32" tileheight="32">
   <image source="../ressources/Tile/Door_brick.png" width="32" height="32"/>
   <tile id="0">
    <objectgroup draworder="index"/>
@@ -138,15 +89,15 @@
    <property name="unity:sortingLayerName" value="Background"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   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
+   eJztXUuOFDEMLTgEJ5gLAVeYQ7CFWSBg2QsEHKNXwHJOgbjG0Bs2VImJZIIdf+Kk3Kk8KWK6ulKd+MWO4zjFzbIsN7PMgpS7tTys5VfHcnn83b37HrGcln1wUrTxSMXCxzvmswSTDz8+PjGfJZh82Pl4vpYXivJS8MzJh40PLRdSTiYfPB+5n3VhZFqDo/Eh8WMvi59/peXyJGzfKH7xXn5sCUn+mnEwih5F5MOCo/CB2QrpfAHrtpxjNhyFj56o4W8kPqz+Uo3ueGMkPnqila88+eiLks+b/LC9ZdmTj55rQAuOxseeeL+WD8w9k49++LyWL8w9R+Ajuo2COAIfNXj7pK6+Zn94tPm8xTr6I8KHVMaW+OVIfEhQm8vgGSPGcDQ+omPyEQsj8xEpLiXFyHxEg3T/cm9ZtuBDshaGSDlVlMw0ejXj7f/zIVkLQ1hyqjbUrk9yjMpHL2DrkxpE5wNbe12y68nuPoDvEs6Pn++Q663yqmH7LPYqch4KNe7vC33Kvzsh10r1PdBaX/fSI6pfpf5KZNFaXj34vhY+NllI9uFaIm9DbkdrcU18SFDirGTza3xZq85g82cUPtIceb/Y5kstPP1Z6VwtfVYEPnpD6s/2zB1elhh8PCNkQ123onfcK48lSPQ+Ah+jQhJLyOeta+MDrhVHxJ58aPafS+h9ztljnU/h2vRjdEw+YiEKH9x6jJo3oA/TIg/FciZdAsrXi8KHFdr9EAjJmpDaPxktDz6CvfLe4/DANfhXEYp1/HPxzxxH1o+ImHzEwuSjHtbclcjx9lK/vGw5J4sIiMRHNPTYh8kx+ZDD0x/ceM5zYaLYq5S7441Wa2svYPu8EfjQ6Ipmn9WSm+gZz8fGPxx3WL8j8KFBxDU1BUre8O98jorMR95Wjf3Wjm/p3rD2zGAOLhclUrxkD59TwoOnn8XlI0XWj1GgOSNxBD72WEdAaPYEavkonRHGfOxan53Ki7cgWnwZ5vNL1y15Tjw3zr3zj49k5yjkMoA61ZuPDd55cteGVnxI7Q42H5Y40e6je+XeegOz9cmmncF9OR+lNa2HflDzoVZPIusVFtvhzl7A+zT6kfybM3OvBXv7Tl7AYjvSuZLig4v9cOdpUmkVX8QQWWegvErnfjT6YW0H9l6fXhxFRekMUys+Nt2g5hxpTkrizrr2sdb3WG9xub2YDeL4sK7XSlxogZ297VHfY3xqbahVP9LvUPOM51qlRi5nY/27yt+1ooW98tSNWrlw7cjnsfROghZcQP+RWldx/hVWp7R3quXivPz7fgYIjVyw+gtTf7sftlWqS3nczdNHt+gHtXdq0YvS/ZL2JC6xezk+sViFBC3tmKe90nJR4k+iG/n41tTH6mL3Y/vm0n5qdWibk6V8eJ5nTWMa65fUfpdsi4SL/Ht4Ddpjjew97Fbr9WAOzqZJ21DzDE7GyR63mtfzvBroE/fmw8PvqpGTpm4reZTyaqj4LrfehaDsZLQ9u2soiY/bZf9xMzokcrPYq8mHDS350OSSjRjLxeJS3DXJ3NlDP7BcyiMiir0q3e/9LtbI2ORA5dOl8bo3Hy1zqnvppNR2b3Lg8ulKfFBcUvItxSwlfrRkT76Ur9n6fUHU87XzrvQdNPlzKS6p378n/vZYc1NtknDQmidN/7h4k6e9gvknVj56/j+0Oaz2DfavtBfRyr/SwlM/NPpA3cc9Q7vPDvtXOsdF9S9/hze1H+X5XhUJamNbkjZL7tG2Y+sfxZX2uZx+1OY0YfWhTsOxkbd3L9tl4cPyXO4dAqX9BAqW9UPSac/8NUkOcIT5XPIsjg/MX019i3gms6X8tftycJxo3xGrmc+5vCxsvI76PtFau/p1ldW3tXxH9mtrZGaJGz4w3+3NX49zqj9WHn6v5adi/1yCrT7GCceTVO4PgmdJ0DvvWvIes9dP//4r5UMqZ+wZ2zVJLEQa/9zgwQ31jHSNO0ub+zI1+vxGyQclZ+k1ydrbGscvPRPmtUp/M13jYn+evswrgo+We8MX8Fsee+uw7ZZnYmdgJediW8on7xMst4XvZmlb/gAE7u+Y
   </data>
  </layer>
- <layer name="Foreground" width="100" height="100">
+ <layer name="Foreground" width="100" height="100" visible="0">
   <properties>
    <property name="unity:sortingLayerName" value="Foreground"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   eJzt3MENwCAIAEDfTQfp/lt0qz4akw5QRPFuAMPDAEJia7VdR3YEAESQ3+d1n9kRvNwRAIDx9GAAAADAKmbZaQEAa7ELAYB6zAiASHIMAACwOrsRAKgnor73M81EAYCq9Dn7MRcDAL70gwAA/EVvCQAAZPMuASqT4wBgHHUXIIb8CgAAAHQ7zQki/0WDKA8dcwz4
+   eJzt3MEJADAIBDCH7f4zdIS+bPGaTOBD9ECwKtt6XQAALcx3TvQIAMB9MhgAAAAAAJDMLQQAAAAAAPiJ2wgA5OnY7zIDAABpZFwAAAAAAAAAAAAAAAAAAACAXv6iMdEGh/AETQ==
   </data>
  </layer>
 </map>
