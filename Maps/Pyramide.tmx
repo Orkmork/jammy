@@ -10,7 +10,7 @@
   <image source="../ressources/Graphics/Tilesets/Dungeon_A5.png" width="256" height="512"/>
   <tile id="35">
    <objectgroup draworder="index">
-    <object x="-0.0625" y="0" width="32.0625" height="31.9375"/>
+    <object x="0.0625" y="0" width="32.0625" height="31.9375"/>
    </objectgroup>
   </tile>
   <tile id="49">
@@ -78,12 +78,12 @@
   </tile>
   <tile id="116">
    <objectgroup draworder="index">
-    <object x="0" y="-0.0625" width="31.9375" height="32.0625"/>
+    <object x="0" y="0.0625" width="31.9375" height="32.0625"/>
    </objectgroup>
   </tile>
   <tile id="117">
    <objectgroup draworder="index">
-    <object x="-0.0625" y="-0.0625" width="32.125" height="32.125"/>
+    <object x="0.0625" y="0.0625" width="32.125" height="32.125"/>
    </objectgroup>
   </tile>
   <tile id="131">
@@ -117,7 +117,7 @@
   </tile>
   <tile id="22">
    <objectgroup draworder="index">
-    <object x="3.0625" y="-0.0625" width="26.0625" height="32"/>
+    <object x="3.0625" y="0.0625" width="26.0625" height="32"/>
    </objectgroup>
   </tile>
  </tileset>
