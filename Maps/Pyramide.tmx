@@ -6,10 +6,9 @@
  <tileset firstgid="1" name="Dungeon_A5" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Dungeon_A5.png" width="256" height="512"/>
   <tile id="35">
-   <objectgroup draworder="index"/>
-  </tile>
-  <tile id="49">
-   <objectgroup draworder="index"/>
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.0625" width="31.9375" height="31.875"/>
+   </objectgroup>
   </tile>
   <tile id="80">
    <objectgroup draworder="index">
@@ -25,9 +24,6 @@
    <objectgroup draworder="index">
     <object x="0.0625" y="0.0625" width="31.8125" height="31.9375"/>
    </objectgroup>
-  </tile>
-  <tile id="99">
-   <objectgroup draworder="index"/>
   </tile>
   <tile id="119">
    <objectgroup draworder="index">
@@ -77,12 +73,6 @@
     <object x="0.0625" y="0.0625" width="31.875" height="31.9375"/>
    </objectgroup>
   </tile>
-  <tile id="131">
-   <objectgroup draworder="index"/>
-  </tile>
-  <tile id="132">
-   <objectgroup draworder="index"/>
-  </tile>
   <tile id="149">
    <objectgroup draworder="index">
     <object x="0.0625" y="0.0625" width="31.875" height="31.875"/>
@@ -91,24 +81,12 @@
  </tileset>
  <tileset firstgid="385" name="Outside_C" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Outside_C.png" width="512" height="512"/>
-  <tile id="6">
-   <objectgroup draworder="index"/>
-  </tile>
-  <tile id="22">
-   <objectgroup draworder="index"/>
-  </tile>
  </tileset>
  <tileset firstgid="641" name="Sign_Bar" tilewidth="32" tileheight="32">
   <image source="../ressources/Tile/Sign_Bar.png" width="32" height="32"/>
-  <tile id="0">
-   <objectgroup draworder="index"/>
-  </tile>
  </tileset>
  <tileset firstgid="642" name="Door_brick" tilewidth="32" tileheight="32">
   <image source="../ressources/Tile/Door_brick.png" width="32" height="32"/>
-  <tile id="0">
-   <objectgroup draworder="index"/>
-  </tile>
  </tileset>
  <tileset firstgid="643" name="Inside_A4" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Inside_A4.png" width="512" height="480"/>
