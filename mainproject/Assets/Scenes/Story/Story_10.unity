@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ebb8c60b76f564d9a440fb9328f5cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyTex: {fileID: 2800000, guid: 07c35e25df32f4a4d846d65d85aee6c9, type: 3}
+  storyTex: {fileID: 2800000, guid: d690f5f99c5d9f245a05babf9cc99a13, type: 3}
   scale: 1.25
   nextLevel: -1
   scaleTex: 0
