@@ -5,15 +5,9 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Zombie
+  m_Name: Laser
   serializedVersion: 2
-  m_AnimatorParameters:
-  - m_Name: Speed
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+  m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -26,18 +20,18 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &110231424
+--- !u!1102 &110200000
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: ZombieRun
+  m_Name: Laser
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: cdb79d13ba9a77a4b997c3ea09faf82e, type: 2}
+  - {fileID: 7400000, guid: e30efcae134f0c54a882a1f6ea429244, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -204, y: -108, z: 0}
+  m_Position: {x: 200, y: 0, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -48,18 +42,12 @@ StateMachine:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110231424}
+  m_DefaultState: {fileID: 110200000}
   m_States:
-  - {fileID: 110231424}
+  - {fileID: 110200000}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
-  m_OrderedTransitions:
-    data:
-      first: {fileID: 0}
-      second: []
-    data:
-      first: {fileID: 110231424}
-      second: []
+  m_OrderedTransitions: {}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: -252, y: -36, z: 0}
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

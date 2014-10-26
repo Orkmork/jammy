@@ -50,12 +50,16 @@
      <Compile Include="Assets\Scripts\CharacterControllerScript.cs" />
      <Compile Include="Assets\Scripts\CharacterRespwan.cs" />
      <Compile Include="Assets\Scripts\DestroyerScript.cs" />
+     <Compile Include="Assets\Scripts\Enemy2Script.cs" />
      <Compile Include="Assets\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\GameOverScript.cs" />
+     <Compile Include="Assets\Scripts\GunScript.cs" />
      <Compile Include="Assets\Scripts\HudScript.cs" />
+     <Compile Include="Assets\Scripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\LevelInitScript.cs" />
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\PowerupScript.cs" />
+     <Compile Include="Assets\Scripts\SetSortingLayer.cs" />
      <Compile Include="Assets\Scripts\SoundScript.cs" />
      <Compile Include="Assets\Scripts\StoryScript.cs" />
      <Compile Include="Assets\Scripts\TrapDestroyerScript.cs" />
@@ -72,7 +76,6 @@
      <None Include="Assets\Tiled2Unity\Imported\Zoo_01.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Imported\_ReadMe.txt" />
      <None Include="Assets\Tiled2Unity\Imported\test_01.tiled2unity.xml" />
-     <None Include="Assets\Tiled2Unity\Imported\Pyramide.tiled2unity.xml" />
      <None Include="Assets\Tiled2Unity\Meshes\_ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
