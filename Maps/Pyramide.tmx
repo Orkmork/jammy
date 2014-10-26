@@ -12,22 +12,32 @@
    <objectgroup draworder="index"/>
   </tile>
   <tile id="80">
-   <objectgroup draworder="index"/>
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.125" width="31.8125" height="31.75"/>
+   </objectgroup>
   </tile>
   <tile id="81">
-   <objectgroup draworder="index"/>
+   <objectgroup draworder="index">
+    <object x="0.125" y="0.0625" width="31.8125" height="31.875"/>
+   </objectgroup>
   </tile>
   <tile id="82">
-   <objectgroup draworder="index"/>
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0.0625" width="31.8125" height="31.9375"/>
+   </objectgroup>
   </tile>
   <tile id="99">
    <objectgroup draworder="index"/>
   </tile>
   <tile id="119">
-   <objectgroup draworder="index"/>
+   <objectgroup draworder="index">
+    <object x="0.1875" y="0.125" width="31.6875" height="31.6875"/>
+   </objectgroup>
   </tile>
   <tile id="127">
-   <objectgroup draworder="index"/>
+   <objectgroup draworder="index">
+    <object x="0.0625" y="0" width="31.75" height="31.875"/>
+   </objectgroup>
   </tile>
  </tileset>
  <tileset firstgid="129" name="Dungeon_C" tilewidth="32" tileheight="32">
@@ -84,15 +94,18 @@
    <objectgroup draworder="index"/>
   </tile>
  </tileset>
+ <tileset firstgid="643" name="Inside_A4" tilewidth="32" tileheight="32">
+  <image source="../ressources/Graphics/Tilesets/Inside_A4.png" width="512" height="480"/>
+ </tileset>
  <layer name="Background" width="100" height="100">
   <properties>
    <property name="unity:sortingLayerName" value="Background"/>
   </properties>
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
- <layer name="Foreground" width="100" height="100" visible="0">
+ <layer name="Foreground" width="100" height="100">
   <properties>
    <property name="unity:sortingLayerName" value="Foreground"/>
   </properties>
