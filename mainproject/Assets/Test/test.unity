@@ -680,6 +680,8 @@ MonoBehaviour:
   levelEnd: 0
   alive: 1
   waitForRespawn: 0
+  moveDir: 1
+  speedJump: 0
   lives: 3
   coins: 0
   allowJumpCrouch: 1
@@ -2568,7 +2570,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .140000001
+  m_Radius: .119999997
   m_Center: {x: 0, y: -.150000006}
 --- !u!50 &1407994294
 Rigidbody2D:
@@ -3046,6 +3048,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 8c8f3ee1eeb2d824783fefbb2ac0485f, type: 2}
       propertyPath: whatIsGround.m_Bits
       value: 4294952959
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 8c8f3ee1eeb2d824783fefbb2ac0485f, type: 2}
+      propertyPath: m_Radius
+      value: .119999997
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8c8f3ee1eeb2d824783fefbb2ac0485f, type: 2}

@@ -53,9 +53,11 @@
      <Compile Include="Assets\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\GameOverScript.cs" />
      <Compile Include="Assets\Scripts\HudScript.cs" />
+     <Compile Include="Assets\Scripts\LevelInitScript.cs" />
      <Compile Include="Assets\Scripts\LevelScript.cs" />
      <Compile Include="Assets\Scripts\PowerupScript.cs" />
      <Compile Include="Assets\Scripts\SoundScript.cs" />
+     <Compile Include="Assets\Scripts\StoryScript.cs" />
      <Compile Include="Assets\Scripts\TrapDestroyerScript.cs" />
      <Compile Include="Assets\Test\MessageScript.cs" />
      <Compile Include="Assets\Tiled2Unity\Scripts\Runtime\SortingLayerExposed.cs" />
