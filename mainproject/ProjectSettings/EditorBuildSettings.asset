@@ -6,6 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Start.unity
+    path: Assets/Scenes/Story/Title.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/gameover.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_1.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_2.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_3.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_4.unity
   - enabled: 1
     path: Assets/Scenes/Zoo.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_5.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_6.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_7.unity
+  - enabled: 1
+    path: Assets/Scenes/Friedhof.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_8.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_9.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_10.unity
+  - enabled: 1
+    path: Assets/Scenes/Pyramide.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_11.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_12.unity
+  - enabled: 1
+    path: Assets/Scenes/Schloss.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_13.unity
+  - enabled: 1
+    path: Assets/Scenes/Story/Credits.unity

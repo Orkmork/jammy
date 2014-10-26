@@ -1,0 +1,56 @@
+﻿
+
+
+
+
+
+
+
+
+
+
+SE/Darkness5.ogg
+
+
+Down3.ogg
+
+
+
+Flash3.ogg
+
+
+
+Jump1.ogg
+
+
+Miss.ogg
+
+
+
+Phone.ogg
+
+
+SE/Heal3.ogg - 
+Scream.ogg
+
+
+SE/Applause2 - Levelende
+SE/Sleep.ogg - Colision
+SE/Blow6.ogg - Tritt
+SE/Cry1 oder SE/Scream.ogg - Sterbesound Fiona
+SE/teleport.ogg - Respawn Fiona
+BGS/Wind.ogg; ME/Mystery.ogg; SE/Bell1.ogg SE/Crow.ogg - Friedhof
+BGM/Dungeon6 - Friedhof Hintergrund
+BGM/Battle9 - Pyramide
+BGM/Dungeon5.ogg - Schloss
+BGM/Town6.ogg - Zoo
+SE/Devil3.ogg - Mumien
+SE/Open1.ogg oder SE/Shop.ogg - ShopOpen
+SE/Chime2.ogg oder Decision2.ogg - Health
+SE/Darknes2.ogg oder SE/Monster3.ogg - Ghost
+SE/Bite.ogg - Sterbesound Wolf
+SE/Coin.ogg - Coins
+?? SE/Blow1.ogg - Zombies/Mumien 
+
+
+
