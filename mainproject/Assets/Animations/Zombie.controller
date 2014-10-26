@@ -96,6 +96,21 @@ State:
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
+--- !u!1102 &110287636
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GhostRun
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 6508a76257b0189478390d03df9ab1a9, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: 299, y: -55, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
 --- !u!1107 &110700000
 StateMachine:
   serializedVersion: 2
@@ -107,17 +122,18 @@ StateMachine:
   m_States:
   - {fileID: 110200000}
   - {fileID: 110231424}
+  - {fileID: 110287636}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110231424}
-      second:
-      - {fileID: 110163052}
-    data:
       first: {fileID: 110200000}
       second:
       - {fileID: 110100000}
+    data:
+      first: {fileID: 110231424}
+      second:
+      - {fileID: 110163052}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -252, y: -36, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

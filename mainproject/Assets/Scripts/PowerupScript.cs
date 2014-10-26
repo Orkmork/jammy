@@ -10,6 +10,7 @@ public class PowerupScript : MonoBehaviour {
 		if (other.tag == "Player")
 		{
 			fiona = GameObject.Find ("Character").GetComponent<CharacterControllerScript>();
+			fiona.hasweapon = true;
 			fiona.anim.SetBool ("HasWeapon",true);
 			Destroy (this.gameObject);
 		}

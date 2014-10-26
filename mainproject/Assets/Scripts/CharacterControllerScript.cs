@@ -4,7 +4,7 @@ using System.Collections;
 public class CharacterControllerScript : MonoBehaviour {
 
 	public float maxSpeed = 2f;
-	bool facingRight = true;
+	public bool facingRight = true;
 
 	public Animator anim;
 
@@ -19,6 +19,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	public bool waitForRespawn = false;
 	public float moveDir = 1f;
 	public bool speedJump = false;
+	public bool hasweapon = false;
 
 
 
@@ -179,6 +180,11 @@ public class CharacterControllerScript : MonoBehaviour {
 			} else if (Mathf.Abs (move) > 0.01f) {
 					anim.SetBool ("KickAttack", false);
 			}
+
+			//Shoot----------------------
+			if (grounded && hasweapon && Input.GetKey (KeyCode.F)) {
+				anim.SetBool ("Shoot", true);
+			} 
 
 			//if(Mathf.Abs (move) > 0.01f && Input.GetKeyDown(KeyCode.T) && anim.GetFloat ("Speed") > 0.01f) {
 			//	anim.SetFloat ("Speed", 200f);
