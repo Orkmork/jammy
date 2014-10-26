@@ -92,7 +92,7 @@ GameObject:
   - 114: {fileID: 12986463}
   m_Layer: 12
   m_Name: Gorilla
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,8 +107,8 @@ Transform:
   m_LocalPosition: {x: 19.9051933, y: 1.96146739, z: -.0673828125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1762606059}
   - {fileID: 182116435}
+  - {fileID: 1762606059}
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!114 &12986463
@@ -184,17 +184,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 12986461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5c9b58d1bd2b86459488463d5465813, type: 3}
+  m_Script: {fileID: 11500000, guid: dea43aef198fbed458d0b3e2b2d25903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
-  groundCheck: {fileID: 1762606059}
-  groundLookAheadCheck: {fileID: 182116435}
+  health: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294961151
-  turnChance: .5
-  maxDropTurns: -1
+  facingRight: 1
+  moveDir: 1
 --- !u!95 &12986469
 Animator:
   serializedVersion: 3
@@ -514,6 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 431697997}
   groundLookAheadCheck: {fileID: 116066666}
   whatIsGround:
@@ -835,6 +835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1497836440}
   groundLookAheadCheck: {fileID: 701732597}
   whatIsGround:
@@ -1049,6 +1050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 622431011}
   groundLookAheadCheck: {fileID: 508570243}
   whatIsGround:
@@ -1236,6 +1238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1458198047}
   groundLookAheadCheck: {fileID: 130234502}
   whatIsGround:
@@ -1465,6 +1468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1370607015}
   groundLookAheadCheck: {fileID: 1492724276}
   whatIsGround:
@@ -1546,8 +1550,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 182116435}
+  - 61: {fileID: 182116436}
   m_Layer: 12
-  m_Name: GroundLookAheadCheck
+  m_Name: frontCheck
   m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1560,11 +1565,23 @@ Transform:
   m_PrefabInternal: {fileID: 843987606}
   m_GameObject: {fileID: 182116434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .343659639, y: -.170368165, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: .149774075, y: -.0657501221, z: 0}
+  m_LocalScale: {x: .800000012, y: .800000012, z: 1}
   m_Children: []
   m_Father: {fileID: 12986462}
-  m_RootOrder: 1
+  m_RootOrder: 0
+--- !u!61 &182116436
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100004, guid: 3a5a20fd02a535a4fb4aba6bccf76be6,
+    type: 2}
+  m_PrefabInternal: {fileID: 843987606}
+  m_GameObject: {fileID: 182116434}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .0900000036, y: .0900000036}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &205882318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,6 +1804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1208382908}
   groundLookAheadCheck: {fileID: 1448816095}
   whatIsGround:
@@ -2074,6 +2092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1006942301}
   groundLookAheadCheck: {fileID: 1623466892}
   whatIsGround:
@@ -2261,6 +2280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1337235295}
   groundLookAheadCheck: {fileID: 2137884754}
   whatIsGround:
@@ -2448,6 +2468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1139917631}
   groundLookAheadCheck: {fileID: 470317142}
   whatIsGround:
@@ -2608,6 +2629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 966759097}
   groundLookAheadCheck: {fileID: 86862919}
   whatIsGround:
@@ -2768,6 +2790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 302270200}
   groundLookAheadCheck: {fileID: 1332628150}
   whatIsGround:
@@ -2999,6 +3022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1157512839}
   groundLookAheadCheck: {fileID: 1972398533}
   whatIsGround:
@@ -3186,6 +3210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 64974822}
   groundLookAheadCheck: {fileID: 211845380}
   whatIsGround:
@@ -3427,6 +3452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 965807779}
   groundLookAheadCheck: {fileID: 1384199416}
   whatIsGround:
@@ -3631,6 +3657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 261103822}
   groundLookAheadCheck: {fileID: 611287370}
   whatIsGround:
@@ -3835,6 +3862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 823109319}
   groundLookAheadCheck: {fileID: 37086616}
   whatIsGround:
@@ -4076,6 +4104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1769018316}
   groundLookAheadCheck: {fileID: 1899715141}
   whatIsGround:
@@ -4280,6 +4309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 371983724}
   groundLookAheadCheck: {fileID: 1236215542}
   whatIsGround:
@@ -4833,6 +4863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1036093362}
   groundLookAheadCheck: {fileID: 169313505}
   whatIsGround:
@@ -5037,6 +5068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 608093025}
   groundLookAheadCheck: {fileID: 1379974959}
   whatIsGround:
@@ -5469,6 +5501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 2034999046}
   groundLookAheadCheck: {fileID: 458112667}
   whatIsGround:
@@ -5556,8 +5589,8 @@ GameObject:
   - 61: {fileID: 908013226}
   - 95: {fileID: 908013225}
   - 114: {fileID: 908013224}
-  - 82: {fileID: 908013223}
   - 114: {fileID: 908013222}
+  - 114: {fileID: 908013223}
   m_Layer: 11
   m_Name: Character
   m_TagString: Player
@@ -5576,6 +5609,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1824229242}
+  - {fileID: 2001273041}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!114 &908013222
@@ -5591,65 +5625,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kick: {fileID: 8300000, guid: 6e754d3d80c25e442a1a9a299ca0d251, type: 3}
---- !u!82 &908013223
-AudioSource:
+  lvlend: {fileID: 0}
+  colision: {fileID: 0}
+  run: {fileID: 0}
+  die: {fileID: 0}
+  mummy: {fileID: 0}
+  health: {fileID: 0}
+  ghost: {fileID: 0}
+  wolfdie: {fileID: 0}
+  zombies: {fileID: 0}
+  coins: {fileID: 0}
+  shoot: {fileID: 0}
+  collectbox: {fileID: 0}
+  jump: {fileID: 0}
+  duck: {fileID: 0}
+--- !u!114 &908013223
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 975c9e5eb5283b544ba18bb97c3c0417,
+  m_PrefabParentObject: {fileID: 11400006, guid: 975c9e5eb5283b544ba18bb97c3c0417,
     type: 2}
   m_PrefabInternal: {fileID: 1135716750}
   m_GameObject: {fileID: 908013220}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 6e754d3d80c25e442a1a9a299ca0d251, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: .5
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f1da8c4c109b74a9b7fa6906bee58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0
+  Damage: 10
+  whatToHit:
     serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
+    m_Bits: 4294957051
 --- !u!114 &908013224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5665,6 +5671,7 @@ MonoBehaviour:
   maxSpeed: 2
   facingRight: 1
   anim: {fileID: 0}
+  grounded: 0
   groundCheck: {fileID: 1824229242}
   whatIsGround:
     serializedVersion: 2
@@ -5677,8 +5684,11 @@ MonoBehaviour:
   moveDir: 1
   speedJump: 0
   hasweapon: 0
+  playableDuck: 1
+  playableJump: 1
   lives: 3
   coins: 0
+  shots: 0
   allowJumpCrouch: 1
 --- !u!95 &908013225
 Animator:
@@ -5873,6 +5883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1490135687}
   groundLookAheadCheck: {fileID: 2024354842}
   whatIsGround:
@@ -6185,6 +6196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 898424834}
   groundLookAheadCheck: {fileID: 161466233}
   whatIsGround:
@@ -6372,6 +6384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1746545301}
   groundLookAheadCheck: {fileID: 1697109264}
   whatIsGround:
@@ -6867,6 +6880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b739635c58056140ac6b52cc79ffba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 7
 --- !u!61 &1148458398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6956,6 +6970,10 @@ Prefab:
     - target: {fileID: 400000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
+      propertyPath: nextLevel
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
@@ -7452,6 +7470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1349269111}
   groundLookAheadCheck: {fileID: 778173325}
   whatIsGround:
@@ -7738,6 +7757,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 908013221}
+  xMargin: 1
+  yMargin: 1
+  xSmooth: 1
+  ySmooth: 1
+  maxXAndY: {x: 0, y: 0}
+  minXAndY: {x: 0, y: 0}
 --- !u!81 &1424005349
 AudioListener:
   m_ObjectHideFlags: 0
@@ -7980,6 +8005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 123460116}
   groundLookAheadCheck: {fileID: 205882319}
   whatIsGround:
@@ -8180,6 +8206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 2134987562}
   groundLookAheadCheck: {fileID: 338184783}
   whatIsGround:
@@ -8354,6 +8381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1422871559}
   groundLookAheadCheck: {fileID: 1586133994}
   whatIsGround:
@@ -8514,6 +8542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 2066587407}
   groundLookAheadCheck: {fileID: 768777289}
   whatIsGround:
@@ -10324,6 +10353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1551278462}
   groundLookAheadCheck: {fileID: 1257906131}
   whatIsGround:
@@ -10484,6 +10514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 2120496635}
   groundLookAheadCheck: {fileID: 971265951}
   whatIsGround:
@@ -10956,6 +10987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1580745339}
   groundLookAheadCheck: {fileID: 230168427}
   whatIsGround:
@@ -11037,8 +11069,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1762606059}
+  - 61: {fileID: 1762606060}
   m_Layer: 12
-  m_Name: GroundCheck
+  m_Name: downCheck
   m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -11051,11 +11084,23 @@ Transform:
   m_PrefabInternal: {fileID: 843987606}
   m_GameObject: {fileID: 1762606058}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0523877144, y: -.17036733, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: .149774075, y: -.170950651, z: 0}
+  m_LocalScale: {x: .800000012, y: .800000012, z: 1}
   m_Children: []
   m_Father: {fileID: 12986462}
-  m_RootOrder: 0
+  m_RootOrder: 1
+--- !u!61 &1762606060
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6100002, guid: 3a5a20fd02a535a4fb4aba6bccf76be6,
+    type: 2}
+  m_PrefabInternal: {fileID: 843987606}
+  m_GameObject: {fileID: 1762606058}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .0900000036, y: .0900000036}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &1769018315
 GameObject:
   m_ObjectHideFlags: 0
@@ -11588,6 +11633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1423287358}
   groundLookAheadCheck: {fileID: 451030192}
   whatIsGround:
@@ -11829,6 +11875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 122691072}
   groundLookAheadCheck: {fileID: 1870784321}
   whatIsGround:
@@ -11875,6 +11922,48 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: afaff2662b67df947a15c520312f8671, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2001273040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
+  m_PrefabInternal: {fileID: 1135716750}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2001273041}
+  - 114: {fileID: 2001273042}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001273041
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
+  m_PrefabInternal: {fileID: 1135716750}
+  m_GameObject: {fileID: 2001273040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .115649, y: -.0250573158, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 908013221}
+  m_RootOrder: 1
+--- !u!114 &2001273042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 975c9e5eb5283b544ba18bb97c3c0417,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135716750}
+  m_GameObject: {fileID: 2001273040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f2e78dc5b331048bfafd60adf0c698, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laser: {fileID: 100000, guid: 680f224300525624d91f47bfd813c97b, type: 2}
+  speed: 10
 --- !u!1 &2024354841
 GameObject:
   m_ObjectHideFlags: 0
@@ -12016,6 +12105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 2
+  health: 1
   groundCheck: {fileID: 1964127937}
   groundLookAheadCheck: {fileID: 1018803163}
   whatIsGround:
@@ -12444,6 +12534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1050583698}
   groundLookAheadCheck: {fileID: 862222373}
   whatIsGround:
@@ -12604,6 +12695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 1
+  health: 1
   groundCheck: {fileID: 1243801266}
   groundLookAheadCheck: {fileID: 1117585305}
   whatIsGround:

@@ -39,7 +39,6 @@ public class Enemy2Script : MonoBehaviour {
 		Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
 		foreach(Collider2D c in frontHits)
 		{
-			Debug.Log ("Hit " + c.tag);
 			if(c.tag == "Obstacle");
 			{
 				Flip();
