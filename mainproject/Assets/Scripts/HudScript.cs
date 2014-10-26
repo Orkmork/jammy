@@ -15,7 +15,23 @@ public class HudScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		LevelControl();
+	}
 	
+	void LevelControl()
+	{
+		if (Input.GetKeyDown(KeyCode.PageUp))
+		{
+			Application.LoadLevel(Application.loadedLevel + 1);
+		}
+		else if (Input.GetKeyDown(KeyCode.PageDown))
+		{
+			Application.LoadLevel(Application.loadedLevel - 1);
+		}
+		else if (Input.GetKeyDown(KeyCode.Home))
+		{
+			Application.LoadLevel(0);
+		}
 	}
 
 	void OnGUI() 

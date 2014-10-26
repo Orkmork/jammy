@@ -5,7 +5,9 @@ public class StoryScript : MonoBehaviour {
 
 	public Texture2D storyTex;
 	
-	float scale = 0.9f;
+	public float scale = 0.9f;
+	
+	public int nextLevel = -1;
 	
 	Vector2 GetCenter()
 	{
@@ -30,6 +32,24 @@ public class StoryScript : MonoBehaviour {
 		{
 			Confirm ();
 		}
+		
+		LevelControl();
+	}
+	
+	void LevelControl()
+	{
+		if (Input.GetKeyDown(KeyCode.PageUp))
+		{
+			Application.LoadLevel(Application.loadedLevel + 1);
+		}
+		else if (Input.GetKeyDown(KeyCode.PageDown))
+		{
+			Application.LoadLevel(Application.loadedLevel - 1);
+		}
+		else if (Input.GetKeyDown(KeyCode.Home))
+		{
+			Application.LoadLevel(0);
+		}
 	}
 	
 	void OnGUI () {
@@ -38,6 +58,12 @@ public class StoryScript : MonoBehaviour {
 	
 	void Confirm()
 	{
-		Application.LoadLevel(Application.loadedLevel + 1);
+		if (nextLevel < 0) {
+			Application.LoadLevel(Application.loadedLevel + 1);
+		}
+		else
+		{
+			Application.LoadLevel(nextLevel);
+		}
 	}
 }
