@@ -32,7 +32,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   m_Layer: 11
-  m_Name: GroundCheck
+  m_Name: frontCheck
   m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -54,6 +54,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  m_Layer: 11
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -64,8 +79,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 400002}
+  - {fileID: 400006}
   - {fileID: 400004}
+  - {fileID: 400002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400002
@@ -75,11 +91,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.235569477, z: 0}
+  m_LocalPosition: {x: .145348251, y: -.0275707245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -92,6 +108,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 1
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.235569477, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 0
 --- !u!50 &5000000
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -159,7 +187,7 @@ MonoBehaviour:
   facingRight: 1
   anim: {fileID: 0}
   grounded: 0
-  groundCheck: {fileID: 400002}
+  groundCheck: {fileID: 400006}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294965247
@@ -171,8 +199,11 @@ MonoBehaviour:
   moveDir: 1
   speedJump: 0
   hasweapon: 0
+  playableDuck: 1
+  playableJump: 1
   lives: 3
   coins: 0
+  shots: 0
   allowJumpCrouch: 1
 --- !u!114 &11400002
 MonoBehaviour:
@@ -186,6 +217,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kick: {fileID: 8300000, guid: 6e754d3d80c25e442a1a9a299ca0d251, type: 3}
+  lvlend: {fileID: 0}
+  colision: {fileID: 0}
+  run: {fileID: 0}
+  die: {fileID: 0}
+  mummy: {fileID: 0}
+  health: {fileID: 0}
+  ghost: {fileID: 0}
+  wolfdie: {fileID: 0}
+  zombies: {fileID: 0}
+  coins: {fileID: 0}
+  shoot: {fileID: 0}
+  collectbox: {fileID: 0}
+  jump: {fileID: 0}
+  duck: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
