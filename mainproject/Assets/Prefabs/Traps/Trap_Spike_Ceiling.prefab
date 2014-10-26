@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
   m_Layer: 13
-  m_Name: Trap_Lava
+  m_Name: Trap_Spike_Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.86105657, y: -.249730349, z: -.0673828125}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -4.37113883e-08}
+  m_LocalPosition: {x: 2.47971535, y: -.0164393783, z: -.0673828125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -41,7 +41,7 @@ Rigidbody2D:
   m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: -1
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -56,8 +56,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .319999993, y: .0700000003}
-  m_Center: {x: 0, y: .217999995}
+  m_Size: {x: .319999993, y: .170000002}
+  m_Center: {x: 0, y: -.0700000003}
 --- !u!61 &6100002
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -67,8 +67,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .319999993, y: .0700000003}
-  m_Center: {x: 0, y: .217999995}
+  m_Size: {x: .319999993, y: .170000002}
+  m_Center: {x: 0, y: -.0700000003}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,7 +100,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6bf59ef1640bfd240bd4caa6cf447595, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae95d3407acbbbe459059ef7970b4af2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

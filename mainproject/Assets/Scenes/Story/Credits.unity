@@ -172,8 +172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyTex: {fileID: 2800000, guid: 54e1e6f1f9d0d5b4e8258d88541b6b25, type: 3}
-  scale: .899999976
+  scale: 1.25
   nextLevel: -1
+  scaleTex: 0
 --- !u!82 &1163970389
 AudioSource:
   m_ObjectHideFlags: 0

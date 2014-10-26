@@ -6672,6 +6672,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: ea2967d018fe3f241acff7f57bc345ff, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: ea2967d018fe3f241acff7f57bc345ff, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: ea2967d018fe3f241acff7f57bc345ff, type: 2}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea2967d018fe3f241acff7f57bc345ff, type: 2}
   m_RootGameObject: {fileID: 1407704343}
@@ -8855,7 +8867,7 @@ GameObject:
   - 60: {fileID: 1625998711}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
