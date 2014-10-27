@@ -16,6 +16,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400006}
+  - 82: {fileID: 8200000}
   m_Layer: 11
   m_Name: Character
   m_TagString: Player
@@ -32,7 +33,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   m_Layer: 11
-  m_Name: GroundCheck
+  m_Name: frontCheck
   m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -54,6 +55,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  m_Layer: 11
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -64,8 +80,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 400002}
+  - {fileID: 400006}
   - {fileID: 400004}
+  - {fileID: 400002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &400002
@@ -75,11 +92,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.235569477, z: 0}
+  m_LocalPosition: {x: .141087353, y: -.0709670782, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!4 &400004
 Transform:
   m_ObjectHideFlags: 1
@@ -92,6 +109,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 1
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.235569477, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 0
 --- !u!50 &5000000
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -129,6 +158,64 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .200000003, y: .230000004}
   m_Center: {x: -.0299999993, y: .0700000003}
+--- !u!82 &8200000
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -159,7 +246,7 @@ MonoBehaviour:
   facingRight: 1
   anim: {fileID: 0}
   grounded: 0
-  groundCheck: {fileID: 400002}
+  groundCheck: {fileID: 400006}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294965247
@@ -171,8 +258,11 @@ MonoBehaviour:
   moveDir: 1
   speedJump: 0
   hasweapon: 0
+  playableDuck: 1
+  playableJump: 1
   lives: 3
   coins: 0
+  shots: 0
   allowJumpCrouch: 1
 --- !u!114 &11400002
 MonoBehaviour:
@@ -186,6 +276,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kick: {fileID: 8300000, guid: 6e754d3d80c25e442a1a9a299ca0d251, type: 3}
+  lvlend: {fileID: 8300000, guid: fdcda4233633eeb4995ddc503e1ab523, type: 3}
+  colision: {fileID: 0}
+  run: {fileID: 0}
+  die: {fileID: 8300000, guid: 5153158a8c11f2b4f8a2e56eca1325aa, type: 3}
+  mummy: {fileID: 0}
+  health: {fileID: 0}
+  ghost: {fileID: 0}
+  wolfdie: {fileID: 0}
+  zombies: {fileID: 0}
+  coins: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
+  shoot: {fileID: 8300000, guid: f7bd2061c5b937346961524f8135bd76, type: 3}
+  collectbox: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
+  jump: {fileID: 8300000, guid: 5d2382fcd317ce5418b53c75f9c3a705, type: 3}
+  duck: {fileID: 8300000, guid: 8d9a70ef9493c744eac51927fd02c199, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

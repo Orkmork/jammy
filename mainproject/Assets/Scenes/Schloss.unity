@@ -1464,7 +1464,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 213814055}
   m_Layer: 11
-  m_Name: GroundCheck
+  m_Name: frontCheck
   m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1477,11 +1477,11 @@ Transform:
   m_PrefabInternal: {fileID: 1091573739}
   m_GameObject: {fileID: 213814054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.235569477, z: 0}
+  m_LocalPosition: {x: .141087353, y: -.0709670782, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1305048138}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!1 &221389171
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,6 +2213,7 @@ GameObject:
   - 81: {fileID: 316557160}
   - 114: {fileID: 316557159}
   - 114: {fileID: 316557158}
+  - 82: {fileID: 316557164}
   m_Layer: 0
   m_Name: MainCam2
   m_TagString: MainCamera
@@ -2323,6 +2324,64 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!82 &316557164
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316557156}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: e8fc591cacb8a5b46a39f693a853c57a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .259000003
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &338266938
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,6 +3437,10 @@ Prefab:
     - target: {fileID: 400000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
+      propertyPath: nextLevel
+      value: 18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bafd41d719d487429c7a1f53c844d2b, type: 2}
@@ -5614,8 +5677,8 @@ Transform:
   m_LocalPosition: {x: 11.2726841, y: -19.8272552, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2113739181}
   - {fileID: 1719764401}
+  - {fileID: 2113739181}
   m_Father: {fileID: 2136146763}
   m_RootOrder: 26
 --- !u!114 &910526034
@@ -7977,6 +8040,7 @@ GameObject:
   - 114: {fileID: 1305048141}
   - 114: {fileID: 1305048139}
   - 114: {fileID: 1305048140}
+  - 82: {fileID: 1305048147}
   m_Layer: 11
   m_Name: Character
   m_TagString: Player
@@ -7994,8 +8058,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 213814055}
+  - {fileID: 1996919411}
   - {fileID: 952033197}
+  - {fileID: 213814055}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!114 &1305048139
@@ -8011,6 +8076,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kick: {fileID: 8300000, guid: 6e754d3d80c25e442a1a9a299ca0d251, type: 3}
+  lvlend: {fileID: 8300000, guid: fdcda4233633eeb4995ddc503e1ab523, type: 3}
+  colision: {fileID: 0}
+  run: {fileID: 0}
+  die: {fileID: 8300000, guid: 5153158a8c11f2b4f8a2e56eca1325aa, type: 3}
+  mummy: {fileID: 0}
+  health: {fileID: 0}
+  ghost: {fileID: 0}
+  wolfdie: {fileID: 0}
+  zombies: {fileID: 0}
+  coins: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
+  shoot: {fileID: 8300000, guid: f7bd2061c5b937346961524f8135bd76, type: 3}
+  collectbox: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
+  jump: {fileID: 8300000, guid: 5d2382fcd317ce5418b53c75f9c3a705, type: 3}
+  duck: {fileID: 8300000, guid: 8d9a70ef9493c744eac51927fd02c199, type: 3}
 --- !u!114 &1305048140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8044,7 +8123,7 @@ MonoBehaviour:
   facingRight: 1
   anim: {fileID: 0}
   grounded: 0
-  groundCheck: {fileID: 213814055}
+  groundCheck: {fileID: 1996919411}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294965247
@@ -8056,6 +8135,8 @@ MonoBehaviour:
   moveDir: 1
   speedJump: 0
   hasweapon: 0
+  playableDuck: 1
+  playableJump: 1
   lives: 3
   coins: 0
   shots: 0
@@ -8139,6 +8220,65 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 4668a60b93787384ba3e32783c1d7dba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!82 &1305048147
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 975c9e5eb5283b544ba18bb97c3c0417,
+    type: 2}
+  m_PrefabInternal: {fileID: 1091573739}
+  m_GameObject: {fileID: 1305048137}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1332651273
 GameObject:
   m_ObjectHideFlags: 0
@@ -8168,6 +8308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b739635c58056140ac6b52cc79ffba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 18
 --- !u!61 &1332651275
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11579,7 +11720,7 @@ Transform:
   m_LocalScale: {x: .800000012, y: .800000012, z: 1}
   m_Children: []
   m_Father: {fileID: 910526033}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!61 &1719764402
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14211,6 +14352,33 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .0900000036, y: .0900000036}
   m_Center: {x: 0, y: 0}
+--- !u!1 &1996919410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
+  m_PrefabInternal: {fileID: 1091573739}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1996919411}
+  m_Layer: 11
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1996919411
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
+  m_PrefabInternal: {fileID: 1091573739}
+  m_GameObject: {fileID: 1996919410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.235569477, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1305048138}
+  m_RootOrder: 0
 --- !u!1001 &2031667762
 Prefab:
   m_ObjectHideFlags: 0
@@ -15003,7 +15171,7 @@ Transform:
   m_LocalScale: {x: .800000012, y: .800000012, z: 1}
   m_Children: []
   m_Father: {fileID: 910526033}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!61 &2113739182
 BoxCollider2D:
   m_ObjectHideFlags: 0
