@@ -92,11 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: .141087353, y: -.0709670782, z: 0}
-=======
   m_LocalPosition: {x: .145348251, y: -.0275707245, z: 0}
->>>>>>> origin/master
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -280,35 +276,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kick: {fileID: 8300000, guid: 6e754d3d80c25e442a1a9a299ca0d251, type: 3}
-<<<<<<< HEAD
   lvlend: {fileID: 8300000, guid: fdcda4233633eeb4995ddc503e1ab523, type: 3}
   colision: {fileID: 0}
   run: {fileID: 0}
   die: {fileID: 8300000, guid: 5153158a8c11f2b4f8a2e56eca1325aa, type: 3}
-=======
-  lvlend: {fileID: 0}
-  colision: {fileID: 0}
-  run: {fileID: 0}
-  die: {fileID: 0}
->>>>>>> origin/master
   mummy: {fileID: 0}
   health: {fileID: 0}
   ghost: {fileID: 0}
   wolfdie: {fileID: 0}
   zombies: {fileID: 0}
-<<<<<<< HEAD
   coins: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
   shoot: {fileID: 8300000, guid: f7bd2061c5b937346961524f8135bd76, type: 3}
   collectbox: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
   jump: {fileID: 8300000, guid: 5d2382fcd317ce5418b53c75f9c3a705, type: 3}
   duck: {fileID: 8300000, guid: 8d9a70ef9493c744eac51927fd02c199, type: 3}
-=======
-  coins: {fileID: 0}
-  shoot: {fileID: 0}
-  collectbox: {fileID: 0}
-  jump: {fileID: 0}
-  duck: {fileID: 0}
->>>>>>> origin/master
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
