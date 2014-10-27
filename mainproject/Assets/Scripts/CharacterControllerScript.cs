@@ -10,16 +10,21 @@ public class CharacterControllerScript : MonoBehaviour {
 
 	public bool grounded = false;
 	public Transform groundCheck;
+	public GameObject hearthUI;
+
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
 	public float jumpForce = 250f;
 	public float killForce = 1f;
 	public bool levelEnd = false;
 	public bool alive = true;
+	public bool canmove = true;
 	public bool waitForRespawn = false;
 	public float moveDir = 1f;
 	public bool speedJump = false;
 	public bool hasweapon = false;
+	public bool buying = false;
+
 
 	public bool playableDuck = true;
 	public bool playableJump = true;
@@ -64,6 +69,7 @@ public class CharacterControllerScript : MonoBehaviour {
 
 			anim.SetBool("LostLife",true);
 			alive = false;
+			canmove = false;
 			waitForRespawn = true;
 		}
 		else
@@ -76,11 +82,17 @@ public class CharacterControllerScript : MonoBehaviour {
 	{
 		if (lives < 10)
 		{
+			Vector3 hearthPos;
+			hearthPos = transform.position;
+			Debug.Log("x:" + transform.position.x + " y:" + transform.position.y);
+			hearthPos.y += 0.5f;
+
+			Instantiate(hearthUI, hearthPos, Quaternion.identity);
 			++lives;
 		}
 	}
 	
-	public void IncreaseCoins(int amount)
+	public void ChangeCoins(int amount)
 	{
 		coins += amount;
 	}
@@ -121,13 +133,13 @@ public class CharacterControllerScript : MonoBehaviour {
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 
-		if (alive) {
+		if (alive && canmove) {
 			anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
 		}
 
 		float move = Input.GetAxis ("Horizontal");
 
-		if (alive) {
+		if (alive && canmove) {
 			if (!levelEnd) {
 					anim.SetFloat ("Speed", Mathf.Abs (move));
 					rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
@@ -155,6 +167,7 @@ public class CharacterControllerScript : MonoBehaviour {
 				if(!facingRight) Flip ();
 				rigidbody2D.position = GameObject.Find ("SpawnPoint").transform.position;
 				alive = true;
+				canmove = true;
 				waitForRespawn = false;
 
 			}
@@ -170,7 +183,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	}
 	
 	void Update() {
-		if (alive) {
+		if (alive && canmove) {
 			float move = Input.GetAxis ("Horizontal");
 			if (grounded && Input.GetKeyDown (KeyCode.Space)) {
 					anim.SetBool ("Ground", false);
@@ -223,7 +236,17 @@ public class CharacterControllerScript : MonoBehaviour {
 		}
 
 	}
-
+	/*
+	void OnCollisionStay2D(Collision2D other) { 
+		if (Input.GetKeyDown (KeyCode.C)) {
+			Debug.Log ("Col:" + other.gameObject.tag);
+		}
+		if (other.gameObject.tag == "Bar") {
+			if(Input.GetKeyDown (KeyCode.B)) {
+				ChangeCoins(1);
+			}
+		}
+	}*/
 
 	void Flip() {
 		facingRight = !facingRight;

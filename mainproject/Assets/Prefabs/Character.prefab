@@ -116,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.235569477, z: 0}
+  m_LocalPosition: {x: -.0223821551, y: -.205726624, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -247,6 +247,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   grounded: 0
   groundCheck: {fileID: 400006}
+  hearthUI: {fileID: 100000, guid: f5372e6651443d4439956b9085d17cc3, type: 2}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294965247
@@ -254,10 +255,12 @@ MonoBehaviour:
   killForce: 1
   levelEnd: 0
   alive: 1
+  canmove: 1
   waitForRespawn: 0
   moveDir: 1
   speedJump: 0
   hasweapon: 0
+  buying: 0
   playableDuck: 1
   playableJump: 1
   lives: 3
@@ -281,13 +284,13 @@ MonoBehaviour:
   run: {fileID: 0}
   die: {fileID: 8300000, guid: 5153158a8c11f2b4f8a2e56eca1325aa, type: 3}
   mummy: {fileID: 0}
-  health: {fileID: 0}
+  health: {fileID: 8300000, guid: 75b4ba2d745aebf4d834af029a90ce5d, type: 3}
   ghost: {fileID: 0}
   wolfdie: {fileID: 0}
   zombies: {fileID: 0}
   coins: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
   shoot: {fileID: 8300000, guid: f7bd2061c5b937346961524f8135bd76, type: 3}
-  collectbox: {fileID: 8300000, guid: 99b2f694f913e524686ef7bd7284dc7b, type: 3}
+  collectbox: {fileID: 8300000, guid: a3cfee5fb64d8c641bb892af2d1c4ae7, type: 3}
   jump: {fileID: 8300000, guid: 5d2382fcd317ce5418b53c75f9c3a705, type: 3}
   duck: {fileID: 8300000, guid: 8d9a70ef9493c744eac51927fd02c199, type: 3}
 --- !u!114 &11400004

@@ -89,11 +89,19 @@ public class SoundScript : MonoBehaviour {
 			audio.Play ();
 		}
 	}
-
+	
 	public void playWall()
 	{
 		if(!audio.isPlaying) {
 			audio.clip = colision;
+			audio.Play ();
+		}
+	}
+	
+	public void playHealth()
+	{
+		if(!audio.isPlaying) {
+			audio.clip = health;
 			audio.Play ();
 		}
 	}
