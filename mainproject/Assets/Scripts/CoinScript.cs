@@ -1,21 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PowerupScript : MonoBehaviour {
+public class CoinScript : MonoBehaviour {
 
 	CharacterControllerScript fiona;
 	SoundScript sfx;
-
+	
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Player")
 		{
 			fiona = GameObject.Find ("Character").GetComponent<CharacterControllerScript>();
 			sfx = GameObject.Find ("Character").GetComponent<SoundScript>();
-			fiona.hasweapon = true;
-			fiona.anim.SetBool ("HasWeapon",true);
-			fiona.shots += 5;
-			sfx.playBox();
+			fiona.coins += 1;
+			sfx.playCoins();
 			Destroy (this.gameObject);
 		}
 	}

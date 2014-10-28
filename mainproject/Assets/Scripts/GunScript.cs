@@ -18,8 +18,8 @@ public class GunScript : MonoBehaviour {
 
 	void Update () {
 		//Shoot----------------------
-		if (fiona.grounded && fiona.hasweapon && Input.GetKeyDown (KeyCode.LeftControl)) {
-			anim.SetTrigger ("Shoot");
+		if (fiona.grounded && fiona.hasweapon && !anim.GetBool ("Crouch") && Mathf.Abs (anim.GetFloat ("Speed")) == 0 && Input.GetKeyDown (KeyCode.LeftControl)) {
+			anim.SetBool ("Shoot", true);
 
 			if (fiona.facingRight) {
 				Rigidbody2D bulletInstance = Instantiate (thisRig, transform.position, Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
@@ -30,7 +30,22 @@ public class GunScript : MonoBehaviour {
 			}
 			fiona.shots--;
 		} 
-
+		if (fiona.grounded && fiona.hasweapon && anim.GetBool ("Crouch") && Mathf.Abs (anim.GetFloat ("Speed")) == 0 && Input.GetKeyDown (KeyCode.LeftControl)) {
+			anim.SetBool ("DuckShoot", true);
+			
+			if (fiona.facingRight) {
+				Rigidbody2D bulletInstance = Instantiate (thisRig, transform.position, Quaternion.Euler (new Vector3 (0, 0, 0))) as Rigidbody2D;
+				bulletInstance.velocity = new Vector2 (speed, 0);
+			} else {
+				Rigidbody2D bulletInstance = Instantiate (thisRig, transform.position, Quaternion.Euler (new Vector3 (0, 0, 180f))) as Rigidbody2D;
+				bulletInstance.velocity = new Vector2 (-speed, 0);
+			}
+			fiona.shots--;
+		} 
+		if (fiona.hasweapon && Input.GetKeyUp (KeyCode.LeftControl)) {
+			anim.SetBool ("Shoot", false);
+			anim.SetBool ("DuckShoot", false);
+		}
 
 	}
 }

@@ -6,7 +6,6 @@ public class LevelScript : MonoBehaviour {
 	CharacterControllerScript fiona;
 	
 	SoundScript sfx;
-	public int nextLevel = 0;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -17,15 +16,18 @@ public class LevelScript : MonoBehaviour {
 			fiona.anim.SetFloat("Speed",0f);
 			fiona.levelEnd = true;
 			sfx.playLvlend();
-			StartCoroutine("ReloadGame");
+			StartCoroutine("NextLevel");
 		}
 	}
 	
-	IEnumerator ReloadGame()
+	IEnumerator NextLevel()
 	{
 		//... pause briefly
 		yield return new WaitForSeconds(4);
 		//and than do stuff
-		Application.LoadLevel (nextLevel);
+		fiona.anim.SetBool ("LevelDone",false);
+		fiona.anim.SetFloat("Speed",0f);
+		fiona.levelEnd = false;
+		Application.LoadLevel(Application.loadedLevel + 1);
 	}
 }

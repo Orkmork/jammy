@@ -247,7 +247,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   grounded: 0
   groundCheck: {fileID: 400006}
-  hearthUI: {fileID: 100000, guid: f5372e6651443d4439956b9085d17cc3, type: 2}
+  hearthUI: {fileID: 100002, guid: 4f726af24956d2745ad003c588ddcd82, type: 2}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294965247

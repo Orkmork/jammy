@@ -38,7 +38,6 @@ public class HudScript : MonoBehaviour {
 	void OnGUI() 
 	{
 		int lives = playerScript.lives;
-		int shots = playerScript.shots;
 		//GUI.Label (new Rect (10, 10, 100, 50), "Lives: " + lives);
 
 		Vector2 o = new Vector2 (5, 5);

@@ -28,13 +28,13 @@ public class SoundScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!fiona.hasweapon && Input.GetKey (KeyCode.LeftControl)) {
+		if (!fiona.hasweapon && Mathf.Abs (fiona.anim.GetFloat ("Speed")) == 0 && Input.GetKey (KeyCode.LeftControl)) {
 			if(!audio.isPlaying) {
 				audio.clip = kick;
 				audio.Play ();
 			}
 		}
-		if (fiona.hasweapon && Input.GetKey (KeyCode.LeftControl)) {
+		if (fiona.hasweapon && Mathf.Abs (fiona.anim.GetFloat ("Speed")) == 0 && Input.GetKey (KeyCode.LeftControl)) {
 			if(!audio.isPlaying) {
 				audio.clip = shoot;
 				audio.Play ();
@@ -44,42 +44,32 @@ public class SoundScript : MonoBehaviour {
 
 	public void playLvlend()
 	{
-		if(!audio.isPlaying) {
-			audio.clip = lvlend;
-			audio.Play ();
-		}
+		audio.clip = lvlend;
+		audio.Play ();
 	}
 
 	public void playDie()
 	{
-		if(!audio.isPlaying) {
-			audio.clip = die;
-			audio.Play ();
-		}
+		audio.clip = die;
+		audio.Play ();
 	}
 
 	public void playCoins()
 	{
-		if(!audio.isPlaying) {
-			audio.clip = coins;
-			audio.Play ();
-		}
+		audio.clip = coins;
+		audio.Play ();
 	}
 
 	public void playBox()
 	{
-		if(!audio.isPlaying) {
-			audio.clip = coins;
-			audio.Play ();
-		}
+		audio.clip = collectbox;
+		audio.Play ();
 	}
 
 	public void playJump()
 	{
-		if(!audio.isPlaying) {
-			audio.clip = jump;
-			audio.Play ();
-		}
+		audio.clip = jump;
+		audio.Play ();
 	}
 
 	public void playDuck()
@@ -100,10 +90,8 @@ public class SoundScript : MonoBehaviour {
 	
 	public void playHealth()
 	{
-		if(!audio.isPlaying) {
-			audio.clip = health;
-			audio.Play ();
-		}
+		audio.clip = health;
+		audio.Play ();
 	}
 
 	void SoundEnd() {

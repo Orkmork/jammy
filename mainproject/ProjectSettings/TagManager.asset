@@ -6,6 +6,8 @@ TagManager:
   - Enemy
   - Obstacle
   - Bar
+  - Traps
+  - Powerup
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -21,8 +23,8 @@ TagManager:
   User Layer 11: Player
   User Layer 12: Enemy
   User Layer 13: Traps
-  User Layer 14: 
-  User Layer 15: 
+  User Layer 14: Powerup
+  User Layer 15: Obstacle
   User Layer 16: 
   User Layer 17: 
   User Layer 18: 

@@ -37,14 +37,21 @@ public class Enemy2Script : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
-		foreach(Collider2D c in frontHits)
-		{
-			if(c.tag == "Obstacle");
-			{
-				Flip();
-				break;
+		if (frontHits.Length >= 1) {
+			foreach(Collider2D c in frontHits) {
+				Debug.Log ("L:" + c.tag + " T:" + c.gameObject.layer);
 			}
-		}		
+		}
+		//Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
+		//foreach(Collider2D c in frontHits)
+		//{
+		//	Debug.Log ("L:" + c.tag + " T:" + c.gameObject.layer);
+		//	if(c.tag == "Obstacle");
+		//	{
+		//		//Flip();
+		//		break;
+		//	}
+		//}		
 		groundLookAhead = Physics2D.OverlapCircle (downCheck.position, lookAheadRadius, whatIsGround);
 		if (!groundLookAhead) {
 			Flip();

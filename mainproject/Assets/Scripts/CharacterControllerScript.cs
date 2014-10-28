@@ -84,9 +84,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		{
 			Vector3 hearthPos;
 			hearthPos = transform.position;
-			Debug.Log("x:" + transform.position.x + " y:" + transform.position.y);
-			hearthPos.y += 0.5f;
-
+			hearthPos.y += 0.15f;
 			Instantiate(hearthUI, hearthPos, Quaternion.identity);
 			++lives;
 		}
@@ -154,6 +152,16 @@ public class CharacterControllerScript : MonoBehaviour {
 			} else if (move < 0 && facingRight) {
 					Flip ();
 			}
+
+			if(Input.GetKeyDown (KeyCode.K))
+			{
+				LoseLife();
+			}
+			if(Input.GetKeyDown (KeyCode.L))
+			{
+				GainLife();
+			}
+
 		} else if (waitForRespawn){
 			if(Input.GetKeyDown (KeyCode.R))
 			{
@@ -181,6 +189,11 @@ public class CharacterControllerScript : MonoBehaviour {
 
 
 	}
+
+	void unsetShoot() {
+		anim.SetBool ("Shoot", false);
+		anim.SetBool ("DuckShoot", false);
+	}
 	
 	void Update() {
 		if (alive && canmove) {
@@ -191,29 +204,49 @@ public class CharacterControllerScript : MonoBehaviour {
 				sfx.playJump();
 			}
 			Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
-			foreach(Collider2D c in frontHits)
-			{
-				if(c.tag == "Obstacle" && move > 0.01f);
+			//Debug.Log ("Front:" + frontHits.Length);
+			if(frontHits.Length >= 1) {
+				foreach(Collider2D c in frontHits)
 				{
-					sfx.playWall();
-					break;
+					//Debug.Log ("Tag:" + c.tag);
+					if(c.tag == "Obstacle")
+					{
+						//Debug.Log ("grounded:" + grounded);
+						anim.SetBool ("WallStick", true);
+						sfx.playWall();
+					}
 				}
+			} else {
+				anim.SetBool ("WallStick", false);
 			}
 			//Crouching-------------
-			if (allowJumpCrouch || grounded) {
-					if (Input.GetKey (KeyCode.DownArrow)) {
-							anim.SetBool ("Crouch", true);
-							if(playableDuck)
-							{
-								if(playableDuck)
-										sfx.playDuck();
-								playableDuck = false;
-							}	
-					} 
-					if (Input.GetKeyUp (KeyCode.DownArrow)) {
-							anim.SetBool ("Crouch", false);
-							playableDuck = true;
-					} 
+			if ((allowJumpCrouch && !grounded) || grounded) {
+				if (Input.GetKey (KeyCode.DownArrow)) {
+					if((allowJumpCrouch && !grounded)) {
+						anim.SetBool ("CrouchJump", true);
+					}
+					else if(grounded){
+						anim.SetBool ("CrouchJump", false);
+						anim.SetBool ("Crouch", true);
+					}
+					if(playableDuck)
+					{
+						if(playableDuck)
+								sfx.playDuck();
+						playableDuck = false;
+					}	
+				} 
+				if (Input.GetKeyUp (KeyCode.DownArrow)) {
+					//if((allowJumpCrouch && !grounded)) {
+					//	anim.SetBool ("CrouchJump", false);
+					//	anim.SetBool ("Crouch", false);
+					//}
+					//else if(grounded){
+						anim.SetBool ("CrouchJump", false);
+						anim.SetBool ("Crouch", false);
+					//}
+					playableDuck = true;
+				} 
 			}
 
 			//KickAttack-----------------

@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf3ac782ddfbe642b75298c9b98feac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 400000, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
   xMargin: 1
   yMargin: 1
   xSmooth: 1
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeTex: {fileID: 2800000, guid: e9824fa5d3c3cb24eb8e71f3104d7d16, type: 3}
   coinTex: {fileID: 2800000, guid: 4dba06e3ad7aadf4d91d79249105f1a8, type: 3}
+  chestTex: {fileID: 2800000, guid: 67ea5f95c23d5104387089f2788ce8c8, type: 3}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
