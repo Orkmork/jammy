@@ -17,12 +17,7 @@ public class BarScript : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Drücke <B> um saufen!";
-			//fiona = GameObject.Find ("Character").GetComponent<CharacterControllerScript>();
-			//fiona.anim.SetBool ("LevelDone",true);
-			//fiona.anim.SetFloat("Speed",0f);
-			//fiona.levelEnd = true;
-			//sfx.playLvlend();
+			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Mit <B> für 10 coins erfrischen...";
 			StartCoroutine("ReloadGame");
 		}
 	}

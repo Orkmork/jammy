@@ -8,24 +8,17 @@ public class Enemy2Script : MonoBehaviour {
 	public LayerMask whatIsGround;
 	float lookAheadRadius = 0.1f;	
 	bool groundLookAhead = false;
+	bool frontLookAhead = false;
 
 		
 	public bool facingRight = true;
 	public float moveDir = 1f;
-
-		
-	Animator anim;
 
 	private Transform frontCheck;
 	private Transform downCheck;
 	
 	public void Hurt() {
 		health--;
-	}
-	// Use this for initialization
-	void Start () {
-		//anim = GetComponent<Animator> ();
-		//Run (1f);
 	}
 
 	void Awake()
@@ -36,22 +29,10 @@ public class Enemy2Script : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
-		if (frontHits.Length >= 1) {
-			foreach(Collider2D c in frontHits) {
-				Debug.Log ("L:" + c.tag + " T:" + c.gameObject.layer);
-			}
+		frontLookAhead = Physics2D.OverlapCircle (frontCheck.position, 0f, whatIsGround);
+		if (frontLookAhead) {
+			Flip();
 		}
-		//Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
-		//foreach(Collider2D c in frontHits)
-		//{
-		//	Debug.Log ("L:" + c.tag + " T:" + c.gameObject.layer);
-		//	if(c.tag == "Obstacle");
-		//	{
-		//		//Flip();
-		//		break;
-		//	}
-		//}		
 		groundLookAhead = Physics2D.OverlapCircle (downCheck.position, lookAheadRadius, whatIsGround);
 		if (!groundLookAhead) {
 			Flip();
@@ -72,23 +53,6 @@ public class Enemy2Script : MonoBehaviour {
 		Destroy (gameObject);
 	}
 
-
-	void Run(float move)
-	{
-		anim.SetFloat ("Speed", Mathf.Abs (move));
-		
-		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
-		
-		if(move > 0 && !facingRight)
-		{
-			Flip();
-		}
-		else if(move < 0 && facingRight)
-		{
-			Flip();
-		}
-	}
-	
 	void Flip() {
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;

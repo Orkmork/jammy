@@ -18,7 +18,7 @@ public class GunScript : MonoBehaviour {
 
 	void Update () {
 		//Shoot----------------------
-		if (fiona.grounded && fiona.hasweapon && !anim.GetBool ("Crouch") && Mathf.Abs (anim.GetFloat ("Speed")) == 0 && Input.GetKeyDown (KeyCode.LeftControl)) {
+		if (fiona.grounded && fiona.hasweapon && !anim.GetBool ("Crouch") && Input.GetKeyDown (KeyCode.LeftControl)) {
 			anim.SetBool ("Shoot", true);
 
 			if (fiona.facingRight) {

@@ -18,6 +18,7 @@ public class SoundScript : MonoBehaviour {
 	public AudioClip collectbox;//#
 	public AudioClip jump;//
 	public AudioClip duck;//
+	public AudioClip attack;//
 
 	CharacterControllerScript fiona;
 
@@ -28,12 +29,6 @@ public class SoundScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (!fiona.hasweapon && Mathf.Abs (fiona.anim.GetFloat ("Speed")) == 0 && Input.GetKey (KeyCode.LeftControl)) {
-			if(!audio.isPlaying) {
-				audio.clip = kick;
-				audio.Play ();
-			}
-		}
 		if (fiona.hasweapon && Mathf.Abs (fiona.anim.GetFloat ("Speed")) == 0 && Input.GetKey (KeyCode.LeftControl)) {
 			if(!audio.isPlaying) {
 				audio.clip = shoot;
@@ -42,10 +37,24 @@ public class SoundScript : MonoBehaviour {
 		}
 	}
 
+	public void playAttack()
+	{
+		audio.clip = attack;
+		audio.Play ();
+	}
+
+	public void playKick()
+	{
+		audio.clip = kick;
+		audio.Play ();
+	}
+
 	public void playLvlend()
 	{
-		audio.clip = lvlend;
-		audio.Play ();
+		if (!audio.isPlaying) {
+			audio.clip = lvlend;
+			audio.Play ();
+		}
 	}
 
 	public void playDie()

@@ -4,6 +4,21 @@ using System.Collections;
 public class StoryScript : MonoBehaviour {
 
 	public Texture2D storyTex;
+
+	public GUIStyle butPlay;
+	public GUIStyle butOptions;
+	public GUIStyle butCredits;
+
+	float scaleX = .25f;
+	float scaleY = .125f;
+
+	float posB1X = 0.16f;
+	float posB1Y = 0.25f;
+	float posB2X = 0.16f;
+	float posB2Y = 0.4f;
+	float posB3X = 0.16f;
+	float posB3Y = 0.55f;
+
 	
 	public float scale = 1.0f;
 	
@@ -34,14 +49,13 @@ public class StoryScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (
-			Input.GetKey(KeyCode.Space)
-			|| Input.GetKey(KeyCode.Return)
-			|| Input.GetAxis("Fire1") > 0)
-		{
-			Confirm ();
+		if (Application.loadedLevel != 0) {
+			if ( Input.GetKey (KeyCode.Space)
+						|| Input.GetKey (KeyCode.Return)
+						|| Input.GetAxis ("Fire1") > 0) {
+				Confirm ();
+			}
 		}
-		
 		LevelControl();
 	}
 	
@@ -63,11 +77,27 @@ public class StoryScript : MonoBehaviour {
 	
 	void OnGUI () {
 		GUI.DrawTexture(GetCenteredRect(storyTex.width, storyTex.height), storyTex);
+		if (Application.loadedLevel == 0) {
+			PlayerPrefs.SetInt ("lives", 3);
+			PlayerPrefs.SetInt ("coins", 0);
+			PlayerPrefs.SetInt ("shots", 0);
+			if(GUI.Button (new Rect(Screen.width * posB1X, Screen.height * posB1Y, Screen.width * scaleX, Screen.height * scaleY),"",butPlay)) {
+				Application.LoadLevel(2);
+			}
+			if(GUI.Button (new Rect(Screen.width * posB2X, Screen.height * posB2Y, Screen.width * scaleX, Screen.height * scaleY),"",butOptions)){
+			}
+			if(GUI.Button (new Rect(Screen.width * posB3X, Screen.height * posB3Y, Screen.width * scaleX, Screen.height * scaleY),"",butCredits)){
+				Application.LoadLevel(19);
+			}
+		}
 	}
 	
 	void Confirm()
 	{
-		if (nextLevel < 0) {
+		if (Application.loadedLevel == 19) {
+			Application.LoadLevel(0);
+		}
+		else if (nextLevel < 0) {
 			Application.LoadLevel(Application.loadedLevel + 1);
 		}
 		else

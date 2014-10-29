@@ -4,17 +4,21 @@ using System.Collections;
 public class LevelScript : MonoBehaviour {
 
 	CharacterControllerScript fiona;
-	
 	SoundScript sfx;
+
+	void Awake()
+	{		
+		fiona = GameObject.Find ("Character").GetComponent<CharacterControllerScript>();
+		sfx = GameObject.Find ("Character").GetComponent<SoundScript>();
+	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if (other.tag == "Player")
+		if (other.tag == "Player" && !fiona.levelEnd)
 		{
-			fiona = GameObject.Find ("Character").GetComponent<CharacterControllerScript>();
+			fiona.levelEnd = true;
 			fiona.anim.SetBool ("LevelDone",true);
 			fiona.anim.SetFloat("Speed",0f);
-			fiona.levelEnd = true;
 			sfx.playLvlend();
 			StartCoroutine("NextLevel");
 		}
@@ -23,7 +27,7 @@ public class LevelScript : MonoBehaviour {
 	IEnumerator NextLevel()
 	{
 		//... pause briefly
-		yield return new WaitForSeconds(4);
+		yield return new WaitForSeconds(3);
 		//and than do stuff
 		fiona.anim.SetBool ("LevelDone",false);
 		fiona.anim.SetFloat("Speed",0f);

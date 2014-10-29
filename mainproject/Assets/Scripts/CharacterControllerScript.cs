@@ -12,7 +12,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	public Transform groundCheck;
 	public GameObject hearthUI;
 
-	float groundRadius = 0.2f;
+	float groundRadius = 0.1f;
 	public LayerMask whatIsGround;
 	public float jumpForce = 250f;
 	public float killForce = 1f;
@@ -37,6 +37,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	public bool allowJumpCrouch = true;
 
 	SoundScript sfx;
+	string[] attacks = { "KickAttack", "Attack1", "Attack2" };
 
 	void Awake()
 	{
@@ -111,10 +112,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		{
 			coins = PlayerPrefs.GetInt("coins");
 		}
-		if (PlayerPrefs.HasKey ("shots"))
-		{
-			shots = PlayerPrefs.GetInt("shots");
-		}
+		shots = 0;
 	}
 
 	void OnDisable()
@@ -122,7 +120,6 @@ public class CharacterControllerScript : MonoBehaviour {
 		// save state
 		PlayerPrefs.SetInt ("lives", lives);
 		PlayerPrefs.SetInt ("coins", coins);
-		PlayerPrefs.SetInt ("shots", shots);
 	}
 	
 	// Update is called once per frame
@@ -151,15 +148,6 @@ public class CharacterControllerScript : MonoBehaviour {
 					Flip ();
 			} else if (move < 0 && facingRight) {
 					Flip ();
-			}
-
-			if(Input.GetKeyDown (KeyCode.K))
-			{
-				LoseLife();
-			}
-			if(Input.GetKeyDown (KeyCode.L))
-			{
-				GainLife();
 			}
 
 		} else if (waitForRespawn){
@@ -198,9 +186,18 @@ public class CharacterControllerScript : MonoBehaviour {
 	void Update() {
 		if (alive && canmove) {
 			float move = Input.GetAxis ("Horizontal");
-			if (grounded && Input.GetKeyDown (KeyCode.Space)) {
+			if (grounded && Input.GetKeyDown (KeyCode.Space) && !anim.GetBool ("WallStick") ) {
 					anim.SetBool ("Ground", false);
 					rigidbody2D.AddForce (new Vector2 (0, jumpForce));
+				sfx.playJump();
+			} else if (grounded && Input.GetKeyDown (KeyCode.Space) && anim.GetBool ("WallStick") ) {
+				anim.SetBool ("Ground", false);
+				float dire = 1f;
+				if(facingRight)
+					dire = -1f;
+				else
+					dire = 1f;
+				rigidbody2D.AddForce (new Vector2 (jumpForce * dire * 2, jumpForce / 4 * 3));
 				sfx.playJump();
 			}
 			Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
@@ -251,13 +248,15 @@ public class CharacterControllerScript : MonoBehaviour {
 
 			//KickAttack-----------------
 
-			if (grounded && move < 0.01f && !hasweapon && Input.GetKey (KeyCode.LeftControl)) {
-					anim.SetBool ("KickAttack", true);
+			if (grounded && Mathf.Abs (move) < 0.01f && !hasweapon && Input.GetKeyDown (KeyCode.LeftControl) && !anim.GetBool ("KickAttack") && !anim.GetBool ("Attack1") && !anim.GetBool ("Attack2") ) {
+				sfx.playAttack();
+				anim.SetBool (attacks[Random.Range (0,3)], true);
+
 			} 
-			if (Input.GetKeyUp (KeyCode.LeftControl)) {
-					anim.SetBool ("KickAttack", false);
-			} else if (Mathf.Abs (move) > 0.01f) {
-					anim.SetBool ("KickAttack", false);
+			if (Mathf.Abs (move) > 0.01f) {
+				anim.SetBool ("KickAttack", false);
+				anim.SetBool ("Attack1", false);
+				anim.SetBool ("Attack2", false);
 			}
 
 
@@ -269,6 +268,17 @@ public class CharacterControllerScript : MonoBehaviour {
 		}
 
 	}
+
+	void resetAttack1() {
+		anim.SetBool ("Attack1", false);
+	}
+	void resetAttack2() {
+		anim.SetBool ("Attack2", false);
+	}
+	void resetKickAttack() {
+		anim.SetBool ("KickAttack", false);
+	}
+
 	/*
 	void OnCollisionStay2D(Collision2D other) { 
 		if (Input.GetKeyDown (KeyCode.C)) {

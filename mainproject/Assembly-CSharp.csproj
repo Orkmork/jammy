@@ -51,7 +51,9 @@
      <Compile Include="Assets\Scripts\CharacterControllerScript.cs" />
      <Compile Include="Assets\Scripts\CharacterRespwan.cs" />
      <Compile Include="Assets\Scripts\CoinScript.cs" />
+     <Compile Include="Assets\Scripts\CombatHitScript.cs" />
      <Compile Include="Assets\Scripts\DestroyerScript.cs" />
+     <Compile Include="Assets\Scripts\DotzScript.cs" />
      <Compile Include="Assets\Scripts\Enemy2Script.cs" />
      <Compile Include="Assets\Scripts\EnemyScript.cs" />
      <Compile Include="Assets\Scripts\GameOverScript.cs" />
