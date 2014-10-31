@@ -8,6 +8,7 @@ public class HudScript : MonoBehaviour {
 	public Texture2D lifeTex;
 	public Texture2D coinTex;
 	public Texture2D chestTex;
+	public GUIStyle guiStyle;
 
 	// Use this for initialization
 	void Start () {
@@ -50,7 +51,7 @@ public class HudScript : MonoBehaviour {
 			p.x += w + 5;
 		}
 
-		GUI.Label(new Rect(o.x, o.y+w, o.x+100, o.y+2*w), new GUIContent(playerScript.coins.ToString(), coinTex));
-		GUI.Label(new Rect(o.x, o.y+2*w, o.x+100, o.y+3*w), new GUIContent(playerScript.shots.ToString(), chestTex));
+		GUI.Label(new Rect(o.x, o.y+w, o.x+100, o.y+2*w), new GUIContent(playerScript.coins.ToString(), coinTex),guiStyle);
+		GUI.Label(new Rect(o.x, o.y+2*w, o.x+100, o.y+3*w), new GUIContent(playerScript.shots.ToString(), chestTex),guiStyle);
 	}
 }

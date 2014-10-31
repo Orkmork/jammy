@@ -227,7 +227,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.16999996, y: .819999993}
+  m_Size: {x: .660000026, y: .519999981}
   m_Center: {x: 0, y: 0}
 --- !u!61 &6100004
 BoxCollider2D:
@@ -343,6 +343,7 @@ MonoBehaviour:
   speedJump: 0
   hasweapon: 0
   buying: 0
+  curSpawnSpot: 0
   playableDuck: 1
   playableJump: 1
   lives: 3

@@ -24,6 +24,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	public bool speedJump = false;
 	public bool hasweapon = false;
 	public bool buying = false;
+	public int curSpawnSpot = 0;
 
 
 	public bool playableDuck = true;
@@ -161,7 +162,10 @@ public class CharacterControllerScript : MonoBehaviour {
 
 				anim.SetBool ("LostLife", false);	
 				if(!facingRight) Flip ();
-				rigidbody2D.position = GameObject.Find ("SpawnPoint").transform.position;
+
+				Debug.Log ("S:"+"SpawnSpot" + curSpawnSpot );
+				rigidbody2D.position = GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position;
+				Debug.Log ("Sx:"+GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.x+" Sy:" + GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.y);
 				alive = true;
 				canmove = true;
 				waitForRespawn = false;

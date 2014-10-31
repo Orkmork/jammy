@@ -4,6 +4,7 @@ using System.Collections;
 public class FlagScript : MonoBehaviour {
 
 	public bool isStartSpawn = true;
+	public int spawnSpot = 0;
 	public Animator anim;
 	CharacterControllerScript fiona;
 	SoundScript sfx;
@@ -32,10 +33,13 @@ public class FlagScript : MonoBehaviour {
 	{
 		if (other.tag == "Player" && !isStartSpawn)
 		{
+			Debug.Log ("mS:" + spawnSpot);
 			fiona = GameObject.Find ("Character").GetComponent<CharacterControllerScript>();
 			sfx = fiona.GetComponent<SoundScript>();
 			sfx.playBox();
 			anim.SetBool ("Active", true);
+			fiona.curSpawnSpot = spawnSpot;
+			Debug.Log ("cS:" + fiona.curSpawnSpot);
 			BoxCollider2D[] myColliders = gameObject.GetComponents<BoxCollider2D>();
 			foreach(BoxCollider2D bc in myColliders) bc.enabled = false;
 

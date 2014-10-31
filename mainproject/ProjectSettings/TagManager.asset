@@ -8,6 +8,10 @@ TagManager:
   - Bar
   - Traps
   - Powerup
+  - SpawnSpot0
+  - SpawnSpot1
+  - SpawnSpot2
+  - SpawnSpot3
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
