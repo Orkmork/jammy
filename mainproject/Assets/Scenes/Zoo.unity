@@ -932,6 +932,27 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 4.6020565
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 4d9ccdcdfd413624c8dd17beba8d68b2, type: 2}
+      propertyPath: guiStyle.m_Normal.m_TextColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 4d9ccdcdfd413624c8dd17beba8d68b2, type: 2}
+      propertyPath: guiStyle.m_Normal.m_TextColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 4d9ccdcdfd413624c8dd17beba8d68b2, type: 2}
+      propertyPath: guiStyle.m_Normal.m_TextColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 4d9ccdcdfd413624c8dd17beba8d68b2, type: 2}
+      propertyPath: guiStyle.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b35529cc9bfc7294a956c891f7de057c,
+        type: 3}
+    - target: {fileID: 11400002, guid: 4d9ccdcdfd413624c8dd17beba8d68b2, type: 2}
+      propertyPath: guiStyle.m_Padding.m_Top
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d9ccdcdfd413624c8dd17beba8d68b2, type: 2}
   m_RootGameObject: {fileID: 1424005346}
@@ -17593,7 +17614,7 @@ MonoBehaviour:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -17628,14 +17649,14 @@ MonoBehaviour:
     m_Padding:
       m_Left: 0
       m_Right: 0
-      m_Top: 0
+      m_Top: 3
       m_Bottom: 0
     m_Overflow:
       m_Left: 0
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 0}
+    m_Font: {fileID: 12800000, guid: b35529cc9bfc7294a956c891f7de057c, type: 3}
     m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
