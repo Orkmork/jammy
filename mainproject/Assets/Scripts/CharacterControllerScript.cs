@@ -30,6 +30,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	public bool playableDuck = true;
 	public bool playableJump = true;
 
+	public int maxlives = 5;
 	public int lives = 3;
 	public int coins = 0;
 	public int shots = 0;
@@ -82,7 +83,7 @@ public class CharacterControllerScript : MonoBehaviour {
 
 	public void GainLife()
 	{
-		if (lives < 10)
+		if (lives < maxlives)
 		{
 			Vector3 hearthPos;
 			hearthPos = transform.position;

@@ -6,6 +6,8 @@ public class HudScript : MonoBehaviour {
 	CharacterControllerScript playerScript;
 
 	public Texture2D lifeTex;
+	public Texture2D heartTex;
+	public Texture2D noheartTex;
 	public Texture2D coinTex;
 	public Texture2D chestTex;
 	public GUIStyle guiStyle;
@@ -39,15 +41,21 @@ public class HudScript : MonoBehaviour {
 	void OnGUI() 
 	{
 		int lives = playerScript.lives;
+		int maxlives = playerScript.maxlives;
 		//GUI.Label (new Rect (10, 10, 100, 50), "Lives: " + lives);
 
 		Vector2 o = new Vector2 (5, 5);
 
-		int w = lifeTex.width;
+		int w = heartTex.width;
 		Vector2 p = o;
 		for (int i=0; i<lives; i++)
 		{
-			GUI.Label(new Rect(p.x, p.y, p.x+w, p.y+w), lifeTex);
+			GUI.Label(new Rect(p.x, p.y, p.x+w, p.y+w), heartTex);
+			p.x += w + 5;
+		}
+		for (int i=lives; i<maxlives; i++)
+		{
+			GUI.Label(new Rect(p.x, p.y, p.x+w, p.y+w), noheartTex);
 			p.x += w + 5;
 		}
 

@@ -324,7 +324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!1001 &24589001
 Prefab:
   m_ObjectHideFlags: 0
@@ -1904,7 +1904,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
@@ -6780,7 +6780,7 @@ Transform:
   - {fileID: 1281673710}
   - {fileID: 547513565}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1001 &742616205
 Prefab:
   m_ObjectHideFlags: 0
@@ -9162,7 +9162,7 @@ Transform:
   - {fileID: 680795546}
   - {fileID: 408938145}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
 --- !u!50 &1040541462
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -9276,6 +9276,7 @@ MonoBehaviour:
   curSpawnSpot: 0
   playableDuck: 1
   playableJump: 1
+  maxlives: 5
   lives: 3
   coins: 0
   shots: 0
@@ -10717,6 +10718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTex: {fileID: 2800000, guid: e9824fa5d3c3cb24eb8e71f3104d7d16, type: 3}
+  heartTex: {fileID: 2800000, guid: 1d24eb0dc6b865c4ebf3c68e0d546e5c, type: 3}
+  noheartTex: {fileID: 2800000, guid: ed35d255149a06e428684a2a2959b951, type: 3}
   coinTex: {fileID: 2800000, guid: 4dba06e3ad7aadf4d91d79249105f1a8, type: 3}
   chestTex: {fileID: 2800000, guid: 67ea5f95c23d5104387089f2788ce8c8, type: 3}
   guiStyle:
@@ -12267,7 +12270,7 @@ Transform:
   - {fileID: 1647857432}
   - {fileID: 1178389582}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!1 &1361844705
 GameObject:
   m_ObjectHideFlags: 0
@@ -14522,7 +14525,7 @@ Transform:
   - {fileID: 52562548}
   - {fileID: 2084733714}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 13
 --- !u!1 &1611700977
 GameObject:
   m_ObjectHideFlags: 0
@@ -15613,7 +15616,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &1705785238
 GameObject:
   m_ObjectHideFlags: 0
@@ -17443,7 +17446,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 00241c387a2629f4b83b00d2ebe36673, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 00241c387a2629f4b83b00d2ebe36673, type: 2}
       propertyPath: m_Name
@@ -17474,6 +17477,14 @@ Prefab:
       propertyPath: guiStyle.m_ContentOffset.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 00241c387a2629f4b83b00d2ebe36673, type: 2}
+      propertyPath: heartTex
+      value: 
+      objectReference: {fileID: 2800000, guid: 1d24eb0dc6b865c4ebf3c68e0d546e5c, type: 3}
+    - target: {fileID: 11400002, guid: 00241c387a2629f4b83b00d2ebe36673, type: 2}
+      propertyPath: noheartTex
+      value: 
+      objectReference: {fileID: 2800000, guid: ed35d255149a06e428684a2a2959b951, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 00241c387a2629f4b83b00d2ebe36673, type: 2}
   m_RootGameObject: {fileID: 1235871735}

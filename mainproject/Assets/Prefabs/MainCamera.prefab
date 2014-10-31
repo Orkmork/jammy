@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTex: {fileID: 2800000, guid: e9824fa5d3c3cb24eb8e71f3104d7d16, type: 3}
+  heartTex: {fileID: 2800000, guid: 1d24eb0dc6b865c4ebf3c68e0d546e5c, type: 3}
+  noheartTex: {fileID: 2800000, guid: ed35d255149a06e428684a2a2959b951, type: 3}
   coinTex: {fileID: 2800000, guid: 4dba06e3ad7aadf4d91d79249105f1a8, type: 3}
   chestTex: {fileID: 2800000, guid: 67ea5f95c23d5104387089f2788ce8c8, type: 3}
   guiStyle:
