@@ -17,7 +17,7 @@ public class BarScript : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Mit <B> für 10 coins erfrischen...";
+			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Mit <B> für " + costs + " Münzen erfrischen...";
 			StartCoroutine("ReloadGame");
 		}
 	}
@@ -33,7 +33,7 @@ public class BarScript : MonoBehaviour {
 				//		Debug.Log ("Col:" + other.gameObject.tag);
 				//}
 		if (other.gameObject.tag == "Player") {
-			if(Input.GetKeyDown (KeyCode.B) && fiona.buying == false && fiona.coins >= costs && fiona.lives < 10) {
+			if(Input.GetKeyDown (KeyCode.B) && fiona.buying == false && fiona.coins >= costs && fiona.lives < fiona.maxlives) {
 				fiona.buying = true;
 				fiona.canmove = false;
 				fiona.anim.SetBool ("Buying", true);

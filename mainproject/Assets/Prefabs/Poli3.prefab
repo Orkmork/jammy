@@ -192,7 +192,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!212 &21200000

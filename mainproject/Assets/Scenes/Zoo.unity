@@ -271,7 +271,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &12986469
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &98950212
@@ -1307,7 +1307,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 105043366}
   - 114: {fileID: 105043367}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2002,7 +2002,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &155867033
@@ -2526,7 +2526,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &208028185
@@ -2970,7 +2970,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &291417619
@@ -4009,7 +4009,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &402180047
@@ -4323,7 +4323,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &411717860
@@ -4482,7 +4482,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &412430549
@@ -4701,7 +4701,7 @@ Transform:
   m_PrefabInternal: {fileID: 464456730}
   m_GameObject: {fileID: 427452401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.651974201, y: -.649999976, z: 0}
+  m_LocalPosition: {x: -0, y: -.649999976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1108837075}
@@ -5003,7 +5003,7 @@ Transform:
   m_PrefabInternal: {fileID: 1046651761}
   m_GameObject: {fileID: 444466828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.1140399, y: 4.59487057, z: 10}
+  m_LocalPosition: {x: 5.1287055, y: 4.66819668, z: 10}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children: []
   m_Father: {fileID: 1117027047}
@@ -5213,7 +5213,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &452882773
@@ -5264,7 +5264,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 3519535be3f3de44581c7ce9984b0aeb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.651974201
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3519535be3f3de44581c7ce9984b0aeb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5919,7 +5919,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &498996534
@@ -6340,7 +6340,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &514800130
@@ -6706,7 +6706,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &529580879
@@ -7630,7 +7630,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &614392935
@@ -7877,7 +7877,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &631540860
@@ -8359,7 +8359,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &663617412
@@ -9168,7 +9168,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &727069930
@@ -9482,7 +9482,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &742768162
@@ -9808,7 +9808,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &774063235
@@ -10841,7 +10841,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &835479365
@@ -11203,7 +11203,7 @@ GameObject:
   - 4: {fileID: 853713823}
   - 61: {fileID: 853713825}
   - 114: {fileID: 853713824}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CombatHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11740,7 +11740,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &884996699
@@ -11983,7 +11983,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &907505801
@@ -12056,7 +12056,7 @@ Transform:
   m_PrefabInternal: {fileID: 1626076047}
   m_GameObject: {fileID: 908013220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.620907307, y: -1.06773007, z: 0}
+  m_LocalPosition: {x: 0, y: -1.06773007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1344942926}
@@ -12135,7 +12135,7 @@ MonoBehaviour:
   killForce: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294940671
+    m_Bits: 4294936575
   groundCheck: {fileID: 1344942926}
   grounded: 0
   facingRight: 1
@@ -13183,7 +13183,7 @@ Transform:
   m_PrefabInternal: {fileID: 2054482382}
   m_GameObject: {fileID: 1022703616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .066362381, y: 7.46163273, z: 0}
+  m_LocalPosition: {x: .0516967773, y: 7.69627762, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1740079972}
@@ -13538,11 +13538,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.23000002
+      value: 2.62963891
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .330000013
+      value: .536024213
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13574,19 +13574,27 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 06450daf818627e44b05da870b387a23, type: 3}
     - target: {fileID: 11400000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
       propertyPath: minXAndY.y
-      value: .649999976
+      value: .330000013
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
       propertyPath: minXAndY.x
-      value: 2.5
+      value: 2.45000005
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
       propertyPath: maxXAndY.x
-      value: 26.3299999
+      value: 26.4500008
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
       propertyPath: maxXAndY.y
       value: 27.8099995
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.66819668
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.1287055
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aadad1cd1f3f80d4b82cf0dcd565d608, type: 2}
@@ -14060,7 +14068,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1092344254
@@ -14337,7 +14345,7 @@ Transform:
   m_PrefabInternal: {fileID: 1046651761}
   m_GameObject: {fileID: 1117027046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.23000002, y: .330000013, z: -10}
+  m_LocalPosition: {x: 2.62963891, y: .536024213, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 444466830}
@@ -14647,8 +14655,8 @@ MonoBehaviour:
   yMargin: 1
   xSmooth: 1
   ySmooth: 2
-  maxXAndY: {x: 26.3299999, y: 27.8099995}
-  minXAndY: {x: 2.5, y: .649999976}
+  maxXAndY: {x: 26.4500008, y: 27.8099995}
+  minXAndY: {x: 2.45000005, y: .330000013}
 --- !u!81 &1117027053
 AudioListener:
   m_ObjectHideFlags: 0
@@ -14974,7 +14982,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1129028092
@@ -15376,7 +15384,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &1148054657
@@ -15811,7 +15819,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1191990539
@@ -16009,12 +16017,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1205180365}
   - 61: {fileID: 1205180364}
-  - 50: {fileID: 1205180363}
   - 114: {fileID: 1205180362}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: BarEntrance
   m_TagString: Bar
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -16030,23 +16037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e808f573c63190146a44ad5d724051c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  costs: 10
---- !u!50 &1205180363
-Rigidbody2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5000000, guid: abe40a6165cb3864392b2ebee7762e00,
-    type: 2}
-  m_PrefabInternal: {fileID: 1554231023}
-  m_GameObject: {fileID: 1205180361}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  costs: 15
 --- !u!61 &1205180364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16483,7 +16474,7 @@ GameObject:
   - 4: {fileID: 1277011459}
   - 114: {fileID: 1277011461}
   - 61: {fileID: 1277011460}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Dotz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16835,7 +16826,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1310473525
@@ -19825,6 +19816,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: abe40a6165cb3864392b2ebee7762e00, type: 2}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: -2065832391, guid: 0000000000000000d000000000000000,
+        type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abe40a6165cb3864392b2ebee7762e00, type: 2}
   m_RootGameObject: {fileID: 1205180361}
@@ -20119,7 +20115,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1594812597
@@ -21089,7 +21085,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.620907307
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 975c9e5eb5283b544ba18bb97c3c0417, type: 2}
       propertyPath: m_LocalPosition.y
@@ -22868,7 +22864,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1773978900
@@ -23027,7 +23023,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &1780303442
@@ -23500,7 +23496,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1808456552
@@ -24296,7 +24292,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &1881935901
@@ -25353,7 +25349,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &2004610007
@@ -25596,7 +25592,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &2022041539
@@ -25990,7 +25986,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &2042158072
@@ -26435,11 +26431,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f375fac3fc896dc4f9e0187a052f9050, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .066362381
+      value: .0516967773
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f375fac3fc896dc4f9e0187a052f9050, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.46163273
+      value: 7.69627762
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f375fac3fc896dc4f9e0187a052f9050, type: 2}
       propertyPath: m_LocalPosition.z
@@ -26671,7 +26667,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &2066731596
@@ -27096,7 +27092,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &2082682058
@@ -27494,7 +27490,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 0
   moveDir: 1
 --- !u!95 &2108570564
@@ -27653,7 +27649,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &2110896975
@@ -27856,7 +27852,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &2131797041
@@ -28015,7 +28011,7 @@ MonoBehaviour:
   health: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294961151
+    m_Bits: 4294936575
   facingRight: 1
   moveDir: 1
 --- !u!95 &2135413515

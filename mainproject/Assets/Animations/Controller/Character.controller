@@ -583,6 +583,10 @@ Transition:
     m_ConditionEvent: CrouchJump
     m_EventTreshold: 0
     m_ExitTime: .899999976
+  - m_ConditionMode: 2
+    m_ConditionEvent: WallStick
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -1185,7 +1189,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 7e3b713231984e84f8ac0b037374c687, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -252, y: 312, z: 0}
+  m_Position: {x: -84, y: 132, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -1324,14 +1328,6 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110289937}
-      second:
-      - {fileID: 110105267}
-    data:
-      first: {fileID: 110257008}
-      second:
-      - {fileID: 110185497}
-    data:
       first: {fileID: 0}
       second:
       - {fileID: 110146555}
@@ -1413,6 +1409,14 @@ StateMachine:
       first: {fileID: 110216499}
       second:
       - {fileID: 110111557}
+    data:
+      first: {fileID: 110257008}
+      second:
+      - {fileID: 110185497}
+    data:
+      first: {fileID: 110289937}
+      second:
+      - {fileID: 110105267}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -240, y: 48, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

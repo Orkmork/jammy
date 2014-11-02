@@ -85,11 +85,11 @@ public class MenuScript : MonoBehaviour {
 	}
 	
 	void Update() {
-		if(Input.GetKeyDown(KeyCode.UpArrow)){			
+		if(Input.GetButtonDown ("Vertical") && Input.GetAxis("Vertical") > 0){			
 			selected = menuSelection(menuElements, selected, "up");			
 		}
 		
-		if(Input.GetKeyDown(KeyCode.DownArrow)){			
+		if(Input.GetButtonDown ("Vertical") && Input.GetAxis("Vertical") < 0){			
 			selected = menuSelection(menuElements, selected, "down");			
 		}
 	}

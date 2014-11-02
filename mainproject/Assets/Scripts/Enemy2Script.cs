@@ -50,7 +50,16 @@ public class Enemy2Script : MonoBehaviour {
 
 	void Death()
 	{
-		Destroy (gameObject);
+		GameObject player = GameObject.FindGameObjectWithTag("Player");         
+		float dir = player.transform.position.x < transform.position.x ? 1f : -1f;
+		
+		foreach (Collider2D collider in GetComponentsInParent<Collider2D>()) {
+			collider.enabled = false;
+		}
+		rigidbody2D.mass = 0f;
+		rigidbody2D.velocity = new Vector2(dir * 10f, 0f);
+		
+		Destroy (gameObject, 0.5f);
 	}
 
 	void Flip() {

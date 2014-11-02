@@ -110,18 +110,6 @@ public class CharacterControllerScript : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		sfx = GameObject.Find ("Character").GetComponent<SoundScript>();
-
-		// restore state
-		/*
-		if (PlayerPrefs.HasKey ("lives"))
-		{
-			lives = PlayerPrefs.GetInt("lives");
-		}
-		if (PlayerPrefs.HasKey ("coins"))
-		{
-			coins = PlayerPrefs.GetInt("coins");
-		}
-		*/
 		shots = 0;
 	}
 
@@ -134,7 +122,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
+		/*
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool ("Ground", grounded);
 
@@ -186,6 +174,7 @@ public class CharacterControllerScript : MonoBehaviour {
 			anim.SetBool ("HasWeapon", false);	
 			hasweapon = false;
 		}
+		*/
 	}
 
 	
@@ -215,13 +204,33 @@ public class CharacterControllerScript : MonoBehaviour {
 	}
 	
 	void Update() {
+		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		anim.SetBool ("Ground", grounded);
+
 		if (alive && canmove) {
 			float move = Input.GetAxis ("Horizontal");
-			if (grounded && Input.GetKeyDown (KeyCode.Space) && !anim.GetBool ("WallStick") ) {
+			anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+
+			if (!levelEnd) {
+				anim.SetFloat ("Speed", Mathf.Abs (move));
+				rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+			}
+			else if(levelEnd)
+			{
+				sfx.playLvlend();
+			}
+			
+			if (move > 0 && !facingRight) {
+				Flip ();
+			} else if (move < 0 && facingRight) {
+				Flip ();
+			}
+
+			if (grounded && Input.GetButtonDown ("Jump") && !anim.GetBool ("WallStick") ) {
 					anim.SetBool ("Ground", false);
 					rigidbody2D.AddForce (new Vector2 (0, jumpForce));
 				sfx.playJump();
-			} else if (grounded && Input.GetKeyDown (KeyCode.Space) && anim.GetBool ("WallStick") ) {
+			} else if (grounded && Input.GetButtonDown ("Jump") && anim.GetBool ("WallStick") ) {
 				anim.SetBool ("Ground", false);
 				float dire = 1f;
 				if(facingRight)
@@ -247,7 +256,7 @@ public class CharacterControllerScript : MonoBehaviour {
 			}
 			//Crouching -------------
 			if ((allowJumpCrouch && !grounded) || grounded) {
-				if (Input.GetKey (KeyCode.DownArrow)) {
+				if (Input.GetButtonDown ("Vertical") && Input.GetAxis("Vertical") < 0) {
 					if((allowJumpCrouch && !grounded)) {
 						anim.SetBool ("CrouchJump", true);
 					}
@@ -262,7 +271,7 @@ public class CharacterControllerScript : MonoBehaviour {
 						playableDuck = false;
 					}	
 				} 
-				if (Input.GetKeyUp (KeyCode.DownArrow)) {
+				if (Input.GetButtonUp ("Vertical") && Input.GetAxis("Vertical") < 0) {
 						anim.SetBool ("CrouchJump", false);
 						anim.SetBool ("Crouch", false);
 					playableDuck = true;
@@ -271,7 +280,7 @@ public class CharacterControllerScript : MonoBehaviour {
 
 			//Close combat -----------------
 
-			if (grounded && Mathf.Abs (move) < 0.01f && !hasweapon && Input.GetKeyDown (KeyCode.LeftControl) && !anim.GetBool ("KickAttack") && !anim.GetBool ("Attack1") && !anim.GetBool ("Attack2") ) {
+			if (grounded && Mathf.Abs (move) < 0.01f && !hasweapon && Input.GetButtonDown ("Fire1") && !anim.GetBool ("KickAttack") && !anim.GetBool ("Attack1") && !anim.GetBool ("Attack2") ) {
 				sfx.playAttack();
 				anim.SetBool (attacks[Random.Range (0,3)], true);
 
@@ -286,6 +295,32 @@ public class CharacterControllerScript : MonoBehaviour {
 			//	anim.SetFloat ("Speed", 200f);
 			//	rigidbody2D.AddForce(new Vector2(2000f * moveDir, 0f));	
 			//}
+		}
+		else if (waitForRespawn){
+			if(Input.GetKeyDown (KeyCode.R))
+			{
+				// highlight playerdeath
+				SpriteRenderer renderer = GameObject.Find ("Deathscreen").GetComponent<SpriteRenderer>();
+				renderer.color = new Color(0f, 0f, 0f, 0f);
+				GameObject.Find ("Character").GetComponent<SpriteRenderer>().sortingLayerName = "Player";
+				GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "";
+				
+				anim.SetBool ("LostLife", false);	
+				if(!facingRight) Flip ();
+				
+				//Debug.Log ("S:"+"SpawnSpot" + curSpawnSpot );
+				rigidbody2D.position = GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position;
+				//Debug.Log ("Sx:"+GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.x+" Sy:" + GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.y);
+				alive = true;
+				canmove = true;
+				waitForRespawn = false;
+				
+			}
+		}
+		
+		if (shots <= 0) {
+			anim.SetBool ("HasWeapon", false);	
+			hasweapon = false;
 		}
 
 	}

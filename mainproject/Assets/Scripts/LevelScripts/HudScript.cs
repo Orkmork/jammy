@@ -34,7 +34,7 @@ public class HudScript : MonoBehaviour {
 	public Texture2D timeTex;
 	public GUIStyle timeStyle;
 	float posTimeTexX = 0.915f;
-	float posTimeTexY = 0f;
+	float posTimeTexY = 0.003f;
 
 	//leveltimer
 	public bool timeRunning = true;
@@ -82,14 +82,14 @@ public class HudScript : MonoBehaviour {
 			Debug.LogError ("Texture for coins is missing.");
 		}
 		GUI.DrawTexture (new Rect (Screen.width * posCoinTexX/scSX, Screen.height * posCoinTexY/scSY, 24/scSX, 24/scSY), coinTex, ScaleMode.ScaleToFit, true, 0f);
-		GUI.Label (new Rect(Screen.width * posCoinTexX /scSX + 28/scSX, Screen.height * posCoinTexY/scSY + 24/scSY * 0.10f,100/scSX,32/scSY),new GUIContent(playerScript.coins.ToString()),coinStyle);
+		GUI.Label (new Rect(Screen.width * posCoinTexX /scSX + 28/scSX, ((Screen.height-12) * posCoinTexY )/scSY ,100/scSX,32/scSY),new GUIContent(playerScript.coins.ToString()),coinStyle);
 
 		//ammo display -----------
 		if (!ammoTex) {
 			Debug.LogError ("Texture for ammo is missing.");
 		}
 		GUI.DrawTexture (new Rect (Screen.width * posAmmoTexX/scSX, Screen.height * posAmmoTexY/scSY, 24/scSX, 21/scSY), ammoTex, ScaleMode.ScaleToFit, true, 0f);
-		GUI.Label (new Rect(Screen.width * posAmmoTexX /scSX + 28/scSX, Screen.height * posAmmoTexY/scSY + 21/scSY * 0.10f,100/scSX,32/scSY),new GUIContent(playerScript.shots.ToString()),ammoStyle);
+		GUI.Label (new Rect(Screen.width * posAmmoTexX /scSX + 28/scSX, ((Screen.height-10) * posAmmoTexY )/scSY,100/scSX,32/scSY),new GUIContent(playerScript.shots.ToString()),ammoStyle);
 
 
 		//time display -------------
@@ -97,7 +97,7 @@ public class HudScript : MonoBehaviour {
 			Debug.LogError ("Texture for level time is missing.");
 		}
 		GUI.DrawTexture (new Rect (Screen.width * posTimeTexX/scSX, Screen.height * posTimeTexY/scSY, 32/scSX, 32/scSY), timeTex, ScaleMode.ScaleToFit, true, 0f);
-		GUI.Label (new Rect(Screen.width * posTimeTexX /scSX + 32/scSX, Screen.height * posTimeTexY/scSY + 32/scSY * 0.10f,100/scSX,32/scSY),new GUIContent(minutes.ToString ("D2") + ":" + seconds.ToString("D2")),timeStyle);
+		GUI.Label (new Rect(Screen.width * posTimeTexX /scSX + 36/scSX, Screen.height  * posTimeTexY / scSY + 2/scSY,100/scSX,32/scSY),new GUIContent(minutes.ToString ("D2") + ":" + seconds.ToString("D2")),timeStyle);
 	}
 
 	// rewrite
