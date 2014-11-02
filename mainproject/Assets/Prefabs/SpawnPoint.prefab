@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: flag_grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ GameObject:
   - 95: {fileID: 9500002}
   - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
-  m_Layer: 0
-  m_Name: Spawnpoint
+  m_Layer: 14
+  m_Name: SpawnPoint
   m_TagString: SpawnSpot0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 212: {fileID: 21200004}
   - 95: {fileID: 9500004}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: flag_blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}

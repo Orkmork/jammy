@@ -3,47 +3,52 @@ using System.Collections;
 
 public class CharacterControllerScript : MonoBehaviour {
 
-	public float maxSpeed = 2f;
-	public bool facingRight = true;
-
-	public Animator anim;
-
-	public bool grounded = false;
-	public Transform groundCheck;
-	public GameObject hearthUI;
-
-	float groundRadius = 0.1f;
-	public LayerMask whatIsGround;
-	public float jumpForce = 250f;
-	public float killForce = 1f;
-	public bool levelEnd = false;
-	public bool alive = true;
-	public bool canmove = true;
-	public bool waitForRespawn = false;
-	public float moveDir = 1f;
-	public bool speedJump = false;
-	public bool hasweapon = false;
-	public bool buying = false;
-	public int curSpawnSpot = 0;
-
-
-	public bool playableDuck = true;
-	public bool playableJump = true;
-
+	// player inital config
+	public string playerName;
 	public int maxlives = 5;
 	public int lives = 3;
 	public int coins = 0;
 	public int shots = 0;
-
-	private Transform frontCheck;
-	public bool allowJumpCrouch = true;
-
-	SoundScript sfx;
+	public float maxSpeed = 2f;
+	public int curSpawnSpot = 0;
 	string[] attacks = { "KickAttack", "Attack1", "Attack2" };
+
+	//game balancing
+	public bool allowJumpCrouch = true;
+	public float jumpForce = 250f;
+	public float killForce = 2f;
+
+	//collision detect
+	public LayerMask whatIsGround;
+	public Transform groundCheck;
+	private Transform frontCheck;
+	float groundRadius = 0.1f;
+	public bool grounded = false;
+	public bool facingRight = true;
+	public float moveDir = 1f;
+
+	//sound check
+	public bool playableDuck = true;
+	public bool playableJump = true;
+
+	//controller stuff
+	public Animator anim;
+	public GameObject hearthUI;
+	SoundScript sfx;
+
+	//animation state mashine
+	public bool levelEnd = false;
+	public bool alive = true;
+	public bool canmove = true;
+	public bool waitForRespawn = false;
+	public bool speedJump = false;
+	public bool hasweapon = false;
+	public bool buying = false;
 
 	void Awake()
 	{
 		frontCheck = transform.Find ("frontCheck").transform;
+		//Hashtable arguments = SceneManager.
 	}
 
 	// === state ====================================
@@ -54,7 +59,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		{
 			--lives;
 			if(lives == 0) {
-				Application.LoadLevel(1);
+				GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("gameover");
 			}
 			if(facingRight) {
 				killForce *= -1f;
@@ -65,10 +70,11 @@ public class CharacterControllerScript : MonoBehaviour {
 			renderer.color = new Color(0f, 0f, 0f, 0.8f);
 			GameObject.Find ("Character").GetComponent<SpriteRenderer>().sortingLayerName = "DeathPlayer";
 			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Hoppala! Da hat's dich wohl erwischt! <R> für respawn...";
-
+			anim.SetBool ("CrouchJump", false);
+			anim.SetBool ("Crouch", false);
 			//kill player
 			rigidbody2D.AddForce(new Vector2(0, 100f));
-			rigidbody2D.velocity = new Vector2 (2f * killForce, rigidbody2D.velocity.y);
+			rigidbody2D.velocity = new Vector2 (killForce, rigidbody2D.velocity.y);
 
 			anim.SetBool("LostLife",true);
 			alive = false;
@@ -106,6 +112,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		sfx = GameObject.Find ("Character").GetComponent<SoundScript>();
 
 		// restore state
+		/*
 		if (PlayerPrefs.HasKey ("lives"))
 		{
 			lives = PlayerPrefs.GetInt("lives");
@@ -114,6 +121,7 @@ public class CharacterControllerScript : MonoBehaviour {
 		{
 			coins = PlayerPrefs.GetInt("coins");
 		}
+		*/
 		shots = 0;
 	}
 
@@ -164,9 +172,9 @@ public class CharacterControllerScript : MonoBehaviour {
 				anim.SetBool ("LostLife", false);	
 				if(!facingRight) Flip ();
 
-				Debug.Log ("S:"+"SpawnSpot" + curSpawnSpot );
+				//Debug.Log ("S:"+"SpawnSpot" + curSpawnSpot );
 				rigidbody2D.position = GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position;
-				Debug.Log ("Sx:"+GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.x+" Sy:" + GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.y);
+				//Debug.Log ("Sx:"+GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.x+" Sy:" + GameObject.FindWithTag("SpawnSpot" + curSpawnSpot).transform.position.y);
 				alive = true;
 				canmove = true;
 				waitForRespawn = false;
@@ -178,14 +186,32 @@ public class CharacterControllerScript : MonoBehaviour {
 			anim.SetBool ("HasWeapon", false);	
 			hasweapon = false;
 		}
-
-
-
 	}
+
+	
+	// === animation ==================================
 
 	void unsetShoot() {
 		anim.SetBool ("Shoot", false);
 		anim.SetBool ("DuckShoot", false);
+	}
+	
+	void resetAttack1() {
+		anim.SetBool ("Attack1", false);
+	}
+	void resetAttack2() {
+		anim.SetBool ("Attack2", false);
+	}
+	void resetKickAttack() {
+		anim.SetBool ("KickAttack", false);
+	}
+	
+	void Flip() {
+		facingRight = !facingRight;
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
+		moveDir *= -1f;
 	}
 	
 	void Update() {
@@ -205,15 +231,13 @@ public class CharacterControllerScript : MonoBehaviour {
 				rigidbody2D.AddForce (new Vector2 (jumpForce * dire * 2, jumpForce / 4 * 3));
 				sfx.playJump();
 			}
+			//Stick to the wall -------------
 			Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position,whatIsGround);
-			//Debug.Log ("Front:" + frontHits.Length);
 			if(frontHits.Length >= 1) {
 				foreach(Collider2D c in frontHits)
 				{
-					//Debug.Log ("Tag:" + c.tag);
 					if(c.tag == "Obstacle")
 					{
-						//Debug.Log ("grounded:" + grounded);
 						anim.SetBool ("WallStick", true);
 						sfx.playWall();
 					}
@@ -221,7 +245,7 @@ public class CharacterControllerScript : MonoBehaviour {
 			} else {
 				anim.SetBool ("WallStick", false);
 			}
-			//Crouching-------------
+			//Crouching -------------
 			if ((allowJumpCrouch && !grounded) || grounded) {
 				if (Input.GetKey (KeyCode.DownArrow)) {
 					if((allowJumpCrouch && !grounded)) {
@@ -239,19 +263,13 @@ public class CharacterControllerScript : MonoBehaviour {
 					}	
 				} 
 				if (Input.GetKeyUp (KeyCode.DownArrow)) {
-					//if((allowJumpCrouch && !grounded)) {
-					//	anim.SetBool ("CrouchJump", false);
-					//	anim.SetBool ("Crouch", false);
-					//}
-					//else if(grounded){
 						anim.SetBool ("CrouchJump", false);
 						anim.SetBool ("Crouch", false);
-					//}
 					playableDuck = true;
 				} 
 			}
 
-			//KickAttack-----------------
+			//Close combat -----------------
 
 			if (grounded && Mathf.Abs (move) < 0.01f && !hasweapon && Input.GetKeyDown (KeyCode.LeftControl) && !anim.GetBool ("KickAttack") && !anim.GetBool ("Attack1") && !anim.GetBool ("Attack2") ) {
 				sfx.playAttack();
@@ -264,48 +282,11 @@ public class CharacterControllerScript : MonoBehaviour {
 				anim.SetBool ("Attack2", false);
 			}
 
-
-
 			//if(Mathf.Abs (move) > 0.01f && Input.GetKeyDown(KeyCode.T) && anim.GetFloat ("Speed") > 0.01f) {
 			//	anim.SetFloat ("Speed", 200f);
 			//	rigidbody2D.AddForce(new Vector2(2000f * moveDir, 0f));	
 			//}
 		}
 
-	}
-
-	void resetAttack1() {
-		anim.SetBool ("Attack1", false);
-	}
-	void resetAttack2() {
-		anim.SetBool ("Attack2", false);
-	}
-	void resetKickAttack() {
-		anim.SetBool ("KickAttack", false);
-	}
-
-	/*
-	void OnCollisionStay2D(Collision2D other) { 
-		if (Input.GetKeyDown (KeyCode.C)) {
-			Debug.Log ("Col:" + other.gameObject.tag);
-		}
-		if (other.gameObject.tag == "Bar") {
-			if(Input.GetKeyDown (KeyCode.B)) {
-				ChangeCoins(1);
-			}
-		}
-	}*/
-
-	void Flip() {
-		facingRight = !facingRight;
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
-		moveDir *= -1f;
-	}
-
-	IEnumerator waitForMe()
-	{
-		yield return new WaitForSeconds(2);
 	}
 }

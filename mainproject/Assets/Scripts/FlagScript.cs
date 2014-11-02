@@ -9,24 +9,12 @@ public class FlagScript : MonoBehaviour {
 	CharacterControllerScript fiona;
 	SoundScript sfx;
 
-	FlagScript() {
-
-	}
-
 	void Awake() {
 		//transform.FindChild ("flag_grey").gameObject.SetActive (false);
 		anim = GetComponent<Animator> ();
 		if (isStartSpawn) {
 			anim.SetBool ("Startspawn", true);
 		}
-	}
-	// Update is called once per frame
-	void FixedUpdate () {
-		/*if (isActive) {
-			anim.SetBool ("Active", true);
-		} else {
-			anim.SetBool ("Active", false);
-		}*/
 	}
 
 	void OnTriggerEnter2D(Collider2D other)

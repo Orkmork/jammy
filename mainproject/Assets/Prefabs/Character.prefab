@@ -324,32 +324,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11361dc79682a0d4daa8a21966e85c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxlives: 5
+  lives: 3
+  coins: 0
+  shots: 0
   maxSpeed: 2
-  facingRight: 1
-  anim: {fileID: 0}
-  grounded: 0
-  groundCheck: {fileID: 400006}
-  hearthUI: {fileID: 100002, guid: 4f726af24956d2745ad003c588ddcd82, type: 2}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 4294965247
+  curSpawnSpot: 0
+  allowJumpCrouch: 1
   jumpForce: 250
   killForce: 1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 4294940671
+  groundCheck: {fileID: 400006}
+  grounded: 0
+  facingRight: 1
+  moveDir: 1
+  playableDuck: 1
+  playableJump: 1
+  anim: {fileID: 0}
+  hearthUI: {fileID: 100002, guid: 4f726af24956d2745ad003c588ddcd82, type: 2}
   levelEnd: 0
   alive: 1
   canmove: 1
   waitForRespawn: 0
-  moveDir: 1
   speedJump: 0
   hasweapon: 0
   buying: 0
-  curSpawnSpot: 0
-  playableDuck: 1
-  playableJump: 1
-  lives: 3
-  coins: 0
-  shots: 0
-  allowJumpCrouch: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
