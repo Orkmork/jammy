@@ -7,12 +7,12 @@
   <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
   <tile id="8">
    <objectgroup draworder="index">
-    <object x="-0.0625" y="0" width="32" height="32"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="58">
    <objectgroup draworder="index">
-    <object x="-0.0625" y="0" width="32" height="32"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="253">
@@ -33,14 +33,14 @@
   <tile id="261">
    <objectgroup draworder="index">
     <object x="0" y="31.875">
-     <polygon points="0,0 32,-31.8125 32,0.0625"/>
+     <polygon points="0,0.125 32,-31.875 32,0.125"/>
     </object>
    </objectgroup>
   </tile>
   <tile id="262">
    <objectgroup draworder="index">
     <object x="0" y="0.0625">
-     <polygon points="0,0 0.0625,31.8125 32,32"/>
+     <polygon points="0,-0.0625 0,31.9375 32,31.9375"/>
     </object>
    </objectgroup>
   </tile>
@@ -66,6 +66,17 @@
  <tileset firstgid="3766" name="Sign_Bar" tilewidth="32" tileheight="32">
   <image source="../ressources/Tile/Sign_Bar.png" width="32" height="32"/>
  </tileset>
+ <tileset firstgid="3767" name="backwalls" tilewidth="32" tileheight="32">
+  <image source="../ressources/Tile/backwalls/wall_castle.png" width="64" height="64"/>
+ </tileset>
+ <layer name="Backwalls" width="100" height="100">
+  <properties>
+   <property name="unit:sortingLayerName" value="Backwalls"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt2kFuwjAARFFOwP1vkpjTFamLuCmlKzIj+X3J+vsy3w0i2/12259n4wqP53lwjdN7YH00O70H1kez03tgfTQ7vQfWR7PTe2B9NDu9B9ZHs9N7YH00O70Hfm98lv/+3udO8FnO9xNyzF3s9h9lvqc299GlzM+tr55nh/vqUt49zwIAACCL7ysAAAAAsAbb6Ter4ftglHH/+/j95HrS7xcl3Uj6fbykG2nYqT4OGnaqj4OGnerjm/k9oRXdxurvt7ehjy700YU+utBHF6v3sZ3OHv6MVu9jTKeBlfuYm2i5u/TR9b9dH8dpYOU+xovzCH8uK/fR6vRO+Xe3DbtgfTQ6vQfWR7PTe2B9NDu9B9ZHs9N7YH00O70H1kez03tgfTQ7vQfWR7PTe2B9NDu9B9ZHs9N7YH00O70H1kez03tgfTQ7vQfWR7PTe2B9NDu9B9ZHs9N7YH00O70H1kez03tgfTQ7vQfWR7PTe+Cf/gJEQbk1
+  </data>
+ </layer>
  <layer name="Background" width="100" height="100">
   <properties>
    <property name="unity:sortingLayerName" value="Background"/>

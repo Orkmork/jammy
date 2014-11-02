@@ -6,7 +6,9 @@
  <tileset firstgid="1" name="Dungeon_A5" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Dungeon_A5.png" width="256" height="512"/>
   <tile id="35">
-   <objectgroup draworder="index"/>
+   <objectgroup draworder="index">
+    <object x="0" y="0" width="32" height="32"/>
+   </objectgroup>
   </tile>
   <tile id="80">
    <objectgroup draworder="index"/>
@@ -28,27 +30,27 @@
   <image source="../ressources/Graphics/Tilesets/Dungeon_C.png" width="512" height="512"/>
   <tile id="2">
    <objectgroup draworder="index">
-    <object x="0.0625" y="0.0625" width="31.875" height="31.875"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="18">
    <objectgroup draworder="index">
-    <object x="0" y="0.0625" width="31.9375" height="31.9375"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="50">
    <objectgroup draworder="index">
-    <object x="0.1875" y="0.125" width="31.625" height="31.75"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="66">
    <objectgroup draworder="index">
-    <object x="0.0625" y="0.0625" width="31.9375" height="31.875"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="116">
    <objectgroup draworder="index">
-    <object x="0" y="0" width="31.9375" height="31.9375"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="149">
@@ -57,6 +59,12 @@
  </tileset>
  <tileset firstgid="385" name="Outside_C" tilewidth="32" tileheight="32">
   <image source="../ressources/Graphics/Tilesets/Outside_C.png" width="512" height="512"/>
+  <tile id="6">
+   <objectgroup draworder="index"/>
+  </tile>
+  <tile id="22">
+   <objectgroup draworder="index"/>
+  </tile>
  </tileset>
  <tileset firstgid="641" name="Sign_Bar" tilewidth="32" tileheight="32">
   <image source="../ressources/Tile/Sign_Bar.png" width="32" height="32"/>
@@ -70,6 +78,17 @@
  <tileset firstgid="883" name="All_v01" tilewidth="32" tileheight="32">
   <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
  </tileset>
+ <tileset firstgid="3383" name="backwalls" tilewidth="32" tileheight="32">
+  <image source="../ressources/Tile/backwalls/wall_pyramid.png" width="64" height="64"/>
+ </tileset>
+ <layer name="Backwalls" width="100" height="100">
+  <properties>
+   <property name="unity:sortingLayerName" value="Backwalls"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztmFtu6zAMRLOBridt97+wNh9GVUF2RPExQ4sEisEFYplO5nDo+/x4PD5//56lFPr1+/ddSqNoP5Tm4ONVXucfxfCcWfh4lff5r0I/ZxY+Dh978uF1/h352I2LDHzsqGg/sOZL8SHTyP0oMmfQfmDTNl96LT4wOqriA69tFR+4XDp4KD50Pkb3kZUPS9+tzvnI/YyZj76sz5Xcn5E/BBfIXFjlMqpvBB+anFjJlVGhc4KBD63PDl/fISdY+GDLHTZF+0E6/9F9FB/xiuQw8veP9neGfSoTH1b+PAr9PGx8rORFX+i+ig98H8UHJm8YFO0HZkXkDtoP1nmj5RGdVww+ZND2fQO5j6F9zahHXXHo9X6C9uXqXEd/3osfBj9G+J2hDyY+0O/H6Ptn4cN7HmdThn2m/XcWH9+Vj3afseYkU26g+YjQjLyh/VC6Dx8ZFe0HVu2r+Bjnwd3zB+1DiUa/pyD2Mwbfs/JR+ZFbLXhC+6HUj49s78OI/SmCj74k10uvs9p3jkLz4MGHxd7T+rT161mhfczKh7XPzs5b5c9DPbnS/p5aLiScWXBo8byefaD8NeKAcZ5nzI93eXDld8nnd9Csc/auivbDas4w9JGND8/cYdizio8/PtB7VvHxXz34YOAO7YdVZeTDItfQPj/zKUMfxUepdD6P3quj5jsqp1Z4XX1+1Jxk0Xf/L9AWko8dtN2nrvwcmWdof7JygZoHDD6V+BiRHzP9WZ2L9mlmHdUOfOykDD7bXVuuIuZvv8do95WoPJHex2IPi5qvFudo+lntY/a+yPxoy2I/sdpzkGrVX7TftPOVVaUcnX2e3S9Wc5lNz74f6zkt9UtpDB8MysCVdE4g/aDhUTKvrfJott+2pPmI9k8pDx+l1/mBmLd9SfNhVMi80t7fYq5650vfV1+SPBnlwLtcmM0NSz6YfDbiR8KZhMf2/PZ61POjfGCxx2i0L+l1Efkx6wsmfry5O3v+CD6Y/BvFIbqP/nvU+IvB5157kvb6Vf4i84DBj5G+X3neTL7LrjO5i/YRcu4z8hr9+zPdZ+Uc7+dj9O1sHmn7lJ4TsVei5+qoZj5veX90rjDlR1/oftCK9kM/zxn62JmP0ms+rOfzHTTy+7D4XWvu3zM/SvF+KP2vP1ifK8s=
+  </data>
+ </layer>
  <layer name="Background" width="100" height="100">
   <properties>
    <property name="unity:sortingLayerName" value="Background"/>

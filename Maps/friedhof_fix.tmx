@@ -7,25 +7,25 @@
   <image source="../ressources/Tile/All_v01.png" width="1600" height="1600"/>
   <tile id="108">
    <objectgroup draworder="index">
-    <object x="0" y="0.0714286" width="32.2143" height="31.9286"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="158">
    <objectgroup draworder="index">
-    <object x="0" y="0.0714286" width="32.0714" height="31.9286"/>
+    <object x="0" y="0" width="32" height="32"/>
    </objectgroup>
   </tile>
   <tile id="257">
    <objectgroup draworder="index">
-    <object x="31.7857" y="0.0714286">
-     <polygon points="0,0 -31.7143,31.9286 0.285714,31.9286"/>
+    <object x="32" y="0">
+     <polygon points="0,0 -32,32 0,32"/>
     </object>
    </objectgroup>
   </tile>
   <tile id="258">
    <objectgroup draworder="index">
     <object x="0.142857" y="0">
-     <polygon points="0,0 31.7857,31.9286 -0.0714286,32"/>
+     <polygon points="-0.142857,0 31.8571,32 -0.142857,32"/>
     </object>
    </objectgroup>
   </tile>
