@@ -81,6 +81,55 @@ public class HandyScript : MonoBehaviour {
 		matrix = Matrix4x4.TRS (Vector3.zero, Quaternion.identity, new Vector3(Screen.width/virtualWidth, Screen.height/virtualHeight, 1.0f));
 	}
 
+	void Update() {
+		if (Input.GetButtonDown ("Fire1")) {
+			if(currentSzene == 4) {
+				Hashtable args = new Hashtable();
+				args.Add ("sourceLevel","Handy");
+				args.Add ("targetLevel","Level");
+				args.Add ("lives",3);
+				args.Add ("coins",0);
+				args.Add ("playerName",playerName);
+				GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("Zoo",args);
+			}
+			else if(currentSzene == 7) {
+				Hashtable args = new Hashtable();
+				args.Add ("sourceLevel","Handy");
+				args.Add ("targetLevel","Level");
+				args.Add ("lives",lives);
+				args.Add ("coins",coins);
+				args.Add ("playerName",playerName);
+				GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("Friedhof",args);
+			}
+			else if(currentSzene == 10) {
+				Hashtable args = new Hashtable();
+				args.Add ("sourceLevel","Handy");
+				args.Add ("targetLevel","Level");
+				args.Add ("lives",lives);
+				args.Add ("coins",coins);
+				args.Add ("playerName",playerName);
+				GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("Pyramide",args);
+			}
+			else if(currentSzene == 12) {
+				Hashtable args = new Hashtable();
+				args.Add ("sourceLevel","Handy");
+				args.Add ("targetLevel","Level");
+				args.Add ("lives",lives);
+				args.Add ("coins",coins);
+				args.Add ("playerName",playerName);
+				GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("Schloss",args);
+			}
+			else if(currentSzene == 14) {
+				Destroy(GameObject.Find("LevelManager"));
+				Application.LoadLevel("Title");
+			}
+			else {
+				currentSzene++;
+			}
+		}
+	}
+
+
 	void OnGUI() {
 		GUI.matrix = matrix;
 		GUI.SetNextControlName("Handy");

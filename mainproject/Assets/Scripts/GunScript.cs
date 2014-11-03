@@ -18,7 +18,7 @@ public class GunScript : MonoBehaviour {
 
 	void Update () {
 		//Shoot----------------------
-		if (fiona.grounded && fiona.hasweapon && !anim.GetBool ("Crouch") && Input.GetKeyDown (KeyCode.LeftControl)) {
+		if (fiona.grounded && fiona.hasweapon && !anim.GetBool ("Crouch") && Input.GetButtonDown ("Fire1") && !fiona.shopping) {
 			anim.SetBool ("Shoot", true);
 
 			if (fiona.facingRight) {
@@ -30,7 +30,7 @@ public class GunScript : MonoBehaviour {
 			}
 			fiona.shots--;
 		} 
-		if (fiona.grounded && fiona.hasweapon && anim.GetBool ("Crouch") && Mathf.Abs (anim.GetFloat ("Speed")) == 0 && Input.GetKeyDown (KeyCode.LeftControl)) {
+		if (fiona.grounded && fiona.hasweapon && anim.GetBool ("Crouch") && Mathf.Abs (anim.GetFloat ("Speed")) == 0 && Input.GetButtonDown ("Fire1") && !fiona.shopping) {
 			anim.SetBool ("DuckShoot", true);
 			
 			if (fiona.facingRight) {
@@ -42,7 +42,7 @@ public class GunScript : MonoBehaviour {
 			}
 			fiona.shots--;
 		} 
-		if (fiona.hasweapon && Input.GetKeyUp (KeyCode.LeftControl)) {
+		if (fiona.hasweapon && Input.GetButtonUp ("Fire1")) {
 			anim.SetBool ("Shoot", false);
 			anim.SetBool ("DuckShoot", false);
 		}

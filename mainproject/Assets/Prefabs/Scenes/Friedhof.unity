@@ -324,7 +324,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!1001 &24589001
 Prefab:
   m_ObjectHideFlags: 0
@@ -6944,7 +6944,7 @@ Transform:
   - {fileID: 1281673710}
   - {fileID: 547513565}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1001 &742616205
 Prefab:
   m_ObjectHideFlags: 0
@@ -8444,7 +8444,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!1 &889211111
 GameObject:
   m_ObjectHideFlags: 0
@@ -9544,6 +9544,7 @@ MonoBehaviour:
   grounded: 0
   facingRight: 1
   moveDir: 1
+  shopping: 0
   playableDuck: 1
   playableJump: 1
   anim: {fileID: 0}
@@ -12645,7 +12646,7 @@ Transform:
   - {fileID: 1647857432}
   - {fileID: 1178389582}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!1 &1361844705
 GameObject:
   m_ObjectHideFlags: 0
@@ -14944,7 +14945,7 @@ Transform:
   - {fileID: 52562548}
   - {fileID: 2084733714}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 17
 --- !u!1 &1611700977
 GameObject:
   m_ObjectHideFlags: 0

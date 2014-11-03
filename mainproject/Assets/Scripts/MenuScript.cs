@@ -92,6 +92,40 @@ public class MenuScript : MonoBehaviour {
 		if(Input.GetButtonDown ("Vertical") && Input.GetAxis("Vertical") < 0){			
 			selected = menuSelection(menuElements, selected, "down");			
 		}
+
+		if (Input.GetButtonDown ("Fire1")) {
+			if(selected == 1) {
+				if(playerName == _defaultName || playerName.Trim () == "")
+				{
+					GUI.FocusControl ("player_name");
+					selected = 0;
+					playnameQuestion = true;
+				}
+				else 
+				{
+					Debug.Log ("pn:" + playerName);
+					playnameQuestion = false;
+					GUI.FocusControl ("button_play");
+					selected = 1;
+					PlayerPrefs.SetString ("playerName", playerName);
+					Hashtable args = new Hashtable();
+					args.Add ("sourceLevel","MainMenu");
+					args.Add ("targetLevel","Handy");
+					args.Add ("playerName",playerName);
+					GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("Handy",args);
+				}
+			}else if (selected == 3) {
+				GUI.FocusControl ("button_credits");
+				selected = 3;
+				//load credits----------
+				
+				Hashtable args = new Hashtable();
+				args.Add ("sourceLevel","MainMenu");
+				args.Add ("targetLevel","Credits");
+				GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("Handy",args);
+			}
+
+		}
 	}
 
 	void OnGUI() {
@@ -115,7 +149,7 @@ public class MenuScript : MonoBehaviour {
 		//play button ---------------------
 		GUI.SetNextControlName(menuElements[1]);
 		if(GUI.Button (new Rect(Screen.width * posPlayX/scSX, Screen.height * posPlayY/scSY, Screen.width * scaleX/scSX, Screen.height * scaleY/scSY),"Play",buttonPlay)) {
-			if(playerName == _defaultName)
+			if(playerName == _defaultName || playerName.Trim () == "")
 			{
 				GUI.FocusControl ("player_name");
 				selected = 0;

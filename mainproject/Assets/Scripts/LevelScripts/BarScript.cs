@@ -17,13 +17,15 @@ public class BarScript : MonoBehaviour {
 	{
 		if (other.tag == "Player")
 		{
-			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Mit <B> für " + costs + " Münzen erfrischen...";
-			StartCoroutine("ReloadGame");
+			fiona.shopping = true;
+			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Mit <Aktionstaste> für " + costs + " Münzen erfrischen...";
+			//StartCoroutine("ReloadGame");
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D other) {
 		if (other.tag == "Player") {
+			fiona.shopping = false;
 			GameObject.Find ("Deathtext").GetComponent<GUIText> ().text = "";
 		}
 	}
@@ -33,7 +35,7 @@ public class BarScript : MonoBehaviour {
 				//		Debug.Log ("Col:" + other.gameObject.tag);
 				//}
 		if (other.gameObject.tag == "Player") {
-			if(Input.GetKeyDown (KeyCode.B) && fiona.buying == false && fiona.coins >= costs && fiona.lives < fiona.maxlives) {
+			if(Input.GetButtonDown ("Fire1") && fiona.shopping && fiona.buying == false && fiona.coins >= costs && fiona.lives < fiona.maxlives) {
 				fiona.buying = true;
 				fiona.canmove = false;
 				fiona.anim.SetBool ("Buying", true);

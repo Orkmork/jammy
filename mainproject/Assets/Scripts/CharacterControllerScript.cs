@@ -26,6 +26,7 @@ public class CharacterControllerScript : MonoBehaviour {
 	public bool grounded = false;
 	public bool facingRight = true;
 	public float moveDir = 1f;
+	public bool shopping = false;
 
 	//sound check
 	public bool playableDuck = true;
@@ -55,8 +56,14 @@ public class CharacterControllerScript : MonoBehaviour {
 	
 	public void LoseLife()
 	{
-		if (lives > 0)
+		if (lives > 0 && alive == true)
 		{
+			anim.SetBool("LostLife",true);
+			alive = false;
+			canmove = false;
+			waitForRespawn = true;
+			anim.SetBool ("CrouchJump", false);
+			anim.SetBool ("Crouch", false);
 			--lives;
 			if(lives == 0) {
 				GameObject.Find("LevelManager").GetComponent<LevelManager>().LoadScene("gameover");
@@ -69,17 +76,13 @@ public class CharacterControllerScript : MonoBehaviour {
 			SpriteRenderer renderer = GameObject.Find ("Deathscreen").GetComponent<SpriteRenderer>();
 			renderer.color = new Color(0f, 0f, 0f, 0.8f);
 			GameObject.Find ("Character").GetComponent<SpriteRenderer>().sortingLayerName = "DeathPlayer";
-			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Hoppala! Da hat's dich wohl erwischt! <R> für respawn...";
-			anim.SetBool ("CrouchJump", false);
-			anim.SetBool ("Crouch", false);
+			GameObject.Find ("Deathtext").GetComponent<GUIText>().text = "Hoppala! Da hat's dich wohl erwischt! <Aktionstaste> für respawn...";
+
 			//kill player
 			rigidbody2D.AddForce(new Vector2(0, 100f));
 			rigidbody2D.velocity = new Vector2 (killForce, rigidbody2D.velocity.y);
 
-			anim.SetBool("LostLife",true);
-			alive = false;
-			canmove = false;
-			waitForRespawn = true;
+
 		}
 		else
 		{
@@ -256,7 +259,7 @@ public class CharacterControllerScript : MonoBehaviour {
 			}
 			//Crouching -------------
 			if ((allowJumpCrouch && !grounded) || grounded) {
-				if (Input.GetButtonDown ("Vertical") && Input.GetAxis("Vertical") < 0) {
+				if ((Input.GetButtonDown ("Vertical") && Input.GetAxis("Vertical") < 0) || Input.GetButtonDown("Crouch")) {
 					if((allowJumpCrouch && !grounded)) {
 						anim.SetBool ("CrouchJump", true);
 					}
@@ -271,7 +274,7 @@ public class CharacterControllerScript : MonoBehaviour {
 						playableDuck = false;
 					}	
 				} 
-				if (Input.GetButtonUp ("Vertical") && Input.GetAxis("Vertical") < 0) {
+				if ((Input.GetButtonUp ("Vertical") && Input.GetAxis("Vertical") < 0) || Input.GetButtonUp("Crouch")) {
 						anim.SetBool ("CrouchJump", false);
 						anim.SetBool ("Crouch", false);
 					playableDuck = true;
@@ -280,12 +283,12 @@ public class CharacterControllerScript : MonoBehaviour {
 
 			//Close combat -----------------
 
-			if (grounded && Mathf.Abs (move) < 0.01f && !hasweapon && Input.GetButtonDown ("Fire1") && !anim.GetBool ("KickAttack") && !anim.GetBool ("Attack1") && !anim.GetBool ("Attack2") ) {
+			if (grounded && Mathf.Abs (move) < 0.03f && !hasweapon && !shopping && Input.GetButtonDown ("Fire1") && !anim.GetBool ("KickAttack") && !anim.GetBool ("Attack1") && !anim.GetBool ("Attack2") ) {
 				sfx.playAttack();
 				anim.SetBool (attacks[Random.Range (0,3)], true);
 
 			} 
-			if (Mathf.Abs (move) > 0.01f) {
+			if (Mathf.Abs (move) > 0.03f) {
 				anim.SetBool ("KickAttack", false);
 				anim.SetBool ("Attack1", false);
 				anim.SetBool ("Attack2", false);
@@ -297,7 +300,7 @@ public class CharacterControllerScript : MonoBehaviour {
 			//}
 		}
 		else if (waitForRespawn){
-			if(Input.GetKeyDown (KeyCode.R))
+			if(Input.GetButtonDown ("Fire1"))
 			{
 				// highlight playerdeath
 				SpriteRenderer renderer = GameObject.Find ("Deathscreen").GetComponent<SpriteRenderer>();

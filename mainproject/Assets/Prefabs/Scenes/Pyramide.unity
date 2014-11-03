@@ -9657,7 +9657,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 844084525}
   - 114: {fileID: 844084526}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12917,7 +12917,7 @@ MonoBehaviour:
   killForce: 1
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 4294940671
+    m_Bits: 4294936575
   groundCheck: {fileID: 419510665}
   grounded: 0
   facingRight: 1
@@ -17143,7 +17143,7 @@ GameObject:
   - 4: {fileID: 1573129943}
   - 114: {fileID: 1573129945}
   - 61: {fileID: 1573129944}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Dotz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17979,7 +17979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e808f573c63190146a44ad5d724051c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  costs: 10
+  costs: 15
 --- !u!61 &1613749369
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22293,7 +22293,7 @@ GameObject:
   - 4: {fileID: 1945672657}
   - 61: {fileID: 1945672659}
   - 114: {fileID: 1945672658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: CombatHitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
